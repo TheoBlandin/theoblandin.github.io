@@ -1,0 +1,138 @@
+.hero-banner {
+    background-color: var(--blue);
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
+}
+
+.hello h1, h2 {
+    text-align: left;
+}
+
+.picture {
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 470px;
+}
+
+.arrow-self, .arrow-poulpy, .name-poulpy {
+    position: absolute;
+}
+
+@media (min-width: 320px) {
+    .arrow-poulpy {
+        top: 50%;
+        left: 65%;
+    }
+
+    .name-poulpy {
+        top: 50%;
+        left: 84%;
+    }
+}
+
+@media (min-width: 480px) {
+    .arrow-poulpy {
+        top: 49%;
+        left: 65%;
+    }
+
+    .name-poulpy {
+        top: 49%;
+        left: 79%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-banner {
+        padding: 0px 8px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .arrow-poulpy {
+        transform: scale(0.7);
+    }
+}
+
+@media (min-width: 576px) {
+    .arrow-poulpy {
+        top: 47%;
+        left: 66%;
+    }
+
+    .name-poulpy {
+        top: 46.5%;
+        left: 79%;
+    }
+}
+
+@media (min-width: 768px) {
+    .arrow-poulpy {
+        top: 49%;
+        left: 63%;
+    }
+
+    .name-poulpy {
+        top: 48%;
+        left: 73%;
+    }
+}
+
+@media (max-width: 992px) {
+    .arrow-self {
+        display: none;
+    }
+
+    .hero-banner {
+        padding: 40px 0px 20px 0px;
+    }
+
+    .picture {
+        margin: 32px 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .arrow-self {
+        display: block;
+        top: 13%;
+        left: 35%;
+    }
+
+    .arrow-poulpy {
+        top: 39%;
+        left: 85%;
+    }
+
+    .name-poulpy {
+        top: 38%;
+        left: 92.5%;
+    }
+
+    .hero-banner {
+        padding: 80px 0px 20px 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .arrow-self {
+        top: 13%;
+        left: 35%;
+    }
+
+    .arrow-poulpy {
+        top: 39%;
+        left: 85%;
+    }
+
+    .name-poulpy {
+        top: 38%;
+        left: 92.5%;
+    }
+}
