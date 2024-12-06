@@ -7,8 +7,8 @@ import "./fonts/MADE_Sunflower.otf";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 setConfiguration({
-  breakpoints: [320, 480, 576, 768, 992, 1200, 1600, 1920], // sm, md, lg, xl, xxl, xxxl (ne couvre donc pas 1600 et 1920)
-  containerWidths: [300, 440, 540, 720, 960, 1140, 1540, 1800], 
+  breakpoints: [320, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl 
+  containerWidths: [300, 450, 738, 984, 1180, 1300], 
   gutterWidth: 10,
   gridColumns: 12,
 });

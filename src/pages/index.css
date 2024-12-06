@@ -2,14 +2,16 @@
     background-color: var(--blue);
 }
 
+
 .hello {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     height: 100%;
 }
 
-.hello h1, h2 {
+.hello h1,
+h2 {
     text-align: left;
 }
 
@@ -19,61 +21,86 @@
     max-width: 470px;
 }
 
-.arrow-self, .arrow-poulpy, .name-poulpy {
+.arrow-self,
+.arrow-poulpy,
+.name-poulpy {
     position: absolute;
+}
+
+.cloud {
+    position: absolute;
+    height: auto;
+}
+
+.cloud-1 {
+    fill: rgba(255, 255, 255, 200);
+}
+
+.cloud-2 {
+    fill: rgba(255, 255, 255, 100);
+}
+
+.cloud-3 {
+    fill: rgba(255, 255, 255, 120);
+}
+
+.cloud-3 {
+    fill: rgba(255, 255, 255, 180);
 }
 
 @media (min-width: 320px) {
     .arrow-poulpy {
         top: 50%;
-        left: 65%;
+        left: 64%;
+        transform: scale(0.6);
     }
 
     .name-poulpy {
-        top: 50%;
-        left: 84%;
+        top: 50.5%;
+        left: 83%;
+    }
+
+    .cloud-1 {
+        width: 170px;
+        left: 0%;
+        top: 68%;
+    }
+
+    .cloud-4 {
+        width: 150px;
+        left: 52%;
+        top: 23%;
     }
 }
 
 @media (min-width: 480px) {
     .arrow-poulpy {
         top: 49%;
-        left: 65%;
+        left: 68%;
+        transform: scale(0.8);
     }
 
     .name-poulpy {
         top: 49%;
-        left: 79%;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .hero-banner {
-        padding: 0px 8px !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .arrow-poulpy {
-        transform: scale(0.7);
-    }
-}
-
-@media (min-width: 576px) {
-    .arrow-poulpy {
-        top: 47%;
-        left: 66%;
+        left: 82%;
     }
 
-    .name-poulpy {
-        top: 46.5%;
-        left: 79%;
+    .cloud-1 {
+        width: 200px;
+        left: 0%;
+        top: 73%;
+    }
+
+    .cloud-4 {
+        width: 180px;
+        left: 60%;
+        top: 10%;
     }
 }
 
 @media (min-width: 768px) {
     .arrow-poulpy {
+        transform: scale(1);
         top: 49%;
         left: 63%;
     }
@@ -82,15 +109,31 @@
         top: 48%;
         left: 73%;
     }
+
+    .cloud-1 {
+        width: 280px;
+        left: 0%;
+        top: 73%;
+    }
+
+    .cloud-4 {
+        width: 220px;
+        left: 68%;
+        top: 15%;
+    }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .arrow-self {
         display: none;
     }
 
+    .cloud-2, .cloud-3 {
+        display: none;
+    }
+
     .hero-banner {
-        padding: 40px 0px 20px 0px;
+        padding: 86px 0px 20px 0px;
     }
 
     .picture {
@@ -98,13 +141,17 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .arrow-self {
         display: block;
         top: 13%;
         left: 35%;
     }
 
+    .cloud-2, .cloud-3 {
+        display: block;
+    }
+
     .arrow-poulpy {
         top: 39%;
         left: 85%;
@@ -112,27 +159,75 @@
 
     .name-poulpy {
         top: 38%;
-        left: 92.5%;
+        left: 92%;
     }
 
     .hero-banner {
-        padding: 80px 0px 20px 0px;
+        padding: 126px 0px 20px 0px;
+    }
+
+    .cloud-1 {
+        width: 380px;
+        left: 0%;
+        top: 60%;
+    }
+
+    .cloud-2 {
+        width: 160px;
+        left: 20%;
+        top: -5%;
+    }
+
+    .cloud-3 {
+        width: 133px;
+        left: 50%;
+        top: 58%;
+    }
+
+    .cloud-4 {
+        width: 323px;
+        left: 68%;
+        top: -2%;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .arrow-self {
-        top: 13%;
-        left: 35%;
+        top: 15%;
+        left: 40%;
     }
 
     .arrow-poulpy {
         top: 39%;
-        left: 85%;
+        left: 83%;
     }
 
     .name-poulpy {
         top: 38%;
-        left: 92.5%;
+        left: 89%;
+    }
+
+    .cloud-1 {
+        width: 400px;
+        left: -5%;
+        top: 55%;
+    }
+
+    .cloud-2 {
+        width: 170px;
+        left: 15%;
+        top: -5%;
+    }
+
+    .cloud-3 {
+        width: 140px;
+        left: 45%;
+        top: 58%;
+    }
+
+    .cloud-4 {
+        width: 340px;
+        left: 83%;
+        top: 0%;
     }
 }
