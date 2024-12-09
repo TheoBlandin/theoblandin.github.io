@@ -3,8 +3,8 @@ import './Navbar.css';
 import { Container, Row } from 'react-grid-system';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { ReactComponent as Menu } from './../assets/menu.svg'
-import { ReactComponent as Close } from './../assets/close.svg'
+import { ReactComponent as Menu } from './../../assets/icons/menu.svg'
+import { ReactComponent as Close } from './../../assets/icons/close.svg'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +14,7 @@ function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
+    // Problème quand on recharge la page
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
@@ -32,7 +33,7 @@ function Navbar() {
             <Container>
                 <Row className="desktop-nav">
                     <Link to="/" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Accueil</Link>
-                    <Link to="/" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Mes projets</Link>
+                    <a href="#projects" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Mes projets</a>
                     <Link to="/about" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>À propos</Link>
                 </Row>
             </Container>

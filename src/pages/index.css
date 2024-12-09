@@ -2,17 +2,11 @@
     background-color: var(--blue);
 }
 
-
 .hello {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-}
-
-.hello h1,
-h2 {
-    text-align: left;
 }
 
 .picture {
@@ -48,10 +42,18 @@ h2 {
     fill: rgba(255, 255, 255, 180);
 }
 
+.more-link {
+    cursor: pointer;
+}
+
+.projects-title {
+    margin-bottom: 32px;
+}
+
 @media (min-width: 320px) {
     .arrow-poulpy {
         top: 50%;
-        left: 64%;
+        left: 65%;
         transform: scale(0.6);
     }
 
@@ -123,6 +125,13 @@ h2 {
     }
 }
 
+@media (max-width: 768px) {
+    .projects-title {
+        margin-bottom: 16px;
+    }
+    
+}
+
 @media (max-width: 1024px) {
     .arrow-self {
         display: none;
@@ -153,12 +162,12 @@ h2 {
     }
 
     .arrow-poulpy {
-        top: 39%;
+        top: 40%;
         left: 85%;
     }
 
     .name-poulpy {
-        top: 38%;
+        top: 39%;
         left: 92%;
     }
 
@@ -209,7 +218,7 @@ h2 {
 
     .cloud-1 {
         width: 400px;
-        left: -5%;
+        left: -2%;
         top: 55%;
     }
 
@@ -227,7 +236,7 @@ h2 {
 
     .cloud-4 {
         width: 340px;
-        left: 83%;
+        left: 75%;
         top: 0%;
     }
 }

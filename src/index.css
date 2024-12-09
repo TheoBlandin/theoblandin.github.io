@@ -14,6 +14,10 @@ body {
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'MADE_Sunflower';
   src: local("MADE_Sunflower"),
@@ -36,6 +40,11 @@ body {
   --borne-orange: #FFA655;
 }
 
+p {
+  margin: 0;
+  line-height: 150%;
+}
+
 /* Text styles mobile */
 @media (max-width: 768px) {
   h1 {
@@ -55,11 +64,13 @@ body {
   .display-L {
     font-family: "MADE_Sunflower", serif;
     font-size: 3.125rem;
+    line-height: 120%;
   }
 
   .display-M {
     font-family: "MADE_Sunflower", serif;
     font-size: 1.875rem;
+    line-height: 120%;
   }
 
   .lead {
@@ -90,11 +101,13 @@ body {
   .display-L {
     font-family: "MADE_Sunflower", serif;
     font-size: 5.625rem;
+    line-height: 120%;
   }
 
   .display-M {
     font-family: "MADE_Sunflower", serif;
     font-size: 3.125rem;
+    line-height: 120%;
   }
 
   .lead {
@@ -107,18 +120,5 @@ body {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 800;
 }
-
-/* @media (max-width: 576px) {
-  body {
-      padding-left: 16px;
-      padding-right: 16px;
-      margin: 0; 
-      box-sizing: border-box; 
-  }
-
-  *, *::before, *::after {
-      box-sizing: inherit;
-  }
-} */
