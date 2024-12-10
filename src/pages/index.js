@@ -28,7 +28,7 @@ export default function Home() {
                                     Salut, moi c'est Théo&nbsp;!
                                 </h1>
                                 <h2>
-                                    UX Designer Rennais spécialisé en accessibilité numérique
+                                    UX Designer et Développeur Front-End Rennais spécialisé en accessibilité numérique
                                 </h2>
                             </div>
                         </Col>

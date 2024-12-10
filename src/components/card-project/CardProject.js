@@ -37,31 +37,28 @@ function CardProject(props) {
                 <Col xl={10}>
                     <div className="card" style={{ backgroundColor: `var(--${props.project})` }}>
                         <Row>
-                            <Col lg={7} xxl={6} className="info-project" debug>
-                                {/* <div> */}
-                                    <div>
-                                        <div className="tags">
-                                            {project.tags.map(tag => (
-                                                <span className="small">#{tag}</span>
-                                            ))}
-                                        </div>
-                                        <p className="display-M project-title mb-3">{project.name}</p>
-                                        <p>{project.description}</p>
+                            <Col lg={7} xxl={6} className="info-project">
+                                <div>
+                                    <div className="tags">
+                                        {project.tags.map(tag => (
+                                            <span className="small">#{tag}</span>
+                                        ))}
                                     </div>
-
-                                    <div className="cta-project">
-                                        <p className="bold lead">En savoir plus</p>
-                                        <Forward style={{ fill: 'var(--dark)', width: '20px', height: '20px' }} />
-                                    </div>
-                                {/* </div> */}
+                                    <p className="display-M project-title mb-3">{project.name}</p>
+                                    <p>{project.description}</p>
+                                </div>
+                                <div className="cta-project">
+                                    <p className="bold lead">En savoir plus</p>
+                                    <Forward className="forward-icon" />
+                                </div>
                             </Col>
                             <Col lg={5} xxl={6}
                                 className={`thumbnail
                                     ${device === 'mobile' ? 'mobile' : ''}
                                     ${device === 'small-desktop' ? 'small' : ''}
                                     ${device === 'large-desktop' ? 'large' : ''}`
-                                } debug>
-                                <img  
+                                }>
+                                <img
                                     src={images[1280]}
                                     srcSet={`
                                     ${images[1280]} 449.66w,
