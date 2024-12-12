@@ -56,8 +56,8 @@ export default function Home() {
                         </Col>
                     </Row>
                 </Container>
-                {projectNames.map(name => (
-                    <CardProject project={name} />
+                {projectNames.map((name, index) => (
+                    <CardProject key={index} project={name} />
                 ))}
             </div>
         </>

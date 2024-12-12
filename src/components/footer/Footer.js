@@ -1,0 +1,38 @@
+import React from "react";
+import './Footer.css';
+import { Container, Row, Col } from 'react-grid-system';
+import { ReactComponent as Download } from './../../assets/icons/download.svg'
+import { ReactComponent as LinkedIn } from './../../assets/icons/linkedin.svg'
+
+function Footer() {
+    return (
+        <footer>
+            <Container>
+                <Row justify="between">
+                    <Col lg={3} xxl={2} className="col-footer first-col">
+                        <span>Théo Blandin ©2024</span>
+                        <span>Mentions légales</span>
+                    </Col>
+                    <Col lg={3} xxl={2} className="col-footer">
+                        <a href="https://www.linkedin.com/in/th%C3%A9o-blandin-b71a15258/"
+                            aria-label="Visitez mon profil LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <div className="labeled-icon">
+                                <LinkedIn className="icon-M icon-dark" />
+                                <span>LinkedIn</span>
+                            </div>
+                        </a>
+                        <a href="/assets/CV_Theo_Blandin.pdf" aria-label="Visualiser mon CV"
+                            target="_blank" rel="noopener noreferrer">
+                            <div className="labeled-icon">
+                                <Download className="icon-M icon-dark" />
+                                <span>CV</span>
+                            </div>
+                        </a>
+                    </Col>
+                </Row>
+            </Container>
+        </footer>
+    )
+}
+
+export default Footer

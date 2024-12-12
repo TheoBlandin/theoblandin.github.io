@@ -4,13 +4,9 @@ import projects from './../../assets/projects.json';
 import { Container, Row, Col } from 'react-grid-system';
 import { ReactComponent as Forward } from './../../assets/icons/forward.svg'
 
-
-
 function CardProject(props) {
     const project = projects[props.project]
     const device = project.device
-
-    console.log("device : ", device)
 
     const imagesContext = require.context(
         './../../assets/screens/',
@@ -40,16 +36,16 @@ function CardProject(props) {
                             <Col lg={7} xxl={6} className="info-project">
                                 <div>
                                     <div className="tags">
-                                        {project.tags.map(tag => (
-                                            <span className="small">#{tag}</span>
+                                        {project.tags.map((tag, index) => (
+                                            <span key={index} className="small">#{tag}</span>
                                         ))}
                                     </div>
                                     <p className="display-M project-title mb-3">{project.name}</p>
                                     <p>{project.description}</p>
                                 </div>
                                 <div className="cta-project">
-                                    <p className="bold lead">En savoir plus</p>
-                                    <Forward className="forward-icon" />
+                                    <span className="bold lead">En savoir plus</span>
+                                    <Forward className="icon-L icon-dark" />
                                 </div>
                             </Col>
                             <Col lg={5} xxl={6}
@@ -73,7 +69,7 @@ function CardProject(props) {
                                     (max-width: 1023px) 270.83px,
                                     (max-width: 1279px) 305px,
                                     449.66px"
-                                    alt={`Capture d'écran du projet ${project.name}`} // nécessaire ?
+                                    alt={`Capture d'écran du projet ${project.name}`}
                                 />
                             </Col>
                         </Row>

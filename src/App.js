@@ -1,5 +1,5 @@
-import './App.css';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer'
 import About from './pages/about'
 import Home from './pages/index'
 import { setConfiguration } from 'react-grid-system';
@@ -22,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

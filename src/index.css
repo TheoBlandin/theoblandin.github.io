@@ -45,6 +45,20 @@ p {
   line-height: 150%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.icon-dark {
+  fill: var(--dark)
+}
+
+.icon-M {
+  height: 1rem;
+  width: 1rem;
+}
+
 /* Text styles mobile */
 @media (max-width: 768px) {
   h1 {
@@ -79,6 +93,11 @@ p {
 
   .small {
     font-size: 0.875rem;
+  }
+
+  .icon-L {
+    height: 1.125rem;
+    width: 1.125rem;
   }
 }
 
@@ -116,6 +135,11 @@ p {
 
   .small {
     font-size: 0.875rem;
+  }
+
+  .icon-L {
+    height: 1.25rem;
+    width: 1.25rem;
   }
 }
 
