@@ -24,6 +24,7 @@
 .cloud {
     position: absolute;
     height: auto;
+    /* animation: float 4s ease-in-out infinite; */
 }
 
 .cloud-1 {
@@ -38,9 +39,21 @@
     fill: rgba(255, 255, 255, 120);
 }
 
-.cloud-3 {
+.cloud-4 {
     fill: rgba(255, 255, 255, 180);
 }
+
+/* @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
 
 .more-link {
     cursor: pointer;

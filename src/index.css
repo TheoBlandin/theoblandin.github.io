@@ -10,7 +10,9 @@ body {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -32,12 +34,21 @@ html {
   --surface: #EBEBEB;
   --secondary: #78736A;
   --yellow: #E9C46A;
+  --yellow-light: #F7E3B1;
   --orange: #F08845;
+  --orange-light: #FDBF8F;
   --green: #20A392;
+  --green-light: #92D1C9;
   --blue: #C6DEF1;
   --manger-de-saison: #E4F2E4;
   --swap: #FFC857;
   --borne-orange: #FFA655;
+}
+
+button {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 p {
@@ -48,6 +59,15 @@ p {
 a {
   text-decoration: none;
   color: var(--dark);
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .icon-dark {

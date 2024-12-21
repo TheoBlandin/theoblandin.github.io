@@ -1,0 +1,164 @@
+.about {
+    margin-top: 56px;
+}
+
+.self-img {
+    width: 100%;
+}
+
+.CTA {
+    position: relative;
+    margin-left: auto;
+    display: block;
+    border: 2px solid var(--dark);
+    padding: 8px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.5s ease;
+}
+
+.CTA::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    z-index: 0;
+    transition: left 0.4s ease;
+}
+
+.CTA:hover::before {
+    left: 0;
+}
+
+.CTA:hover {
+    color: var(--light);
+}
+
+.CTA span {
+    position: relative;
+    z-index: 1;
+}
+
+.tools {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.tools-design {
+    background-color: var(--yellow-light);
+    height: 100%;
+}
+
+.tools-dev {
+    background-color: var(--orange-light);
+    height: 100%;
+}
+
+.tools-accessibility {
+    background-color: var(--green-light);
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tools-accessibility>div {
+    flex: 1;
+}
+
+.category-tools-icon {
+    width: 128px;
+    height: 128px;
+}
+
+.container-chips-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.chip-tools {
+    background-color: var(--light);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+}
+
+.icon-tools {
+    width: 16px;
+    height: 16px;
+}
+
+.card-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accessibility-links {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.photos-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.photos-row div {
+    width: 100%;
+}
+
+.photos-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tools-accessibility {
+        padding: 8px;
+        flex-direction: column;
+    }
+
+    .tools {
+        padding: 8px;
+    }
+
+    .accessibility-links {
+        padding: 8px;
+    }
+
+    .container-chips-tools {
+        gap: 8px;
+    }
+
+    .square-tools {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photos-row-2 {
+        margin-top: 20px;
+    }
+}

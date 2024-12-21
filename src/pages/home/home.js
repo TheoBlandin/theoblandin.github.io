@@ -1,13 +1,13 @@
 import React from "react";
-import './index.css';
+import './home.css';
 import { Container, Row, Col } from 'react-grid-system';
-import Picture from './../assets/picture.svg';
-import ArrowMore from './../assets/arrow-down.svg'
-import ArrowSelf from './../assets/arrow-self.svg'
-import ArrowPoulpy from './../assets/arrow-poulpy.svg'
-import { ReactComponent as Cloud } from './../assets/cloud.svg'
-import CardProject from './../components/card-project/CardProject'
-import projects from './../assets/projects.json';
+import Picture from './../../assets/picture.svg';
+import ArrowMore from './../../assets/arrow-down.svg'
+import ArrowSelf from './../../assets/arrow-self.svg'
+import ArrowPoulpy from './../../assets/arrow-poulpy.svg'
+import { ReactComponent as Cloud } from './../../assets/cloud.svg'
+import CardProject from '../../components/card-project/CardProject'
+import projects from './../../assets/projects.json';
 
 
 export default function Home() {
