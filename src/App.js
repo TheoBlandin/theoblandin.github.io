@@ -4,7 +4,9 @@ import About from './pages/about/about'
 import Home from './pages/home/home'
 import { setConfiguration } from 'react-grid-system';
 import "./fonts/MADE_Sunflower.otf";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+
 
 setConfiguration({
   breakpoints: [320, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl 
@@ -13,11 +15,29 @@ setConfiguration({
   gridColumns: 12,
 });
 
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) { // anchor links
+      const element = document.querySelector(hash); 
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

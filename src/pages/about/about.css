@@ -159,6 +159,10 @@
     }
 
     .photos-row-2 {
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+
+    .photos-col, .photos-row {
+        gap: 10px;
     }
 }

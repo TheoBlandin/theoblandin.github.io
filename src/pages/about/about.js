@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import './about.css'
 import { Container, Row, Col } from 'react-grid-system';
 import Self from './../../assets/photos/self.png';
@@ -35,6 +36,10 @@ import Streetart from './../../assets/photos/streetart.png';
 import Swimming from './../../assets/photos/swimming.png';
 
 export default function About() {
+    useEffect(() => {
+        document.title = "À propos - Théo Blandin";
+    }, []);
+
     return (
         <Container>
             <section aria-label="À propos de moi" className="about">

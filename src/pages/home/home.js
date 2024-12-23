@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import './home.css';
 import { Container, Row, Col } from 'react-grid-system';
 import Picture from './../../assets/picture.svg';
@@ -12,6 +13,9 @@ import projects from './../../assets/projects.json';
 
 export default function Home() {
     const projectNames = Object.keys(projects);
+    useEffect(() => {
+        document.title = "Théo Blandin - Portfolio";
+    }, []);
 
     return (
         <>

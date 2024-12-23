@@ -33,7 +33,7 @@ function Navbar() {
             <Container>
                 <Row className="desktop-nav">
                     <Link to="/" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Accueil</Link>
-                    <a href="#projects" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Mes projets</a>
+                    <a href="/#projects" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Mes projets</a>
                     <Link to="/about" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>À propos</Link>
                 </Row>
             </Container>

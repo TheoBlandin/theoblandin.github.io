@@ -65,13 +65,13 @@
 
 @media (min-width: 320px) {
     .arrow-poulpy {
-        top: 50%;
+        top: 52.5%;
         left: 65%;
         transform: scale(0.6);
     }
 
     .name-poulpy {
-        top: 50.5%;
+        top: 53%;
         left: 83%;
     }
 
@@ -116,13 +116,13 @@
 @media (min-width: 768px) {
     .arrow-poulpy {
         transform: scale(1);
-        top: 49%;
+        top: 51%;
         left: 63%;
     }
 
     .name-poulpy {
-        top: 48%;
-        left: 73%;
+        top: 50%;
+        left: 72%;
     }
 
     .cloud-1 {
@@ -167,7 +167,7 @@
     .arrow-self {
         display: block;
         top: 13%;
-        left: 35%;
+        left: 37%;
     }
 
     .cloud-2, .cloud-3 {
