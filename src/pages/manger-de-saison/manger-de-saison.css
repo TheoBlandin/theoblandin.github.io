@@ -1,0 +1,73 @@
+.header {
+    background-color: var(--manger-de-saison);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.back-link {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+    padding: 10px 0px;
+}
+
+.paragraph, .info-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph {
+    gap: 8px;
+}
+
+.info-el {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.alinea {
+    padding-left: 16px;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    max-width: fit-content;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 50px 0px 26px 0px;
+    }
+
+    .header-content {
+        gap: 16px;
+    }
+
+    .info-col {
+        margin-top: 32px;
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding: 86px 0px 70px 0px;
+    }
+
+    .paragraph, .info-col {
+        padding: 16px;
+    }
+
+    .info-col {
+        gap: 32px;
+    }
+}

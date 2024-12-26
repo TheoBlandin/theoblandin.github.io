@@ -14,7 +14,6 @@ function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
-    // Problème quand on recharge la page
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {

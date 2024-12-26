@@ -2,6 +2,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer'
 import About from './pages/about/about'
 import Home from './pages/home/home'
+import MangerDeSaison from './pages/manger-de-saison/manger-de-saison'
 import { setConfiguration } from 'react-grid-system';
 import "./fonts/MADE_Sunflower.otf";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
@@ -41,6 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/manger-de-saison" element={<MangerDeSaison />} />
         </Routes>
         <Footer />
       </div>
