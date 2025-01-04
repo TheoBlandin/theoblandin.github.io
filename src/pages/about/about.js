@@ -61,7 +61,7 @@ export default function About() {
 
                         <p className="mb-2">J'apporte une attention toute particulière à l'accessibilité numérique, spécialité que j'ai pu explorer lors de mon stage chez Vially à Dublin, une entreprise spécialisé dans le domaine.</p>
 
-                        <p className="mb-2">En dehors de mon travail, je m'occupe en regardant des films (particulièrement d'animation), je fais de l'origami, je cuisine et je nage plusieurs longueurs de piscine chaque semaine. Je suis également bénévole pour l'association Karma Com Solidarité, qui vise à aider les associations dans leur communication numérique.</p>
+                        <p className="mb-2">Actuellement, je participe à la création d'une startup au sein de l'incubateur de startup de l'INRIA à Rennes. Cette startup est la suite directe du projet de recherche A4LL qui vise à employer l'IA afin d'analyser les écrits des apprenants en langues et d'ainsi fournir une analyse détaillée sous forme de tableau de bord. J'y occupe un travail d'UX Designer et de Développeur Front-End.</p>
 
                         <a href="/assets/CV_Theo_Blandin.pdf" aria-label="Visualiser mon CV"
                             target="_blank" rel="noopener noreferrer">

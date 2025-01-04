@@ -16,7 +16,14 @@
     padding: 10px 0px;
 }
 
-.paragraph, .info-col {
+.body-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.paragraph,
+.info-col {
     display: flex;
     flex-direction: column;
 }
@@ -43,6 +50,92 @@
     max-width: fit-content;
 }
 
+.container-carousel {
+    background-color: var(--surface);
+    position: relative;
+}
+
+.slick-slide {
+    >div {
+        margin-inline: 30px;
+    }
+}
+
+.container-carousel-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 64px;
+}
+
+.carousel-btn {
+    background-color: var(--light);
+    border-radius: 50px;
+    padding: 8px;
+    border-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.carousel-nav-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.mockup {
+    position: relative;
+}
+
+.mockup-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.mockup-content {
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.mockup-content-mobile {
+    border-radius: 16px;
+}
+
+.mockup-image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mockup-image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .container-carousel-nav {
+        padding: 0px 16px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .container-carousel-nav {
+        padding: 0px 32px;
+    }
+}
+
 @media (max-width: 1024px) {
     .header {
         padding: 50px 0px 26px 0px;
@@ -56,6 +149,10 @@
         margin-top: 32px;
         gap: 16px;
     }
+
+    .container-carousel {
+        padding: 32px 0px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -63,11 +160,20 @@
         padding: 86px 0px 70px 0px;
     }
 
-    .paragraph, .info-col {
+    .paragraph,
+    .info-col {
         padding: 16px;
     }
 
     .info-col {
         gap: 32px;
+    }
+
+    .container-carousel {
+        padding: 64px 0px;
+    }
+
+    .container-carousel-nav {
+        padding: 0px 64px;
     }
 }
