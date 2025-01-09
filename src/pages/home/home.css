@@ -2,30 +2,9 @@
     background-color: var(--blue);
 }
 
-.hello {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-    height: 100%;
-}
-
 .picture {
     aspect-ratio: 1/1;
-    width: 100%;
     max-width: 470px;
-}
-
-.arrow-self,
-.arrow-poulpy,
-.name-poulpy {
-    position: absolute;
-}
-
-.cloud {
-    position: absolute;
-    height: auto;
-    /* animation: float 4s ease-in-out infinite; */
 }
 
 .cloud-1 {
@@ -42,26 +21,6 @@
 
 .cloud-4 {
     fill: rgba(255, 255, 255, 180);
-}
-
-/* @keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-} */
-
-.more-link {
-    cursor: pointer;
-}
-
-.projects-title {
-    margin-bottom: 32px;
 }
 
 @media (min-width: 320px) {
@@ -143,7 +102,12 @@
     .projects-title {
         margin-bottom: 16px;
     }
-    
+}
+
+@media (min-width: 768px) {
+    .projects-title {
+        margin-bottom: 32px;
+    }
 }
 
 @media (max-width: 1024px) {

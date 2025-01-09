@@ -53,9 +53,9 @@ function CardProject(props) {
                                     }>
                                     {mockupThumbnail}
                                 </Col> */}
-                            <div className="info-project">
+                            <div className="d-flex flex-column justify-content-between info-project">
                                 <div>
-                                    <div className="tags">
+                                    <div className="d-flex flex-wrap c-gap-4">
                                         {project.tags.map((tag, index) => (
                                             <span key={index} className="small">#{tag}</span>
                                         ))}
@@ -63,7 +63,7 @@ function CardProject(props) {
                                     <p className="display-M project-title mb-3">{project.name}</p>
                                     <p>{project.description}</p>
                                 </div>
-                                <div className="cta-project">
+                                <div className="cta-project d-flex flex-row justify-content-end align-items-center gap-2">
                                     <span className="bold lead">En savoir plus</span>
                                     <Forward className="icon-L icon-dark" />
                                 </div>

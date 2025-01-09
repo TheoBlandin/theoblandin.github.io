@@ -50,7 +50,7 @@ export default function About() {
                 </Row>
                 <Row justify="center">
                     <Col lg={6} xl={4}>
-                        <img src={Self} className="self-img" alt="Selfie" />
+                        <img src={Self} className="w-100" alt="Selfie" />
                     </Col>
                     <Col xl={6}>
                         <p className="lead bold mb-3">Je m'appelle Théo, je suis UX Designer et Développeur Front-End à Rennes, spécialisé en accessibilité numérique.</p>
@@ -65,8 +65,8 @@ export default function About() {
 
                         <a href="/assets/CV_Theo_Blandin.pdf" aria-label="Visualiser mon CV"
                             target="_blank" rel="noopener noreferrer">
-                            <button className="CTA mt-4">
-                                <span>Télécharger mon CV</span>
+                            <button className="mt-4 position-relative ms-auto py-3 px-4 CTA">
+                                <span className="position-relative">Télécharger mon CV</span>
                             </button>
                         </a>
                     </Col>
@@ -79,38 +79,38 @@ export default function About() {
                         <h1 className="mb-4">Mes outils</h1>
                     </Col>
                 </Row>
-                <div className="card-tools">
+                <div className="d-flex flex-column gap-20">
                     <Row justify="center" className="square-tools">
                         <Col lg={6} xl={5}>
-                            <div className="tools tools-design">
+                            <div className="tools d-flex flex-column align-items-center gap-4 h-100 bg-yellow-light">
                                 <img src={DesignTools} className="category-tools-icon icon-dark" alt="" />
                                 <span className="lead bold">Design</span>
-                                <div className="container-chips-tools">
-                                    <div className="chip-tools">
+                                <div className="container-chips-tools d-flex flex-wrap justify-content-center">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Figma} className="icon-tools" alt="" />
                                         Figma
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={DesignThinking} className="icon-tools" alt="" />
                                         Design thinking
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Empathy} className="icon-tools" alt="" />
                                         Empathie
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Inkscape} className="icon-tools" alt="" />
                                         Inkscape
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Notebook} className="icon-tools" alt="" />
                                         Mon carnet
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Canva} className="icon-tools" alt="" />
                                         Canva
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Creativity} className="icon-tools" alt="" />
                                         Créativité
                                     </div>
@@ -118,39 +118,39 @@ export default function About() {
                             </div>
                         </Col>
                         <Col lg={6} xl={5}>
-                            <div className="tools tools-dev">
+                            <div className="tools d-flex flex-column align-items-center gap-4 h-100 bg-orange-light">
                                 <img className="category-tools-icon icon-dark" src={DevTools} alt="" />
                                 <span className="lead bold">Développement</span>
-                                <div className="container-chips-tools">
-                                    <div className="chip-tools">
+                                <div className="container-chips-tools d-flex flex-wrap justify-content-center">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={HTML} className="icon-tools" alt="" />
                                         HTML
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={CSS} className="icon-tools" alt="" />
                                         CSS
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={JavaScript} className="icon-tools" alt="" />
                                         JavaScript
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Angular} className="icon-tools" alt="" />
                                         Angular
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={ReactLogo} className="icon-tools" alt="" />
                                         React
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Bootstrap} className="icon-tools" alt="" />
                                         Bootstrap
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Flutter} className="icon-tools" alt="" />
                                         Flutter
                                     </div>
-                                    <div className="chip-tools">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                         <img src={Responsive} className="icon-tools" alt="" />
                                         Responsive design
                                     </div>
@@ -160,34 +160,34 @@ export default function About() {
                     </Row>
                     <Row justify="center">
                         <Col xl={10}>
-                            <div className="tools-accessibility">
-                                <div className="tools">
+                            <div className="tools-accessibility bg-green-light d-flex flex-row">
+                                <div className="tools d-flex flex-column align-items-center gap-4">
                                     <img className="category-tools-icon icon-dark" src={AccessibilityTools} alt="" />
                                     <span className="lead bold">Accessibilité numérique</span>
-                                    <div className="container-chips-tools">
-                                        <div className="chip-tools">
+                                    <div className="container-chips-tools d-flex flex-wrap justify-content-center">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                             <img src={WCAG} className="icon-tools" alt="" />
                                             WCAG
                                         </div>
-                                        <div className="chip-tools">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                             <img src={Audit} className="icon-tools" alt="" />
                                             Audit d'accessibilité
                                         </div>
-                                        <div className="chip-tools">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                             <img src={RGAA} className="icon-tools" alt="" />
                                             RGAA
                                         </div>
-                                        <div className="chip-tools">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                             <img src={Analysis} className="icon-tools" alt="" />
                                             Esprit d'analyse
                                         </div>
-                                        <div className="chip-tools">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
                                             <img src={Disabilities} className="icon-tools" alt="" />
                                             Connaissance des handicaps
                                         </div>
                                     </div>
                                 </div>
-                                <div className="accessibility-links">
+                                <div className="accessibility-links d-flex flex-column align-items-start gap-4">
                                     <span className="lead bold">Ce que j'utilise au quotidien</span>
                                     <ul>
                                         <li>
@@ -232,26 +232,26 @@ export default function About() {
                 </Row>
                 <Row justify="center">
                     <Col lg={6} xl={5}>
-                        <div className="photos-row">
-                            <div className="photos-col">
-                                <img src={Swimming} alt="Piscine municipale vide à l'aspect ancien" className="photo" />
-                                <img src={Puzzle} alt="Puzzle en cours" className="photo" />
+                        <div className="photos-row d-flex flex-row">
+                            <div className="photos-col d-flex flex-column w-100">
+                                <img src={Swimming} alt="Piscine municipale vide à l'aspect ancien" className="w-100" />
+                                <img src={Puzzle} alt="Puzzle en cours" className="w-100" />
                             </div>
-                            <div className="photos-col">
-                                <img src={Ocean} alt="Vague tapant sur des rochers" className="photo" />
-                                <img src={Cooking} alt="Fournée de biscuits en forme de chat" className="photo" />
+                            <div className="photos-col d-flex flex-column w-100">
+                                <img src={Ocean} alt="Vague tapant sur des rochers" className="w-100" />
+                                <img src={Cooking} alt="Fournée de biscuits en forme de chat" className="w-100" />
                             </div>
                         </div>
                     </Col>
                     <Col lg={6} xl={5}>
-                        <div className="photos-row photos-row-2">
-                            <div className="photos-col">
-                                <img src={Streetart} alt="Street-art d'un nounours demandant 'Hug?' en mimant un calin" className="photo" />
-                                <img src={Cat} alt="Chat blanc" className="photo" />
+                        <div className="photos-row d-flex flex-row photos-row-2">
+                            <div className="photos-col d-flex flex-column">
+                                <img src={Streetart} alt="Street-art d'un nounours demandant 'Hug?' en mimant un calin" className="w-100" />
+                                <img src={Cat} alt="Chat blanc" className="w-100" />
                             </div>
-                            <div className="photos-col">
-                                <img src={YoungSelf} alt="Photo de moi à environ 5 ans sur un cheval à bascule" className="photo" />
-                                <img src={IceCream} alt="Cornet de glace" className="photo" />
+                            <div className="photos-col d-flex flex-column">
+                                <img src={YoungSelf} alt="Photo de moi à environ 5 ans sur un cheval à bascule" className="w-100" />
+                                <img src={IceCream} alt="Cornet de glace" className="w-100" />
                             </div>
                         </div>
                     </Col>

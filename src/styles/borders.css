@@ -1,0 +1,24 @@
+/* Border radius */
+.br-1 {
+    border-radius: 2px !important;
+}
+
+.br-2 {
+    border-radius: 4px !important;
+}
+
+.br-3 {
+    border-radius: 8px !important;
+}
+
+.br-4 {
+    border-radius: 16px !important;
+}
+
+.br-5 {
+    border-radius: 32px !important;
+}
+
+.br-6 {
+    border-radius: 64px !important;
+}

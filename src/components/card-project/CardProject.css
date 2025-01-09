@@ -3,34 +3,18 @@
     overflow: hidden;
 }
 
-.info-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px 16px;
-}
-
 .project-title {
     margin-top: 32px;
 }
 
 .cta-project {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    gap: 4px;
     margin-top: 16px;
 }
 
 .thumbnail {
     display: flex;
     height: 100%;
+    filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.25));
 }
 
 .thumbnail.mobile,
@@ -58,7 +42,6 @@
 
 .mockup-svg {
     display: block;
-    filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.25));
 }
 
 .mockup-content {
