@@ -1,57 +1,4 @@
-.header {
-    background-color: var(--manger-de-saison);
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.back-link {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: fit-content;
-    padding: 10px 0px;
-}
-
-.body-container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px
-}
-
-.paragraph,
-.info-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.paragraph {
-    gap: 8px;
-}
-
-.info-el {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.alinea {
-    padding-left: 16px;
-}
-
-.project-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    max-width: fit-content;
-}
-
 .container-carousel {
-    background-color: var(--surface);
     position: relative;
 }
 
@@ -81,7 +28,10 @@
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
+}
+
+.carousel-btn:hover {
+    background-color: #F4F4F4;
 }
 
 .carousel-nav-icon {
@@ -124,35 +74,13 @@
     display: block;
 }
 
-.container-explanations {
-    display: flex;
-    flex-direction: column;
-}
-
-.section, .section-container, .illu {
-    display: flex;
-    flex-direction: column;
-}
-
-.illu {
-    align-items: center;
-}
-
-.multiple-illu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.prout {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
 @media (max-width: 480px) {
     .container-carousel-nav {
         padding: 0px 16px;
+    }
+
+    .sub-info-col {
+        flex-direction: column;
     }
 }
 
@@ -162,18 +90,25 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .header {
-        padding: 50px 0px 26px 0px;
-    }
-
-    .header-content {
-        gap: 16px;
+@media (max-width: 768px) {
+    .double-illu {
+        flex-direction: column;
     }
 
     .info-col {
         margin-top: 32px;
+    }
+
+    .info-col, .info-col-1, .info-col-2 {
         gap: 16px;
+    }
+
+    .info-col {
+        flex-direction: column;
+    }
+
+    .sub-info-col {
+        flex-direction: row;
     }
 
     .container-carousel {
@@ -193,18 +128,18 @@
     }
 }
 
-@media (min-width: 1024px) {
-    .header {
-        padding: 86px 0px 70px 0px;
+@media (min-width: 768px) {
+    .double-illu {
+        flex-direction: row;
+    }
+
+    .double-illu img {
+        width: 50% !important;
     }
 
     .paragraph,
     .info-col {
         padding: 16px;
-    }
-
-    .info-col {
-        gap: 32px;
     }
 
     .container-carousel {
@@ -229,5 +164,23 @@
 
     .multiple-illu {
         gap: 20px;
+    }
+
+    .info-col, .sub-info-col {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1024px) {
+    .multiple-illu-container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-col, .sub-info-col {
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 32px;
     }
 }

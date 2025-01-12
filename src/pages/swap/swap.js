@@ -1,11 +1,10 @@
 import React from "react";
-import './manger-de-saison.css';
-import InfoProject from './../../assets/data/manger-de-saison.json';
+import './swap.css';
 import HeaderProject from "../../components/header_project/HeaderProject";
-import PresentationProject from "../../components/presentation-project/PresentationProject";
+import InfoProject from './../../assets/data/manger-de-saison.json';
 import { useEffect } from "react";
 import { Container, Row, Col } from 'react-grid-system';
-import { ReactComponent as GitHub } from './../../assets/icons/github.svg'
+import { ReactComponent as Figma } from './../../assets/icons/figma_mono.svg'
 import { ReactComponent as ChevronBack } from './../../assets/icons/chevron_backward.svg'
 import { ReactComponent as ChevronForward } from './../../assets/icons/chevron_forward.svg'
 import Slider from "react-slick";
@@ -14,7 +13,7 @@ import Part02_Illu02 from './../../assets/illustrations/manger-de-saison/part02_
 import Part02_Illu03 from './../../assets/illustrations/manger-de-saison/part02_illu03.png';
 import Part03_Illu01 from './../../assets/illustrations/manger-de-saison/part03_illu01.png';
 
-export default function MangerDeSaison() {
+export default function Swap() {
     const slider = React.useRef(null);
 
     useEffect(() => {
@@ -103,7 +102,7 @@ export default function MangerDeSaison() {
     };
 
     useEffect(() => {
-        document.title = "Manger de saison - Théo Blandin";
+        document.title = "SWAP - Théo Blandin";
     }, []);
 
     return (
@@ -111,20 +110,17 @@ export default function MangerDeSaison() {
             <HeaderProject project={InfoProject}></HeaderProject>
 
             <div className="my-5 d-flex flex-column gap-5">
-                <PresentationProject
-                    project={InfoProject}>
-                </PresentationProject>
-                {/* <Container>
+                <Container>
                     <Row justify="center">
                         <Col xl={6}>
                             <div className="d-flex flex-column gap-3 paragraph">
                                 <span className="lead bold">Projet</span>
                                 <div className="ps-4">
-                                    <p className="mb-2">C'est dans l'optique d'améliorer à la fois mon alimentation et mon empreinte carbone que j'ai créé <i>Manger de saison</i>. Cette application mobile propose un calendrier complet des fruits et légumes de saison, basé sur une localisation en France métropolitaine, dans l'optique d'accompagner ses utilisateurs dans la préparation de leurs repas.</p>
+                                    <p className="mb-2">Au cours de ma cinquième et dernière année d'études à l'ENSIM, il nous a été demandé de réaliser un projet sur un semestre, à raison de 8h par semaine allouées au projet. Ce projet fut réalisé en binôme, et avait comme objectif d'appliquer étape par étape la démarche de Design Thinking tel qu'étudié en cours.</p>
 
-                                    <p className="mb-2">Il existe des applications de fruits et légumes de saison par dizaine, mais là où Manger de saison se distingue, c'est par son interactivité. L'utilisateur a la possibilité d'ajouter une préférence personnelle à chaque aliment (<i>J'aime</i> ou <i>Je n'aime pas</i>), lui permettant ainsi une expérience totalement personnalisée. Ainsi, grâce aux options de tri, il lui sera possible d'afficher uniquement les légumes du mois de mai qu'il aime, lui fournissant une liste précise de ce qu'il pourra manger durant cette période de l'année.</p>
+                                    <p className="mb-2">Pour cela, nous avons décidé de nous concentrer sur l'étude d'une population spécifique : les professeurs de collège et de lycée général, technologique et professionnel (allant jusqu'au BTS). Notre but à travers l'étude de cette communauté est d'identifier une problématique à laquelle il serait possible de répondre via une solution numérique. </p>
 
-                                    <p className="mb-2">Ce qui fait également la différence de <i>Manger de saison</i>, ce sont ses designs. Chaque aliment possède une illustration réalisée sur Inkscape, proposant des designs originaux et esthétiques.</p>
+                                    <p className="mb-2"><i>SWAP</i> est la solution que nous avons imaginée face à la problématique rencontrée. SWAP, pour Site Web Annuaire de ressources Pédagogiques, est un site web fictif qui recense des ressources pédagogiques à destination des professeurs afin de les aider dans leur travail. Il repose sur une base de collaboration, où chacun peut venir ajouter des ressources qu'il considère utiles..</p>
                                 </div>
                             </div>
                         </Col>
@@ -134,17 +130,16 @@ export default function MangerDeSaison() {
                                     <div className="info-el d-flex flex-column gap-3 flex-1">
                                         <span className="lead bold">Contexte</span>
                                         <div className="ps-4">
-                                            <p className="mb-2">Projet personnel</p>
-                                            <p className="mb-2">Application mobile</p>
+                                            <p className="mb-2">Projet scolaire</p>
+                                            <p className="mb-2">Travail en binôme</p>
                                         </div>
                                     </div>
 
                                     <div className="info-el d-flex flex-column gap-3 flex-1">
                                         <span className="lead bold">Rôle</span>
                                         <div className="ps-4">
+                                            <p className="mb-2">UX Resercher</p>
                                             <p className="mb-2">UX Designer</p>
-                                            <p className="mb-2">Graphiste</p>
-                                            <p className="mb-2">Développeur</p>
                                         </div>
                                     </div>
                                 </div>
@@ -153,16 +148,16 @@ export default function MangerDeSaison() {
                                     <div className="info-el d-flex flex-column gap-3 flex-1">
                                         <span className="lead bold">Date</span>
                                         <div className="ps-4">
-                                            <p className="mb-2">2023 - maintenant</p>
+                                            <p className="mb-2">Sep. 2024 - Fev. 2024</p>
                                         </div>
                                     </div>
 
                                     <div className="info-el d-flex flex-column gap-3 flex-1">
                                         <span className="lead bold">Lien</span>
                                         <div className="ps-4">
-                                            <a href="https://github.com/TheoBlandin/manger_de_saison" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le projet GitHub" className="d-flex flex-row align-items-center gap-3 w-max-fit mb-2">
-                                                <GitHub className="icon-L icon-dark" />
-                                                <span>Projet GitHub</span>
+                                            <a href="https://www.figma.com/design/VvqOd05wya8qIULu7e4gBY/Projet-p%C3%A9dagogique---ENSIM-5A?t=bLbez66hEcNt0O9U-0" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le prototype Figma" className="d-flex flex-row align-items-center gap-3 w-max-fit mb-2">
+                                                <Figma className="icon-L icon-dark" />
+                                                <span>Prototype Figma</span>
                                             </a>
                                         </div>
                                     </div>
@@ -170,7 +165,7 @@ export default function MangerDeSaison() {
                             </div>
                         </Col>
                     </Row>
-                </Container> */}
+                </Container>
                 <div className="container-carousel bg-surface">
                     <Slider ref={slider} {...settings}>
                         {Object.values(images).map((urlImg, index) => (

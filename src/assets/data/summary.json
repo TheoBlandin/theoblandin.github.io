@@ -1,6 +1,7 @@
 {
   "manger-de-saison": {
-    "name": "Manger de saison",
+    "displayName": "Manger de saison",
+    "linkName": "manger-de-saison",
     "description": "Calendrier personnalisable des fruits et légumes de saison sous forme d'application mobile.",
     "tags": [
         "Design", "Mobile", "Développement"
@@ -8,7 +9,8 @@
     "device": "mobile"
   },
   "swap": {
-    "name": "SWAP",
+    "displayName": "SWAP",
+    "linkName": "swap",
     "description": "Mise en application de la démarche Design Thinking sur une population spécifique : les professeurs de collège et de lycée.",
     "tags": [
         "Design", "Figma", "UX Research"
@@ -16,7 +18,8 @@
     "device": "small-desktop"
   },
   "borne-orange": {
-    "name": "Borne de sécurité mobile",
+    "displayName": "Borne de sécurité mobile",
+    "linkName": "borne-orange",
     "description": "Refonte de l'interface graphique d'une borne d'audit de sécurité mobile développé par Orange Innovation",
     "tags": [
         "Design", "Développement", "Figma", "UX Research"

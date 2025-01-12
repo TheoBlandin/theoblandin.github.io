@@ -68,6 +68,9 @@ p {
 a {
   text-decoration: none;
   color: var(--dark);
+}
+
+a, button {
   cursor: pointer;
 }
 

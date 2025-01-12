@@ -8,7 +8,7 @@ import ArrowSelf from './../../assets/arrow-self.svg'
 import ArrowPoulpy from './../../assets/arrow-poulpy.svg'
 import { ReactComponent as Cloud } from './../../assets/cloud.svg'
 import CardProject from '../../components/card-project/CardProject'
-import projects from './../../assets/projects.json';
+import projects from './../../assets/data/summary.json';
 
 
 export default function Home() {

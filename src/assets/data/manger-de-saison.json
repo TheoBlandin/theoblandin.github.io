@@ -1,0 +1,27 @@
+{
+    "displayName": "Manger de saison",
+    "linkName": "manger-de-saison",
+    "intro": [
+        "C'est dans l'optique d'améliorer à la fois mon alimentation et mon empreinte carbone que j'ai créé <i>Manger de saison</i>. Cette application mobile propose un calendrier complet des fruits et légumes de saison, basé sur une localisation en France métropolitaine, dans l'optique d'accompagner ses utilisateurs dans la préparation de leurs repas.",
+        "Il existe des applications de fruits et légumes de saison par dizaine, mais là où Manger de saison se distingue, c'est par son interactivité. L'utilisateur a la possibilité d'ajouter une préférence personnelle à chaque aliment (<i>J'aime</i> ou <i>Je n'aime pas</i>), lui permettant ainsi une expérience totalement personnalisée. Ainsi, grâce aux options de tri, il lui sera possible d'afficher uniquement les légumes du mois de mai qu'il aime, lui fournissant une liste précise de ce qu'il pourra manger durant cette période de l'année.",
+        "Ce qui fait également la différence de <i>Manger de saison</i>, ce sont ses designs. Chaque aliment possède une illustration réalisée sur Inkscape, proposant des designs originaux et esthétiques."
+    ],
+    "context": [
+        "Projet personnel",
+        "Application mobile"
+    ],
+    "role": [
+        "UX Designer",
+        "Graphiste",
+        "Développeur"
+    ],
+    "date": "2023 - maintenant",
+    "links": [
+        {
+            "link": "https://github.com/TheoBlandin/manger_de_saison",
+            "icon": "github",
+            "label": "Projet GitHub",
+            "aria-label": "Ouvrir le projet GitHub"
+        }
+    ]
+}

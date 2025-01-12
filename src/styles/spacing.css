@@ -302,53 +302,53 @@
     padding-bottom: 64px !important;
 }
 
-/* Padding à gauche (pl) */
-.pl-1 {
+/* Padding à gauche (ps) */
+.ps-1 {
     padding-left: 2px !important;
 }
 
-.pl-2 {
+.ps-2 {
     padding-left: 4px !important;
 }
 
-.pl-3 {
+.ps-3 {
     padding-left: 8px !important;
 }
 
-.pl-4 {
+.ps-4 {
     padding-left: 16px !important;
 }
 
-.pl-5 {
+.ps-5 {
     padding-left: 32px !important;
 }
 
-.pl-6 {
+.ps-6 {
     padding-left: 64px !important;
 }
 
-/* Padding à droite (pr) */
-.pr-1 {
+/* Padding à droite (pe) */
+.pe-1 {
     padding-right: 2px !important;
 }
 
-.pr-2 {
+.pe-2 {
     padding-right: 4px !important;
 }
 
-.pr-3 {
+.pe-3 {
     padding-right: 8px !important;
 }
 
-.pr-4 {
+.pe-4 {
     padding-right: 16px !important;
 }
 
-.pr-5 {
+.pe-5 {
     padding-right: 32px !important;
 }
 
-.pr-6 {
+.pe-6 {
     padding-right: 64px !important;
 }
 

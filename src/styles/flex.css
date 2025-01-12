@@ -89,3 +89,7 @@
 .flex-nowrap {
     flex-wrap: nowrap !important;
 }
+
+.flex-1 {
+    flex: 1;
+}
