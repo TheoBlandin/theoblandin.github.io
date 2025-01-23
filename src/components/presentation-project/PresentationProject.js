@@ -31,7 +31,7 @@ function PresentationProject(props) {
                 <Col xl={3}>
                     <div className="info-col d-flex">
                         <div className="sub-info-col d-flex flex-1">
-                            <div className="info-el d-flex flex-column gap-3 flex-1">
+                            <div className="d-flex flex-column gap-3 flex-1">
                                 <span className="lead bold">Contexte</span>
                                 <div className="ps-4">
                                     {project.context.map((el, index) => (
@@ -42,7 +42,7 @@ function PresentationProject(props) {
                                 </div>
                             </div>
 
-                            <div className="info-el d-flex flex-column gap-3 flex-1">
+                            <div className="d-flex flex-column gap-3 flex-1">
                                 <span className="lead bold">Rôle</span>
                                 <div className="ps-4">
                                     {project.role.map((el, index) => (
@@ -55,14 +55,14 @@ function PresentationProject(props) {
                         </div>
 
                         <div className="sub-info-col d-flex flex-1">
-                            <div className="info-el d-flex flex-column gap-3 flex-1">
+                            <div className="d-flex flex-column gap-3 flex-1">
                                 <span className="lead bold">Date</span>
                                 <div className="ps-4">
                                     <p className="mb-2">{project.date}</p>
                                 </div>
                             </div>
 
-                            <div className="info-el d-flex flex-column gap-3 flex-1">
+                            <div className="d-flex flex-column gap-3 flex-1">
                                 <span className="lead bold">{project.links.length > 1 ? "Liens" : "Lien"}</span>
                                 <div className="ps-4">
                                     {project.links.map((link, index) => (

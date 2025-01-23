@@ -1,106 +1,18 @@
 import React from "react";
 import './swap.css';
 import HeaderProject from "../../components/header_project/HeaderProject";
-import InfoProject from './../../assets/data/manger-de-saison.json';
+import PresentationProject from "../../components/presentation-project/PresentationProject";
+import Carousel from "../../components/carousel/Carousel";
+import InfoProject from './../../assets/data/swap.json';
 import { useEffect } from "react";
 import { Container, Row, Col } from 'react-grid-system';
-import { ReactComponent as Figma } from './../../assets/icons/figma_mono.svg'
-import { ReactComponent as ChevronBack } from './../../assets/icons/chevron_backward.svg'
-import { ReactComponent as ChevronForward } from './../../assets/icons/chevron_forward.svg'
-import Slider from "react-slick";
-import Part02_Illu01 from './../../assets/illustrations/manger-de-saison/part02_illu01.png';
-import Part02_Illu02 from './../../assets/illustrations/manger-de-saison/part02_illu02.png';
-import Part02_Illu03 from './../../assets/illustrations/manger-de-saison/part02_illu03.png';
-import Part03_Illu01 from './../../assets/illustrations/manger-de-saison/part03_illu01.png';
+import Part03_Illu01 from './../../assets/illustrations/swap/part03_illu01.png';
+import Part04_Illu01 from './../../assets/illustrations/swap/part04_illu01.png';
+import Part04_Illu02 from './../../assets/illustrations/swap/part04_illu02.png';
+import Part06_Illu01 from './../../assets/illustrations/swap/part06_illu01.png';
+import Part08_Illu01 from './../../assets/illustrations/swap/part08_illu01.png';
 
 export default function Swap() {
-    const slider = React.useRef(null);
-
-    useEffect(() => {
-        function handleKeyDown(event) {
-            if (event.key === 'ArrowLeft') {
-                slider?.current?.slickPrev()
-            }
-            if (event.key === 'ArrowRight') {
-                slider?.current?.slickNext()
-            }
-        };
-        document.addEventListener('keydown', handleKeyDown);
-
-        return function cleanup() {
-            document.removeEventListener('keydown', handleKeyDown);
-        }
-    });
-
-    const imagesContext = require.context(
-        './../../assets/screens/',
-        true,
-        /\.png$/
-    );
-
-    const getProjectImages = (projectName) => {
-        const projectPath = `./${projectName}/carousel/`;
-        return {
-            pic_01: imagesContext(`${projectPath}pic_01.png`),
-            pic_02: imagesContext(`${projectPath}pic_02.png`),
-            pic_03: imagesContext(`${projectPath}pic_03.png`),
-            pic_04: imagesContext(`${projectPath}pic_04.png`),
-            pic_05: imagesContext(`${projectPath}pic_05.png`),
-            pic_06: imagesContext(`${projectPath}pic_06.png`),
-        };
-    };
-
-    const images = getProjectImages('manger-de-saison');
-
-    const responsiveMobile = [
-        {
-            breakpoint: 1440,
-            settings: {
-                slidesToShow: 5
-            }
-        },
-        {
-            breakpoint: 1280,
-            settings: {
-                slidesToShow: 4
-            }
-        },
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 320,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ];
-
-    var settings = {
-        dots: false,
-        speed: 300, // duration in ms
-        slidesToScroll: 1,
-        slidesToShow: 5,
-        centerMode: true,
-        arrows: false,
-        responsive: responsiveMobile
-    };
-
     useEffect(() => {
         document.title = "SWAP - Théo Blandin";
     }, []);
@@ -110,163 +22,47 @@ export default function Swap() {
             <HeaderProject project={InfoProject}></HeaderProject>
 
             <div className="my-5 d-flex flex-column gap-5">
-                <Container>
-                    <Row justify="center">
-                        <Col xl={6}>
-                            <div className="d-flex flex-column gap-3 paragraph">
-                                <span className="lead bold">Projet</span>
-                                <div className="ps-4">
-                                    <p className="mb-2">Au cours de ma cinquième et dernière année d'études à l'ENSIM, il nous a été demandé de réaliser un projet sur un semestre, à raison de 8h par semaine allouées au projet. Ce projet fut réalisé en binôme, et avait comme objectif d'appliquer étape par étape la démarche de Design Thinking tel qu'étudié en cours.</p>
+                <PresentationProject
+                    project={InfoProject}>
+                </PresentationProject>
 
-                                    <p className="mb-2">Pour cela, nous avons décidé de nous concentrer sur l'étude d'une population spécifique : les professeurs de collège et de lycée général, technologique et professionnel (allant jusqu'au BTS). Notre but à travers l'étude de cette communauté est d'identifier une problématique à laquelle il serait possible de répondre via une solution numérique. </p>
+                <Carousel project={InfoProject}></Carousel>
 
-                                    <p className="mb-2"><i>SWAP</i> est la solution que nous avons imaginée face à la problématique rencontrée. SWAP, pour Site Web Annuaire de ressources Pédagogiques, est un site web fictif qui recense des ressources pédagogiques à destination des professeurs afin de les aider dans leur travail. Il repose sur une base de collaboration, où chacun peut venir ajouter des ressources qu'il considère utiles..</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col xl={3}>
-                            <div className="info-col d-flex">
-                                <div className="sub-info-col d-flex flex-1">
-                                    <div className="info-el d-flex flex-column gap-3 flex-1">
-                                        <span className="lead bold">Contexte</span>
-                                        <div className="ps-4">
-                                            <p className="mb-2">Projet scolaire</p>
-                                            <p className="mb-2">Travail en binôme</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="info-el d-flex flex-column gap-3 flex-1">
-                                        <span className="lead bold">Rôle</span>
-                                        <div className="ps-4">
-                                            <p className="mb-2">UX Resercher</p>
-                                            <p className="mb-2">UX Designer</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="sub-info-col d-flex flex-1">
-                                    <div className="info-el d-flex flex-column gap-3 flex-1">
-                                        <span className="lead bold">Date</span>
-                                        <div className="ps-4">
-                                            <p className="mb-2">Sep. 2024 - Fev. 2024</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="info-el d-flex flex-column gap-3 flex-1">
-                                        <span className="lead bold">Lien</span>
-                                        <div className="ps-4">
-                                            <a href="https://www.figma.com/design/VvqOd05wya8qIULu7e4gBY/Projet-p%C3%A9dagogique---ENSIM-5A?t=bLbez66hEcNt0O9U-0" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le prototype Figma" className="d-flex flex-row align-items-center gap-3 w-max-fit mb-2">
-                                                <Figma className="icon-L icon-dark" />
-                                                <span>Prototype Figma</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-                <div className="container-carousel bg-surface">
-                    <Slider ref={slider} {...settings}>
-                        {Object.values(images).map((urlImg, index) => (
-                            <div key={index} className="mockup">
-                                <svg
-                                    className="mockup-svg"
-                                    viewBox="0 0 280 607"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <foreignObject
-                                        x="5.5"
-                                        y="8"
-                                        width="266"
-                                        height="592"
-                                        className="mockup-content mockup-content-mobile"
-                                    >
-                                        <div xmlns="http://www.w3.org/1999/xhtml" className="mockup-image-wrapper">
-                                            <img
-                                                src={urlImg}
-                                                alt="Mockup Content"
-                                            />
-                                        </div>
-                                    </foreignObject>
-                                    // path from ''./../../assets/devices-mockups/mobile.svg'
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M36.8491 1.08643C15.0442 1.08643 0 16.0309 0 36.3348L9.98456e-05 573.291C9.98456e-05 593.595 14.9159 605.51 36.7208 605.51L240.188 605.51C261.992 605.51 277.018 593.595 277.018 573.291L277.018 249.053H277.876C278.824 249.053 279.391 248.598 279.391 247.716V213.043C279.391 212.16 278.824 211.184 277.876 211.184H277.018V174.532H277.876C278.824 174.532 279.391 173.752 279.391 172.869V104.324C279.391 103.441 278.824 102.79 277.876 102.79H277.018V36.3349C277.018 16.0311 262.063 1.08643 240.259 1.08643H36.8491ZM36.8491 9.13024C19.7844 9.13024 8.58285 20.4448 8.58285 36.3348L8.58305 573.291C8.58305 589.181 19.6561 597.142 36.7208 597.142H240.188C257.252 597.142 268.435 589.181 268.435 573.291L268.435 36.3349C268.435 20.445 257.323 9.13024 240.259 9.13024L36.8491 9.13024Z" fill="#1E1E1F" />
-                                    <path d="M146.088 21.3043C146.088 25.6745 142.545 29.2173 138.175 29.2173C133.805 29.2173 130.262 25.6745 130.262 21.3043C130.262 16.934 133.805 13.3912 138.175 13.3912C142.545 13.3912 146.088 16.934 146.088 21.3043Z" fill="#1E1E1F" />
-                                </svg>
-                            </div>
-                        ))}
-                    </Slider>
-                    <div className="container-carousel-nav">
-                        <button className="carousel-btn" onClick={() => slider?.current?.slickPrev()}>
-                            <ChevronBack className="icon-dark carousel-nav-icon" />
-                        </button>
-                        <button className="carousel-btn" onClick={() => slider?.current?.slickNext()}>
-                            <ChevronForward className="icon-dark carousel-nav-icon" />
-                        </button>
-                    </div>
-                </div>
                 <Container className="container-explanations d-flex flex-column">
-                    <Row justify="center">
-                        <Col xl={6}>
-                            <div className="section d-flex flex-column">
-                                <div>
-                                    <span className="display-S">01</span>
-                                    <h1 style={{ marginTop: '-8px' }}>Benchmark</h1>
-                                </div>
-                                <div className="ps-4">
-                                    <p className="mb-2">Il existe plusieurs applications et sites web similaires à Manger de saison. J'en ai analysé plusieurs, principalement francophones, pour avoir une vision claire de l'offre actuelle.</p>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">01</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Planification</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">Dans un premier temps, nous avons étudié notre population cible pour identifier les différentes problématiques rencontrées dans la vie professionnelle des enseignants. Nous avons par ce biais identifié 8 sujets pertinents à aborder avec nos utilisateurs.</p>
 
-                                    <p className="mb-2">Les retours utilisateurs sur ces applications mobiles ont également été pris en compte pour enrichir mon étude.</p>
+                                        <p className="mb-2">Pour cela, nous avons pris contact avec plusieurs établissements scolaires de la ville du Mans, dans le but de privilégier les entretiens en présentiel. Au total, 10 établissements ont été contacté.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </Col>
-                        <Col xl={3}></Col>
-                    </Row>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                    </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
                             <Col xl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">02</span>
-                                        <h1 style={{ marginTop: '-8px' }}>Maquettages</h1>
+                                        <h1 style={{ marginTop: '-8px' }}>Entretiens utilisateurs</h1>
                                     </div>
                                     <div className="ps-4">
-                                        <p className="mb-2">La première version de la maquette de l'application a été réalisée sur papier lors de la phase d'idéation, puis transférée sur Figma. Elle n'est pas destinée à être reproduite exactement à l'identique, mais plutôt à servir de point de départ. Au fil du développement, le design s'est affiné parallèlement à l'évolution de mes compétences.</p>
+                                        <p className="mb-2">Au total, 5 entretiens utilisateurs avec 6 utilisateurs en tout ont pu être réalisé (un entretien était un double entretien). Ces entretiens se sont déroulés en présentiel, avec une personne chargé de la prise de note et une personne chargée de mener la discussion avec le ou les utilisateurs. </p>
+
+                                        <p className="mb-2">Ces entretiens se sont basés sur la trame d'entretien rédigé à partir des sujets précédemment identifiés, permettant d'aborder différents thèmes pouvant donner lieu à l'apparition de pain points. En plus de suivre la trame, des informations ont été relevées sur chacun des interviewés afin de mettre en perspective les données récoltées.</p>
                                     </div>
                                 </div>
                             </Col>
                             <Col xl={3}></Col>
-                        </Row>
-                        <Row justify="center">
-                            <Col xl={9} className="d-flex align-items-center justify-content-center gap-20 multiple-illu-container w-100">
-                                <div className="illu d-flex flex-column align-items-cneter flex-1">
-                                    <img
-                                        src={Part02_Illu01}
-                                        alt="Maquette sur papier de l'application avec annotations"
-                                        className="w-100"
-                                    />
-                                    <span aria-hidden="true" className="small">
-                                        Maquette sur papier
-                                    </span>
-                                </div>
-                                <div className="illu flex-1">
-                                    <div className="double-illu d-flex gap-20 w-100">
-                                        <img
-                                            src={Part02_Illu02}
-                                            alt="Maquette sur Figma de l'écran d'accueil de l'application"
-                                            className="w-100"
-                                        />
-                                        <img
-                                            src={Part02_Illu03}
-                                            alt="Maquette sur Figma de l'écran d'accueil de l'application avec un modal affichant les informations de l'élément sélectionné"
-                                            className="w-100"
-                                        />
-                                    </div>
-                                    <span aria-hidden="true" className="small">
-                                        Maquette sur Figma
-                                    </span>
-                                </div>
-                            </Col>
                         </Row>
                     </div>
                     <div className="section d-flex flex-column">
@@ -275,72 +71,206 @@ export default function Swap() {
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">03</span>
-                                        <h1 style={{ marginTop: '-8px' }}>Illustrations</h1>
+                                        <h1 style={{ marginTop: '-8px' }}>Analyse</h1>
                                     </div>
                                     <div className="ps-4">
-                                        <p className="mb-2">Les illustrations des différents fruits et légumes recensés dans le calendrier furent réalisées sous forme de dessin vectoriel à laide du logiciel Inkscape. L'objectif étant de créer un design attractif pour l'utilisateur, tout en lui permettant de reconnaître facilement chaque aliment.</p>
+                                        <p className="mb-2">Les différents entretiens utilisateurs ont été analysés afin d'identifier une problématique commune. Chaque prise de note a été examinée afin de mettre en évidence les thèmes récurrents, représentés sous forme de nuage de mots. Des verbatims ont également été extraits pour illustrer et appuyer les observations.</p>
 
-                                        <p className="mb-2">En attendant que l'ensemble des illustrations soit complété, des émojis sont employés, ou un point d'interrogation lorsque aucun émoji n'est disponible dans la bibliothèque utilisée.</p>
+                                        <p className="mb-2">La problématique retenue est la suivante : <b>Comment pourrions-nous favoriser la collaboration et le partage de ressources pédagogiques entre les enseignants ?</b></p>
                                     </div>
                                 </div>
                             </Col>
                             <Col xl={3}></Col>
                         </Row>
                         <Row justify="center">
-                            <Col xl={9} className="illu">
-                                {/* besoin de hide la navbar quand c'est ouvert pour ModalImage, jspa comment faire */}
-                                {/* <ModalImage
-                                    small={Part03_Illu01}
-                                    large={Part03_Illu01}
-                                    alt="Création d'une illustration sur Inkscape"
-                                    hideDownload="true"
-                                    style={{ width: '100%' }}
-                                /> */}
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
                                 <img
                                     src={Part03_Illu01}
-                                    alt="Création d'une illustration représentant un ail sur Inkscape"
+                                    alt="Nuage de mots synthétisant les entretiens utilisateur. On distingue au centre le mot Entraide."
                                     className="w-100"
                                 />
                                 <span aria-hidden="true" className="small">
-                                    Création d'une illustration sur Inkscape
+                                    Nuage de mots synthétisant les entretiens utilisateur
                                 </span>
                             </Col>
                         </Row>
                     </div>
-                    <Row justify="center">
-                        <Col xl={6}>
-                            <div className="section d-flex flex-column">
-                                <div>
-                                    <span className="display-S">04</span>
-                                    <h1 style={{ marginTop: '-8px' }}>Développement</h1>
-                                </div>
-                                <div className="ps-4">
-                                    <p className="mb-2"><i>Manger de Saison</i> est ma deuxième application mobile développée avec Flutter, destinée aux téléphones Android.</p>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">04</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Idéation</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">L'idéation s'est faite en binôme sous forme d'un brainstorming. Le but étant de répondre à la problématique précédemment établie à travers une solution numérique. C'est à ce moment là qu'est né <i>SWAP</i>.</p>
 
-                                    <p className="mb-2">Les données sur les aliments ainsi que les préférences des utilisateurs sont stockées localement sur l'appareil, garantissant un accès continu aux informations tout en réduisant les coûts.</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col xl={3}></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col xl={6}>
-                            <div className="section d-flex flex-column">
-                                <div>
-                                    <span className="display-S">05</span>
-                                    <h1 style={{ marginTop: '-8px' }}>Ce que ça m'a apporté</h1>
-                                </div>
-                                <div className="ps-4">
-                                    <p className="mb-2"><i>Manger de saison</i> est ma deuxième application mobile, un projet qui m'a permis de progresser à la fois en développement, en approfondissant mes compétences en Flutter, et en design, notamment grâce à la création des illustrations des fruits et légumes.</p>
+                                        <p className="mb-2">La contrainte d'une solution numérique découlait directement de notre contexte : en tant qu'étudiants en école d'informatique, une maquette d'application numérique était attendue de notre part. Sans cette exigence, la solution aurait pu prendre une tout autre forme.</p>
 
-                                    <p className="mb-2">Ce travail d'illustration, toujours en cours, m'a permis de mieux maîtriser le logiciel Inkscape tout en développant mon propre style graphique. L'application a également traversé plusieurs refontes, reflétant l'évolution continue de mes compétences en design d'interface.</p>
-
-                                    <p className="mb-2">Ce projet constitue pour moi un terrain d'apprentissage idéal, alliant technique et créativité, que je continue à perfectionner avec l'objectif de le publier un jour.</p>
+                                        <p className="mb-2">Nous n'avions néanmoins aucune limite de moyen, n'étant pas désireux de développer le projet par la suite. </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </Col>
-                        <Col xl={3}></Col>
-                    </Row>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <img
+                                    src={Part04_Illu01}
+                                    alt="Photo du brainstorming du projet réalisé sur un tableau blanc."
+                                    className="w-100"
+                                />
+                                <span aria-hidden="true" className="small">
+                                    Résultat du brainstorming
+                                </span>
+                            </Col>
+                        </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <img
+                                    src={Part04_Illu02}
+                                    alt="Minde map d'idéation reprenant les idées du brainstorming. Il y a 4 noeuds principaux : Formulaire d'ajout, Ressource, Recherche et Profil. Ceux-ci sont reliés entre eux par de plus petites fonctionnalités."
+                                    className="w-100"
+                                />
+                                <span aria-hidden="true" className="small">
+                                    Mind map d'idéation mise au propre
+                                </span>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">05</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Personas</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">Trois personas furent créés, se basant sur les profils rencontrés lors des entretiens utilisateurs. Chacun se focalise sur une des fonctionnalités clés de SWAP.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                    </div>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">06</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Parcours utilisateur</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">Voici un parcours utilisateur simplifié, illustrant les principales fonctionnalités et étapes de navigation sur SWAP.</p>
+
+                                        <p className="mb-2">Les actions effectuées par l'utilisateur sont représentées en orange avec des angles droits, tandis que les réponses du système apparaissent en jaune avec des angles arrondis. Les actions nécessitant la connexion de l'utilisateur sont mises en évidence par un encadré rouge.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <img
+                                    src={Part06_Illu01}
+                                    alt="Workflow simplifié. À partir de la page d'accueil, l'utilisateur peut sélectionner une catégorie, faire une recherche par mots-clés, se connecter ou s'inscrire, publier une nouvelle ressource ou consulter son profil. Pour publier une nouvelle ressource ou consulter son profil, l'utilisateur doit être connecté. Lorsque l'utilisateur a sélectionné une catégorie, il visualise les résultats. Il peut décider de les trier ou de les filtrer, et il peut sélectionner une ressource. Lorsque l'utilisateur a sélectionné une ressource il visualise la page ressource. Sur cette page, il peut consulter la ressource qui est un lien externe, voter pour la ressource avec plus 1 ou moins un, ajouter la ressource à une liste, partager la ressource ou signaler la ressource. Pour ajouter la ressource à une liste, partager la ressource ou signaler la ressource, l'utilisateur doit être connecté."
+                                    className="w-100"
+                                />
+                                <span aria-hidden="true" className="small">
+                                    Workflow simplifié
+                                </span>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">07</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Wireframes</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">Les wireframes ont d'abord été dessinés sur papier, puis formalisé et approfondi sur Figma.</p>
+
+                                        <p className="mb-2">Chacun d'entre nous a esquissé les pages principales de SWAP (Accueil, Résultats de recherche, etc.), puis nous avons confronté nos idées pour en créer une troisième version, intégrant les meilleurs éléments de chacune.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                    </div>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">08</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Design System</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">Le Design System a été conçu pour offrir une maquette proche d'un rendu professionnel, de tel manière à faciliter les itérations d'un potentiel graphiste externe tout en assurant la cohérence visuelle du design.</p>
+
+                                        <p className="mb-2">Inspiré du Design System de Google, il reprend des codes visuels largement connus, ce qui le rend plus accessible pour une majorité d'utilisateurs. Comme notre produit s'adresse à un public varié ce choix nous a paru être le plus pertinent.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <img
+                                    src={Part08_Illu01}
+                                    alt="Extrait du Design System reprenant les éléments principaux"
+                                    className="w-100"
+                                />
+                                <span aria-hidden="true" className="small">
+                                    Extrait du Design System
+                                </span>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">09</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Prototypage</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">À partir du zoning et du Design System, une maquette interactive haute fidélité, reproduisant au plus près le fonctionnement souhaité pour <i>SWAP</i>, a été élaborée. Elle permet de naviguer entre les différentes pages du site et d'interagir avec divers éléments.</p>
+
+                                        <p className="mb-2">Une démonstration scénarisée a également été préparée pour la présentation de ce projet en soutenance. La maquette Figma est disponible sur ce lien.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                    </div>
+                    <div className="section d-flex flex-column">
+                        <Row justify="center">
+                            <Col xl={6}>
+                                <div className="section d-flex flex-column">
+                                    <div>
+                                        <span className="display-S">10</span>
+                                        <h1 style={{ marginTop: '-8px' }}>Ce que ça m'a apporté</h1>
+                                    </div>
+                                    <div className="ps-4">
+                                        <p className="mb-2">Ce projet a représenté pour moi une véritable immersion dans la méthode du Design Thinking, me permettant de découvrir chaque étape de manière concrète et active. J'ai eu l'opportunité d'interagir directement avec de vrais utilisateurs, d'apprendre à les comprendre et de concevoir une solution en réponse à leurs besoins, en suivant le principe fondamental suivant : <b>s'il n'y a pas de problème, il n'y a pas de solution.</b></p>
+
+                                        <p className="mb-2">J'ai également créé mon premier Design System pour <i>SWAP</i>, ce qui m'a permis de perfectionner ma maîtrise de Figma. Enfin, ce projet m'a offert l'occasion d'apprendre à présenter mon travail de façon claire, synthétique et pédagogique, y compris à un public parfois peu initié, que ce soit à travers des rapports écrits ou des présentations orales.</p>
+
+                                        <p className="mb-2">Ce projet a été pour moi une expérience d'apprentissage profonde et a confirmé ma passion pour l'UX Design ainsi que mon envie de poursuivre dans cette voie professionnelle. Il marque également la fin de mes études d'ingénieur, et l'accomplissement de mon apprentissage au cours de ces 5 années de formation.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col xl={3}></Col>
+                        </Row>
+                    </div>
                 </Container>
             </div>
         </>

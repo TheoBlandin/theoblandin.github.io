@@ -1,6 +1,7 @@
 {
     "displayName": "Manger de saison",
     "linkName": "manger-de-saison",
+    "device": "mobile",
     "intro": [
         "C'est dans l'optique d'améliorer à la fois mon alimentation et mon empreinte carbone que j'ai créé <i>Manger de saison</i>. Cette application mobile propose un calendrier complet des fruits et légumes de saison, basé sur une localisation en France métropolitaine, dans l'optique d'accompagner ses utilisateurs dans la préparation de leurs repas.",
         "Il existe des applications de fruits et légumes de saison par dizaine, mais là où Manger de saison se distingue, c'est par son interactivité. L'utilisateur a la possibilité d'ajouter une préférence personnelle à chaque aliment (<i>J'aime</i> ou <i>Je n'aime pas</i>), lui permettant ainsi une expérience totalement personnalisée. Ainsi, grâce aux options de tri, il lui sera possible d'afficher uniquement les légumes du mois de mai qu'il aime, lui fournissant une liste précise de ce qu'il pourra manger durant cette période de l'année.",

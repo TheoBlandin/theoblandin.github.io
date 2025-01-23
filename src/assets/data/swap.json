@@ -1,0 +1,27 @@
+{
+    "displayName": "SWAP",
+    "linkName": "swap",
+    "device": "small-desktop",
+    "intro": [
+        "Au cours de ma cinquième et dernière année d'études à l'ENSIM, il nous a été demandé de réaliser un projet sur un semestre, à raison de 8h par semaine allouées au projet. Ce projet fut réalisé en binôme, et avait comme objectif d'appliquer étape par étape la démarche de Design Thinking tel qu'étudié en cours.",
+        "Pour cela, nous avons décidé de nous concentrer sur l'étude d'une population spécifique : les professeurs de collège et de lycée général, technologique et professionnel (allant jusqu'au BTS). Notre but à travers l'étude de cette communauté est d'identifier une problématique à laquelle il serait possible de répondre via une solution numérique.",
+        "<i>SWAP</i> est la solution que nous avons imaginée face à la problématique rencontrée. <i>SWAP</i> , pour Site Web Annuaire de ressources Pédagogiques, est un site web fictif qui recense des ressources pédagogiques à destination des professeurs afin de les aider dans leur travail. Il repose sur une base de collaboration, où chacun peut venir ajouter des ressources qu'il considère utiles."
+    ],
+    "context": [
+        "Projet scolaire",
+        "Travail en binôme"
+    ],
+    "role": [
+        "UX Researcher",
+        "UX Designer"
+    ],
+    "date": "Sep. 2024 - Fev. 2024",
+    "links": [
+        {
+            "link": "https://www.figma.com/file/VvqOd05wya8qIULu7e4gBY/Projet-p%C3%A9dagogique---ENSIM-5A?type=design&node-id=516%3A16293&mode=design&t=wb7BZ3K74e7Vk6fm-1",
+            "icon": "figma",
+            "label": "Prototype Figma",
+            "aria-label": "Ouvrir le fichier du prototype Figma"
+        }
+    ]
+}
