@@ -1,0 +1,37 @@
+@media (max-width: 480px) {
+    .plan-row {
+        flex-direction: column;
+    }
+
+    .plan-sub-row {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .plan-row {
+        flex-direction: column;
+    }
+
+    .plan-sub-row {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-container, .plan-row, .plan-sub-row {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .plan-container, .plan-row, .plan-sub-row {
+        gap: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .plan-row, .plan-sub-row {
+        flex-direction: row;
+    }
+}

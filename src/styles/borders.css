@@ -22,3 +22,25 @@
 .br-6 {
     border-radius: 64px !important;
 }
+
+/* Border width */
+
+.bw-1 {
+    border-width: 1px;
+}
+
+.bw-2 {
+    border-width: 2px;
+}
+
+/* Border style */
+
+.b-solid {
+    border-style: solid;
+}
+
+/* Border color */
+
+.b-dark {
+    border-color: var(--dark);
+}

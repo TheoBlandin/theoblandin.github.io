@@ -6,6 +6,7 @@
 @import "./styles/position.css";
 @import "./styles/colors.css";
 @import "./styles/borders.css";
+@import "./styles/text.css";
 
 body {
   margin: 0;

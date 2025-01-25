@@ -46,6 +46,68 @@ export default function Swap() {
                             </Col>
                             <Col xl={3}></Col>
                         </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <div className="d-flex flex-column plan-container ">
+                                    <div className="plan-row d-flex">
+                                        <div className="plan-sub-row flex-1 d-flex">
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Le métier</span>
+                                                <span className="text-center">Ressenti face au métier, expériences</span>
+                                            </div>
+
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Les élèves</span>
+                                                <span className="text-center">Élèves en difficulté, isolés et/ou atypiques</span>
+                                            </div>
+                                        </div>
+
+                                        <div className="plan-sub-row flex-1 d-flex">
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Vie pro/perso</span>
+                                                <span className="text-center">Horaires, charge de travail en dehors des cours</span>
+                                            </div>
+
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Programme</span>
+                                                <span className="text-center">
+                                                    Préparation des cours, programme scolaire</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="plan-row d-flex">
+                                        <div className="plan-sub-row flex-1 d-flex">
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Illectronisme</span>
+                                                <span className="text-center">
+                                                    Enseignement et utilisation du numérique</span>
+                                            </div>
+
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Les parents</span>
+                                                <span className="text-center">Contact avec les parents, réunions parent-prof</span>
+                                            </div>
+                                        </div>
+
+                                        <div className="plan-sub-row flex-1 d-flex">
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">RPS</span>
+                                                <span className="text-center">Risques psychosociaux, accompagnement</span>
+                                            </div>
+
+                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                                <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">L'attention</span>
+                                                <span className="text-center">Attention des élèves, participation en classe</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span className="small">
+                                    Domaines identifiés comme possible porteurs de problématiques
+                                </span>
+                            </Col>
+                        </Row>
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
