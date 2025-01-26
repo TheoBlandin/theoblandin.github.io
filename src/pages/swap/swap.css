@@ -19,19 +19,23 @@
 }
 
 @media (max-width: 768px) {
-    .plan-container, .plan-row, .plan-sub-row {
+    .plan-container, .plan-row, .plan-sub-row, .data-row, .data-sub-row {
         gap: 16px;
+    }
+
+    .data-sub-row {
+        flex-direction: column;
     }
 }
 
 @media (min-width: 768px) {
-    .plan-container, .plan-row, .plan-sub-row {
+    .plan-container, .plan-row, .plan-sub-row, .data-row, .data-sub-row {
         gap: 32px;
     }
 }
 
 @media (min-width: 1024px) {
-    .plan-row, .plan-sub-row {
+    .plan-row, .plan-sub-row, .data-sub-row {
         flex-direction: row;
     }
 }

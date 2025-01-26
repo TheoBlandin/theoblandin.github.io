@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from 'react';
 import './swap.css';
 import HeaderProject from "../../components/header_project/HeaderProject";
 import PresentationProject from "../../components/presentation-project/PresentationProject";
@@ -6,6 +6,7 @@ import Carousel from "../../components/carousel/Carousel";
 import InfoProject from './../../assets/data/swap.json';
 import { useEffect } from "react";
 import { Container, Row, Col } from 'react-grid-system';
+import { PieChart, Pie, Cell, LabelList } from 'recharts';
 import Part03_Illu01 from './../../assets/illustrations/swap/part03_illu01.png';
 import Part04_Illu01 from './../../assets/illustrations/swap/part04_illu01.png';
 import Part04_Illu02 from './../../assets/illustrations/swap/part04_illu02.png';
@@ -15,6 +16,47 @@ import Part08_Illu01 from './../../assets/illustrations/swap/part08_illu01.png';
 export default function Swap() {
     useEffect(() => {
         document.title = "SWAP - Théo Blandin";
+    }, []);
+
+    const data01 = [
+        { name: 'Lycée professionel', value: 3 },
+        { name: 'Lycée général', value: 2 },
+        { name: 'BTS', value: 1 },
+    ];
+
+    const data02 = [
+        { name: 'Contractuel', value: 1 },
+        { name: 'Titulaire', value: 5 },
+    ];
+
+    const data03 = [
+        { name: 'Privée', value: 1 },
+        { name: 'Public', value: 5 },
+    ];
+
+    const data04 = [
+        { name: '0-1 an', value: 1 },
+        { name: '5-10 ans', value: 1 },
+        { name: '10+ ans', value: 4 },
+    ];
+
+    const COLORS = ['#F08845', '#E9C46A', '#20A392'];
+
+    const renderCustomizedLabelPercentage = (data) => {
+        return data.value;
+    };
+
+    const renderLabel = useCallback((piePiece) => {
+        return (
+            <text
+                x={piePiece.x}
+                y={piePiece.y}
+                fill="#201708"
+                textAnchor={piePiece.textAnchor}
+                dominantBaseline="central">
+                {piePiece.name}
+            </text>
+        )
     }, []);
 
     return (
@@ -125,6 +167,140 @@ export default function Swap() {
                                 </div>
                             </Col>
                             <Col xl={3}></Col>
+                        </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <div className="d-flex flex-column data-row">
+                                    <div className="d-flex data-sub-row">
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
+                                            <PieChart width={300} height={240}>
+                                                <Pie
+                                                    data={data01}
+                                                    cx={150}
+                                                    cy={120}
+                                                    isAnimationActive={false}
+                                                    labelLine={false}
+                                                    label={renderLabel}
+                                                    outerRadius={80}
+                                                    dataKey="value"
+                                                >
+                                                    {data01.map((entry, index) => (
+                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                                    ))}
+                                                    <LabelList
+                                                        dy={-3}
+                                                        fill="#201708"
+                                                        dataKey={renderCustomizedLabelPercentage}
+                                                        position="inside"
+                                                        angle="0"
+                                                        stroke="none"
+                                                    />
+                                                </Pie>
+                                            </PieChart>
+                                            <span className="small">
+                                                Type d'enseignement
+                                            </span>
+                                        </div>
+
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
+                                            <PieChart width={300} height={240}>
+                                                <Pie
+                                                    data={data02}
+                                                    cx={150}
+                                                    cy={120}
+                                                    startAngle={90}
+                                                    endAngle={450}
+                                                    isAnimationActive={false}
+                                                    labelLine={false}
+                                                    label={renderLabel}
+                                                    outerRadius={80}
+                                                    dataKey="value"
+                                                >
+                                                    {data02.map((entry, index) => (
+                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                                    ))}
+                                                    <LabelList
+                                                        dy={-3}
+                                                        fill="#201708"
+                                                        dataKey={renderCustomizedLabelPercentage}
+                                                        position="inside"
+                                                        angle="0"
+                                                        stroke="none"
+                                                    />
+                                                </Pie>
+                                            </PieChart>
+                                            <span className="small">
+                                                Contractuel et titulaire
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div className="d-flex data-sub-row">
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
+                                            <PieChart width={300} height={240}>
+                                                <Pie
+                                                    data={data03}
+                                                    cx={150}
+                                                    cy={120}
+                                                    isAnimationActive={false}
+                                                    labelLine={false}
+                                                    label={renderLabel}
+                                                    outerRadius={80}
+                                                    dataKey="value"
+                                                >
+                                                    {data03.map((entry, index) => (
+                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                                    ))}
+                                                    <LabelList
+                                                        dy={-3}
+                                                        fill="#201708"
+                                                        dataKey={renderCustomizedLabelPercentage}
+                                                        position="inside"
+                                                        angle="0"
+                                                        stroke="none"
+                                                    />
+                                                </Pie>
+                                            </PieChart>
+                                            <span className="small">
+                                                Type d'établissement
+                                            </span>
+                                        </div>
+
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
+                                            <PieChart width={300} height={240}>
+                                                <Pie
+                                                    data={data04}
+                                                    cx={150}
+                                                    cy={120}
+                                                    isAnimationActive={false}
+                                                    labelLine={false}
+                                                    label={renderLabel}
+                                                    outerRadius={80}
+                                                    dataKey="value"
+                                                >
+                                                    {data04.map((entry, index) => (
+                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                                    ))}
+                                                    <LabelList
+                                                        dy={-3}
+                                                        fill="#201708"
+                                                        dataKey={renderCustomizedLabelPercentage}
+                                                        position="inside"
+                                                        angle="0"
+                                                        stroke="none"
+                                                    />
+                                                </Pie>
+                                            </PieChart>
+                                            <span className="small">
+                                                Ancienneté
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span className="small">
+                                    Caractéristiques des utilisateurs interrogés
+                                </span>
+                            </Col>
                         </Row>
                     </div>
                     <div className="section d-flex flex-column">
