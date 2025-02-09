@@ -26,7 +26,7 @@ export default function Home() {
                     <Cloud className="position-absolute h-auto cloud-3" />
                     <Cloud className="position-absolute h-auto cloud-4" />
                     <Row>
-                        <Col xl={6}>
+                        <Col xl={7} xxl={6}>
                             <div className="h-100 d-flex flex-column justify-content-center gap-2">
                                 <h1 className="mr-3">
                                     Salut, moi c'est Théo&nbsp;!

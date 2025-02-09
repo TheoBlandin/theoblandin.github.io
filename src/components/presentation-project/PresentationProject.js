@@ -14,7 +14,7 @@ function PresentationProject(props) {
     return (
         <Container>
             <Row justify="center">
-                <Col xl={6}>
+                <Col xl={7} xxl={6}>
                     <div className="d-flex flex-column gap-3 paragraph">
                         <span className="lead bold">Projet</span>
                         <div className="ps-4">

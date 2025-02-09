@@ -52,7 +52,7 @@ export default function About() {
                     <Col lg={6} xl={4}>
                         <img src={Self} className="w-100" alt="Selfie" />
                     </Col>
-                    <Col xl={6}>
+                    <Col xl={7} xxl={6}>
                         <p className="lead bold mb-3">Je m'appelle Théo, je suis UX Designer et Développeur Front-End à Rennes, spécialisé en accessibilité numérique.</p>
 
                         <p className="mb-2">Je suis passionné par la conception orientée utilisateur et m'efforce de créer des interfaces intuitives, esthétiques et accessibles dans mon travail.</p>

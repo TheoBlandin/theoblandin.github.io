@@ -4,12 +4,14 @@ import InfoProject from './../../assets/data/manger-de-saison.json';
 import HeaderProject from "../../components/header_project/HeaderProject";
 import PresentationProject from "../../components/presentation-project/PresentationProject";
 import Carousel from "../../components/carousel/Carousel";
+import { Link } from 'react-router-dom';
 import { useEffect } from "react";
 import { Container, Row, Col } from 'react-grid-system';
 import Part02_Illu01 from './../../assets/illustrations/manger-de-saison/part02_illu01.png';
 import Part02_Illu02 from './../../assets/illustrations/manger-de-saison/part02_illu02.png';
 import Part02_Illu03 from './../../assets/illustrations/manger-de-saison/part02_illu03.png';
 import Part03_Illu01 from './../../assets/illustrations/manger-de-saison/part03_illu01.png';
+import { ReactComponent as Forward } from './../../assets/icons/forward.svg'
 
 export default function MangerDeSaison() {
     useEffect(() => {
@@ -29,7 +31,7 @@ export default function MangerDeSaison() {
 
                 <Container className="container-explanations d-flex flex-column">
                     <Row justify="center">
-                        <Col xl={6}>
+                        <Col xl={7} xxl={6}>
                             <div className="section d-flex flex-column">
                                 <div>
                                     <span className="display-S">01</span>
@@ -42,11 +44,11 @@ export default function MangerDeSaison() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xl={3}></Col>
+                        <Col xl={2} xxl={3}></Col>
                     </Row>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">02</span>
@@ -57,7 +59,7 @@ export default function MangerDeSaison() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex align-items-center justify-content-center gap-20 multiple-illu-container w-100">
@@ -93,7 +95,7 @@ export default function MangerDeSaison() {
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">03</span>
@@ -106,7 +108,7 @@ export default function MangerDeSaison() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
@@ -130,7 +132,7 @@ export default function MangerDeSaison() {
                         </Row>
                     </div>
                     <Row justify="center">
-                        <Col xl={6}>
+                        <Col xl={7} xxl={6}>
                             <div className="section d-flex flex-column">
                                 <div>
                                     <span className="display-S">04</span>
@@ -143,10 +145,10 @@ export default function MangerDeSaison() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xl={3}></Col>
+                        <Col xl={2} xxl={3}></Col>
                     </Row>
                     <Row justify="center">
-                        <Col xl={6}>
+                        <Col xl={7} xxl={6}>
                             <div className="section d-flex flex-column">
                                 <div>
                                     <span className="display-S">05</span>
@@ -161,8 +163,16 @@ export default function MangerDeSaison() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xl={3}></Col>
+                        <Col xl={2} xxl={3}></Col>
                     </Row>
+                    <div className="d-flex flex-row justify-content-end align-items-center gap-2">
+                        <Link to='/swap'>
+                            <div className="d-flex flex-row justify-content-end align-items-center gap-2 py-4">
+                                <span className="">Vers le prochain projet</span>
+                                <Forward className="icon-M icon-dark" />
+                            </div>
+                        </Link>
+                    </div>
                 </Container>
             </div>
         </>

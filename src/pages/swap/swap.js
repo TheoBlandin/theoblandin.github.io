@@ -1,63 +1,103 @@
-import React, { useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './swap.css';
 import HeaderProject from "../../components/header_project/HeaderProject";
 import PresentationProject from "../../components/presentation-project/PresentationProject";
 import Carousel from "../../components/carousel/Carousel";
 import InfoProject from './../../assets/data/swap.json';
-import { useEffect } from "react";
 import { Container, Row, Col } from 'react-grid-system';
-import { PieChart, Pie, Cell, LabelList } from 'recharts';
-import Part03_Illu01 from './../../assets/illustrations/swap/part03_illu01.png';
+import { ResponsivePie } from '@nivo/pie'
+import { TagCloud } from 'react-tagcloud'
 import Part04_Illu01 from './../../assets/illustrations/swap/part04_illu01.png';
 import Part04_Illu02 from './../../assets/illustrations/swap/part04_illu02.png';
 import Part06_Illu01 from './../../assets/illustrations/swap/part06_illu01.png';
 import Part08_Illu01 from './../../assets/illustrations/swap/part08_illu01.png';
+import { ReactComponent as Forward } from './../../assets/icons/forward.svg'
+import theme from './../../utils/dataviz.js';
 
 export default function Swap() {
+    const [pieHeight, setPieHeight] = useState(300);
+    const [doublePieHeight, setdoublePieHeight] = useState(332);
+    const [maxWordSize, setMaxWordSize] = useState(64);
+
     useEffect(() => {
         document.title = "SWAP - Théo Blandin";
+
+        const handleResize = () => {
+            if (window.innerWidth < 480) {
+                setPieHeight(150);
+                setdoublePieHeight(364);
+                setMaxWordSize(48);
+            }
+
+            else if (window.innerWidth < 768) {
+                setPieHeight(250);
+                setdoublePieHeight(564);
+                setMaxWordSize(48);
+            }
+
+            else if (window.innerWidth > 768) {
+                setPieHeight(300);
+                setdoublePieHeight(332);
+                setMaxWordSize(64);
+            }
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const data01 = [
-        { name: 'Lycée professionel', value: 3 },
-        { name: 'Lycée général', value: 2 },
-        { name: 'BTS', value: 1 },
+        { id: 'Lycée professionel', value: 3 },
+        { id: 'BTS', value: 1 },
+        { id: 'Lycée général', value: 2 },
     ];
 
     const data02 = [
-        { name: 'Contractuel', value: 1 },
-        { name: 'Titulaire', value: 5 },
+        { id: 'Contractuel', value: 1 },
+        { id: 'Titulaire', value: 5 },
     ];
 
     const data03 = [
-        { name: 'Privée', value: 1 },
-        { name: 'Public', value: 5 },
+        { id: 'Privée', value: 1 },
+        { id: 'Public', value: 5 },
     ];
 
     const data04 = [
-        { name: '0-1 an', value: 1 },
-        { name: '5-10 ans', value: 1 },
-        { name: '10+ ans', value: 4 },
+        { id: '0-1 an', value: 1 },
+        { id: '5-10 ans', value: 1 },
+        { id: '10+ ans', value: 4 },
     ];
 
+    const words = [
+        { value: 'Pas/peu de devoirs', count: 3 },
+        { value: 'Parents absents des réunions', count: 3 },
+        { value: 'Alternance cours/activités', count: 3 },
+        { value: 'Profils d\'élèves variés', count: 4 },
+        { value: 'Pluridisciplinarité', count: 2 },
+        { value: 'Différenciation', count: 3.5 },
+        { value: 'Confiance', count: 3 },
+        { value: 'Partage avec les collèges volontaire', count: 3.5 },
+        { value: 'Pas/peu de moyens', count: 3 },
+        { value: 'Rapport à l\'élève', count: 2 },
+        { value: 'Métier passion', count: 3 },
+        { value: 'Entraide', count: 7 },
+        { value: 'Collèges qui ne partagent pas', count: 2 },
+        { value: 'Horaires fixes', count: 2 },
+        { value: 'Autoformation', count: 3 },
+        { value: 'Début difficile', count: 4 },
+        { value: 'Pas de formation au numérique', count: 2 },
+        { value: 'Transmission de savoir', count: 3 },
+        { value: 'Travail le soir/week-end/vacances', count: 3 },
+        { value: 'Pas/peu de soutien psychologique', count: 2 },
+        { value: 'Espace de partage', count: 4 },
+        { value: 'Formation incomplète/inutile', count: 3 },
+        { value: 'Plus de demandes avec autant/moins de moyens', count: 2 },
+        { value: 'Travail payant sur le long terme', count: 3 },
+    ]
+
     const COLORS = ['#F08845', '#E9C46A', '#20A392'];
-
-    const renderCustomizedLabelPercentage = (data) => {
-        return data.value;
-    };
-
-    const renderLabel = useCallback((piePiece) => {
-        return (
-            <text
-                x={piePiece.x}
-                y={piePiece.y}
-                fill="#201708"
-                textAnchor={piePiece.textAnchor}
-                dominantBaseline="central">
-                {piePiece.name}
-            </text>
-        )
-    }, []);
 
     return (
         <>
@@ -73,7 +113,7 @@ export default function Swap() {
                 <Container className="container-explanations d-flex flex-column">
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">01</span>
@@ -86,7 +126,7 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
@@ -153,7 +193,7 @@ export default function Swap() {
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">02</span>
@@ -166,138 +206,92 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <div className="d-flex flex-column data-row">
-                                    <div className="d-flex data-sub-row">
-                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
-                                            <PieChart width={300} height={240}>
-                                                <Pie
-                                                    data={data01}
-                                                    cx={150}
-                                                    cy={120}
-                                                    isAnimationActive={false}
-                                                    labelLine={false}
-                                                    label={renderLabel}
-                                                    outerRadius={80}
-                                                    dataKey="value"
-                                                >
-                                                    {data01.map((entry, index) => (
-                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                                    ))}
-                                                    <LabelList
-                                                        dy={-3}
-                                                        fill="#201708"
-                                                        dataKey={renderCustomizedLabelPercentage}
-                                                        position="inside"
-                                                        angle="0"
-                                                        stroke="none"
-                                                    />
-                                                </Pie>
-                                            </PieChart>
+                                <div className="d-flex flex-column data-row w-100">
+                                    <div className="d-flex data-sub-row" style={{ height: doublePieHeight }}>
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1" style={{ height: pieHeight }} >
+                                            <ResponsivePie
+                                                data={data01}
+                                                margin={{ top: 20, right: 80, bottom: 20, left: 80 }}
+                                                activeOuterRadiusOffset={8}
+                                                colors={COLORS}
+                                                borderWidth={1}
+                                                borderColor="#FCFCFC"
+                                                theme={theme}
+                                                arcLinkLabelsThickness={1}
+                                                arcLinkLabelsOffset={-10}
+                                                arcLinkLabelsColor="#201708"
+                                                startAngle={270}
+                                                endAngle={630}
+                                            />
                                             <span className="small">
                                                 Type d'enseignement
                                             </span>
                                         </div>
 
-                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
-                                            <PieChart width={300} height={240}>
-                                                <Pie
-                                                    data={data02}
-                                                    cx={150}
-                                                    cy={120}
-                                                    startAngle={90}
-                                                    endAngle={450}
-                                                    isAnimationActive={false}
-                                                    labelLine={false}
-                                                    label={renderLabel}
-                                                    outerRadius={80}
-                                                    dataKey="value"
-                                                >
-                                                    {data02.map((entry, index) => (
-                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                                    ))}
-                                                    <LabelList
-                                                        dy={-3}
-                                                        fill="#201708"
-                                                        dataKey={renderCustomizedLabelPercentage}
-                                                        position="inside"
-                                                        angle="0"
-                                                        stroke="none"
-                                                    />
-                                                </Pie>
-                                            </PieChart>
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1" style={{ height: pieHeight }} >
+                                            <ResponsivePie
+                                                data={data02}
+                                                margin={{ top: 20, right: 80, bottom: 20, left: 80 }}
+                                                activeOuterRadiusOffset={8}
+                                                colors={COLORS}
+                                                borderWidth={1}
+                                                borderColor="#FCFCFC"
+                                                theme={theme}
+                                                arcLinkLabelsThickness={1}
+                                                arcLinkLabelsOffset={-10}
+                                                arcLinkLabelsColor="#201708"
+                                            />
                                             <span className="small">
                                                 Contractuel et titulaire
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div className="d-flex data-sub-row">
-                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
-                                            <PieChart width={300} height={240}>
-                                                <Pie
-                                                    data={data03}
-                                                    cx={150}
-                                                    cy={120}
-                                                    isAnimationActive={false}
-                                                    labelLine={false}
-                                                    label={renderLabel}
-                                                    outerRadius={80}
-                                                    dataKey="value"
-                                                >
-                                                    {data03.map((entry, index) => (
-                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                                    ))}
-                                                    <LabelList
-                                                        dy={-3}
-                                                        fill="#201708"
-                                                        dataKey={renderCustomizedLabelPercentage}
-                                                        position="inside"
-                                                        angle="0"
-                                                        stroke="none"
-                                                    />
-                                                </Pie>
-                                            </PieChart>
+                                    <div className="d-flex data-sub-row" style={{ height: doublePieHeight }}>
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1" style={{ height: pieHeight }} >
+                                            <ResponsivePie
+                                                data={data03}
+                                                margin={{ top: 20, right: 80, bottom: 20, left: 80 }}
+                                                activeOuterRadiusOffset={8}
+                                                colors={COLORS}
+                                                borderWidth={1}
+                                                borderColor="#FCFCFC"
+                                                theme={theme}
+                                                arcLinkLabelsThickness={1}
+                                                arcLinkLabelsOffset={-10}
+                                                arcLinkLabelsColor="#201708"
+                                            />
                                             <span className="small">
                                                 Type d'établissement
                                             </span>
                                         </div>
 
-                                        <div className="d-flex flex-column align-items-center gap-2 flex-1">
-                                            <PieChart width={300} height={240}>
-                                                <Pie
-                                                    data={data04}
-                                                    cx={150}
-                                                    cy={120}
-                                                    isAnimationActive={false}
-                                                    labelLine={false}
-                                                    label={renderLabel}
-                                                    outerRadius={80}
-                                                    dataKey="value"
-                                                >
-                                                    {data04.map((entry, index) => (
-                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                                    ))}
-                                                    <LabelList
-                                                        dy={-3}
-                                                        fill="#201708"
-                                                        dataKey={renderCustomizedLabelPercentage}
-                                                        position="inside"
-                                                        angle="0"
-                                                        stroke="none"
-                                                    />
-                                                </Pie>
-                                            </PieChart>
+                                        <div className="d-flex flex-column align-items-center gap-2 flex-1" style={{ height: pieHeight }} >
+                                            <ResponsivePie
+                                                data={data04}
+                                                margin={{ top: 20, right: 80, bottom: 20, left: 80 }}
+                                                activeOuterRadiusOffset={8}
+                                                colors={COLORS}
+                                                borderWidth={1}
+                                                borderColor="#FCFCFC"
+                                                theme={theme}
+                                                arcLinkLabelsThickness={1}
+                                                arcLinkLabelsOffset={-10}
+                                                arcLinkLabelsColor="#201708"
+                                                startAngle={90}
+                                                endAngle={450}
+                                            />
                                             <span className="small">
                                                 Ancienneté
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <span className="small">
+                                <span className="small mt-5">
                                     Caractéristiques des utilisateurs interrogés
                                 </span>
                             </Col>
@@ -305,7 +299,7 @@ export default function Swap() {
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">03</span>
@@ -318,16 +312,19 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <img
-                                    src={Part03_Illu01}
-                                    alt="Nuage de mots synthétisant les entretiens utilisateur. On distingue au centre le mot Entraide."
-                                    className="w-100"
+                                <TagCloud
+                                    minSize={16}
+                                    maxSize={maxWordSize}
+                                    tags={words}
+                                    shuffle={false}
+                                    disableRandomColor={true}
+                                    className='bg-surface text-center wordcloud'
                                 />
-                                <span aria-hidden="true" className="small">
+                                <span className="small text-center">
                                     Nuage de mots synthétisant les entretiens utilisateur
                                 </span>
                             </Col>
@@ -335,7 +332,7 @@ export default function Swap() {
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">04</span>
@@ -350,7 +347,7 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
@@ -379,7 +376,7 @@ export default function Swap() {
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">05</span>
@@ -390,12 +387,12 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">06</span>
@@ -408,7 +405,7 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
@@ -425,7 +422,7 @@ export default function Swap() {
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">07</span>
@@ -438,12 +435,12 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">08</span>
@@ -456,7 +453,7 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
@@ -473,7 +470,7 @@ export default function Swap() {
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">09</span>
@@ -486,12 +483,12 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
                     </div>
                     <div className="section d-flex flex-column">
                         <Row justify="center">
-                            <Col xl={6}>
+                            <Col xl={7} xxl={6}>
                                 <div className="section d-flex flex-column">
                                     <div>
                                         <span className="display-S">10</span>
@@ -506,8 +503,16 @@ export default function Swap() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col xl={3}></Col>
+                            <Col xl={2} xxl={3}></Col>
                         </Row>
+                    </div>
+                    <div className="d-flex flex-row justify-content-end align-items-center gap-2">
+                        <Link to='/borne-orange'>
+                            <div className="d-flex flex-row justify-content-end align-items-center gap-2 py-4">
+                                <span className="">Vers le prochain projet</span>
+                                <Forward className="icon-M icon-dark" />
+                            </div>
+                        </Link>
                     </div>
                 </Container>
             </div>

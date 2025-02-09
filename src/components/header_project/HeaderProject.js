@@ -13,7 +13,7 @@ function HeaderProject(props) {
                     <Col sm={12} className="header-content d-flex flex-column">
                         <a href="/#projects" className="d-inline-flex flex-row align-items-center back-link">
                             <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>arrow_back</span>
-                            &nbsp;Retour
+                            &nbsp;Retour aux projets
                         </a>
                         <span className="display-L">{project.displayName}</span>
                     </Col>

@@ -1,3 +1,8 @@
+.tag-cloud-tag{
+    line-height: 100%;
+    padding: 4px;
+}
+
 @media (max-width: 480px) {
     .plan-row {
         flex-direction: column;
@@ -5,6 +10,10 @@
 
     .plan-sub-row {
         flex-direction: column;
+    }
+
+    .wordcloud {
+        padding: 8px;
     }
 }
 
@@ -19,18 +28,35 @@
 }
 
 @media (max-width: 768px) {
-    .plan-container, .plan-row, .plan-sub-row, .data-row, .data-sub-row {
+    .plan-container, .plan-row, .plan-sub-row {
         gap: 16px;
     }
 
     .data-sub-row {
         flex-direction: column;
+        gap: 32px;
+    }
+
+    .data-row {
+        gap: 32px;
+    }
+
+    .wordcloud {
+        padding: 16px;
     }
 }
 
 @media (min-width: 768px) {
-    .plan-container, .plan-row, .plan-sub-row, .data-row, .data-sub-row {
+    .plan-container, .plan-row, .plan-sub-row, .data-row {
         gap: 32px;
+    }
+
+    .data-sub-row>div {
+        width: 50%;
+    }
+
+    .wordcloud {
+        padding: 32px;
     }
 }
 
