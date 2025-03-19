@@ -113,6 +113,12 @@ ul {
     line-height: 120%;
   }
 
+  .display-M-body {
+    font-size: 1.875rem;
+    line-height: 120%;
+    font-weight: bold;
+  }
+
   .display-S, h2 {
     font-size: 1.25rem;
     margin: 0;
@@ -153,6 +159,12 @@ ul {
     font-family: "MADE_Sunflower", serif;
     font-size: 3.125rem;
     line-height: 120%;
+  }
+
+  .display-M-body {
+    font-size: 3.125rem;
+    line-height: 120%;
+    font-weight: bold;
   }
 
   .display-S, h2 {

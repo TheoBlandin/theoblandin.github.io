@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './swap.css';
 import HeaderProject from "../../components/header_project/HeaderProject";
+import Persona from "../../components/persona/Persona";
 import PresentationProject from "../../components/presentation-project/PresentationProject";
 import Carousel from "../../components/carousel/Carousel";
 import InfoProject from './../../assets/data/swap.json';
+import Personas from './../../assets/data/personas.json';
 import { Container, Row, Col } from 'react-grid-system';
 import { ResponsivePie } from '@nivo/pie'
 import { TagCloud } from 'react-tagcloud'
@@ -14,6 +16,7 @@ import Part06_Illu01 from './../../assets/illustrations/swap/part06_illu01.png';
 import Part08_Illu01 from './../../assets/illustrations/swap/part08_illu01.png';
 import { ReactComponent as Forward } from './../../assets/icons/forward.svg'
 import theme from './../../utils/dataviz.js';
+
 
 export default function Swap() {
     const [pieHeight, setPieHeight] = useState(300);
@@ -111,10 +114,10 @@ export default function Swap() {
                 <Carousel project={InfoProject}></Carousel>
 
                 <Container className="container-explanations d-flex flex-column">
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">01</span>
                                         <h1 style={{ marginTop: '-8px' }}>Planification</h1>
@@ -191,10 +194,10 @@ export default function Swap() {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">02</span>
                                         <h1 style={{ marginTop: '-8px' }}>Entretiens utilisateurs</h1>
@@ -297,10 +300,10 @@ export default function Swap() {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">03</span>
                                         <h1 style={{ marginTop: '-8px' }}>Analyse</h1>
@@ -330,10 +333,10 @@ export default function Swap() {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">04</span>
                                         <h1 style={{ marginTop: '-8px' }}>Idéation</h1>
@@ -365,7 +368,7 @@ export default function Swap() {
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
                                 <img
                                     src={Part04_Illu02}
-                                    alt="Minde map d'idéation reprenant les idées du brainstorming. Il y a 4 noeuds principaux : Formulaire d'ajout, Ressource, Recherche et Profil. Ceux-ci sont reliés entre eux par de plus petites fonctionnalités."
+                                    alt="Mind map d'idéation reprenant les idées du brainstorming. Il y a 4 noeuds principaux : Formulaire d'ajout, Ressource, Recherche et Profil. Ceux-ci sont reliés entre eux par de plus petites fonctionnalités."
                                     className="w-100"
                                 />
                                 <span aria-hidden="true" className="small">
@@ -374,10 +377,10 @@ export default function Swap() {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">05</span>
                                         <h1 style={{ marginTop: '-8px' }}>Personas</h1>
@@ -389,11 +392,24 @@ export default function Swap() {
                             </Col>
                             <Col xl={2} xxl={3}></Col>
                         </Row>
+
+                        {Personas["swap"].map((persona, index) => (
+                            <Row justify="center">
+                                <Col xl={9} key={index} className="d-flex flex-column align-items-center gap-2">
+                                    <Persona infoPersona={persona} />
+                                    <span className="small">
+                                        Persona de {persona.name}
+                                    </span>
+                                </Col>
+                            </Row>
+                        ))}
+
+
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">06</span>
                                         <h1 style={{ marginTop: '-8px' }}>Parcours utilisateur</h1>
@@ -420,10 +436,10 @@ export default function Swap() {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">07</span>
                                         <h1 style={{ marginTop: '-8px' }}>Wireframes</h1>
@@ -438,10 +454,10 @@ export default function Swap() {
                             <Col xl={2} xxl={3}></Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">08</span>
                                         <h1 style={{ marginTop: '-8px' }}>Design System</h1>
@@ -468,10 +484,10 @@ export default function Swap() {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">09</span>
                                         <h1 style={{ marginTop: '-8px' }}>Prototypage</h1>
@@ -486,10 +502,10 @@ export default function Swap() {
                             <Col xl={2} xxl={3}></Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">10</span>
                                         <h1 style={{ marginTop: '-8px' }}>Ce que ça m'a apporté</h1>

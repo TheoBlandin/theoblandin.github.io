@@ -1,0 +1,115 @@
+{
+  "swap": [
+    {
+      "name": "Sophie Garnier",
+      "img": "sophie_garnier",
+      "color": "yellow",
+      "features": [
+        "Ouverte",
+        "29 ans",
+        "Veille pédagogique",
+        "Animaux",
+        "Connectée à l'actualité",
+        "Dynamique",
+        "Voyage"
+      ],
+      "bio": "Sophie, 29 ans, est professeure d'espagnol dans un lycée général depuis 6 ans. Dynamique et ouverte d'esprit, elle prend plaisir à enseigner sa matière en connectant ses cours à l'actualité. Passionnée par les voyages et grande amoureuse des animaux, elle nourrit constamment sa curiosité à travers la veille pédagogique pour enrichir ses pratiques en classe. Elle préfère néanmoins ne pas passer trop de temps sur l'ordinateur.",
+      "data": [
+        {
+          "name": "want",
+          "title": "Ce qu'elle veut faire",
+          "content": "Dynamiser ses cours avec de nouvelles approches"
+        },
+        {
+          "name": "need",
+          "title": "Ce qu'elle souhaiterait",
+          "content": "Trouver les nouveautés qui l'intéressent rapidement"
+        },
+        {
+          "name": "use",
+          "title": "Ce qu'elle va utiliser",
+          "content": "Les listes de ressources enregistrées"
+        },
+        {
+          "name": "block",
+          "title": "Ce qui la bloque",
+          "content": "Le temps passé sur l'ordinateur"
+        }
+      ]
+    },
+    {
+      "name": "Karine Bernier",
+      "img": "karine_bernier",
+      "color": "orange",
+      "features": [
+        "Partage",
+        "56 ans",
+        "Ouverture au changement",
+        "Géologie",
+        "Amélioration continue",
+        "Organisation",
+        "Suite office"
+      ],
+      "bio": "Karine, 56 ans, est professeure de sciences de la vie et de la terre en lycée général depuis 18 ans. Très organisée et méthodique, elle utilise fréquemment la suite Office pour structurer ses cours et partager des ressources pédagogiques avec ses collègues. Passionnée par les cailloux, elle est également dans une dynamique d'amélioration continue, toujours prête à adopter de nouvelles approches pour enrichir son enseignement.",
+      "data": [
+        {
+          "name": "want",
+          "title": "Ce qu'elle veut faire",
+          "content": "Partager ses ressources et son expérience"
+        },
+        {
+          "name": "need",
+          "title": "Ce qu'elle souhaiterait",
+          "content": "Vérifier que sa ressource n'a pas déjà été publiée"
+        },
+        {
+          "name": "use",
+          "title": "Ce qu'elle va utiliser",
+          "content": "Le formulaire de publication de ressources"
+        },
+        {
+          "name": "block",
+          "title": "Ce qui la bloque",
+          "content": "La compétition entre les utilisateurs"
+        }
+      ]
+    },
+    {
+      "name": "Damien Leroux",
+      "img": "damien_leroux",
+      "color": "green",
+      "features": [
+        "Innovation",
+        "37 ans",
+        "Optimisation du temps",
+        "Sport d'équipe",
+        "Apprentissage concret",
+        "Réorientation",
+        "Canva"
+      ],
+      "bio": "Damien, 37 ans, est un nouveau professeur en lycée professionnel après une carrière dans la vente. Il privilégie un apprentissage concret et pratique pour transmettre ses connaissances en marketing dans un lycée professionnel. Passionné par les nouvelles technologies, il utilise des outils comme Canva et cherche constamment à optimiser son temps. Grand amateur de sports d'équipe, il allie efficacité et modernité dans son enseignement dans un soucis d'efficacité.",
+      "data": [
+        {
+          "name": "want",
+          "title": "Ce qu'il veut faire",
+          "content": "Construire sa pédagogie de manière efficace"
+        },
+        {
+          "name": "need",
+          "title": "Ce qu'il souhaiterait",
+          "content": "Avoir des suggestions pertinentes"
+        },
+        {
+          "name": "use",
+          "title": "Ce qu'il va utiliser",
+          "content": "La barre de recherche et les filtres"
+        },
+        {
+          "name": "block",
+          "title": "Ce qui le bloque",
+          "content": "La répétivité des informations"
+        }
+      ]
+    }
+  ]
+}

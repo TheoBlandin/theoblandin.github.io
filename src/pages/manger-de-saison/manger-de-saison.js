@@ -32,7 +32,7 @@ export default function MangerDeSaison() {
                 <Container className="container-explanations d-flex flex-column">
                     <Row justify="center">
                         <Col xl={7} xxl={6}>
-                            <div className="section d-flex flex-column">
+                            <div className="section d-flex flex-column gap-4">
                                 <div>
                                     <span className="display-S">01</span>
                                     <h1 style={{ marginTop: '-8px' }}>Benchmark</h1>
@@ -46,10 +46,10 @@ export default function MangerDeSaison() {
                         </Col>
                         <Col xl={2} xxl={3}></Col>
                     </Row>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">02</span>
                                         <h1 style={{ marginTop: '-8px' }}>Maquettages</h1>
@@ -93,10 +93,10 @@ export default function MangerDeSaison() {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section d-flex flex-column">
+                    <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
                             <Col xl={7} xxl={6}>
-                                <div className="section d-flex flex-column">
+                                <div className="section d-flex flex-column gap-4">
                                     <div>
                                         <span className="display-S">03</span>
                                         <h1 style={{ marginTop: '-8px' }}>Illustrations</h1>
@@ -133,7 +133,7 @@ export default function MangerDeSaison() {
                     </div>
                     <Row justify="center">
                         <Col xl={7} xxl={6}>
-                            <div className="section d-flex flex-column">
+                            <div className="section d-flex flex-column gap-4">
                                 <div>
                                     <span className="display-S">04</span>
                                     <h1 style={{ marginTop: '-8px' }}>Développement</h1>
@@ -149,7 +149,7 @@ export default function MangerDeSaison() {
                     </Row>
                     <Row justify="center">
                         <Col xl={7} xxl={6}>
-                            <div className="section d-flex flex-column">
+                            <div className="section d-flex flex-column gap-4">
                                 <div>
                                     <span className="display-S">05</span>
                                     <h1 style={{ marginTop: '-8px' }}>Ce que ça m'a apporté</h1>
