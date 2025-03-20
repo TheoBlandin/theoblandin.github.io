@@ -257,6 +257,7 @@ function Carousel(props) {
                                 </svg>
                             </div>
                         ))}
+
                     </Slider>
                     <div className="container-carousel-nav">
                         <button className="carousel-btn" onClick={() => slider?.current?.slickPrev()}>
@@ -268,6 +269,139 @@ function Carousel(props) {
                     </div>
                 </div>
             )
+
+
+        case 'large-desktop':
+            responsiveMobile = [
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 320,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ];
+
+            settings.slidesToShow = 2;
+            settings.responsive = responsiveMobile
+
+            return (
+                <div className="container-carousel bg-surface">
+                    <Slider ref={slider} {...settings}>
+                        {Object.values(images).map((urlImg, index) => (
+                            <div key={index} className="mockup">
+                                <svg
+                                    className="mockup-svg"
+                                    viewBox="0 0 574 344"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <foreignObject
+                                        x="0"
+                                        y="17"
+                                        width="574"
+                                        height="325"
+                                        className="mockup-content"
+                                    >
+                                        <div xmlns="http://www.w3.org/1999/xhtml" className="mockup-image-wrapper">
+                                            <img
+                                                src={urlImg}
+                                                alt="Mockup Content"
+                                            />
+                                        </div>
+                                    </foreignObject>
+                                    <rect width="573.69" height="10" fill="#2B373D" />
+                                    <path d="M0 4C0 2.89543 0.895431 2 2 2H50C51.1046 2 52 2.89543 52 4V10H0V4Z" fill="#445760" />
+                                    <path d="M50 9C50 7.89543 50.8954 7 52 7V7C53.1046 7 54 7.89543 54 9V10H50V9Z" fill="#445760" />
+                                    <path d="M52 5H55.716V9H53.858C52.8319 9 52 8.16815 52 7.142V5Z" fill="#2B373D" />
+                                    <rect width="573.69" height="10" transform="matrix(1 0 0 -1 0 19)" fill="#445760" />
+                                    <mask id="mask0_1318_73" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="47" y="4" width="4" height="4">
+                                        <rect x="47" y="4" width="4" height="4" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_1318_73)">
+                                        <path d="M48.0673 7.20888L47.834 6.97417L48.7673 6.03535L47.834 5.09652L48.0673 4.86182L49.0007 5.80064L49.934 4.86182L50.1673 5.09652L49.234 6.03535L50.1673 6.97417L49.934 7.20888L49.0007 6.27005L48.0673 7.20888Z" fill="white" />
+                                    </g>
+                                    <mask id="mask1_1318_73" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="53" y="4" width="4" height="4">
+                                        <rect x="53" y="4" width="4" height="4" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask1_1318_73)">
+                                        <path d="M54.834 6.20299H53.834V5.8677H54.834V4.86182H55.1673V5.8677H56.1673V6.20299H55.1673V7.20888H54.834V6.20299Z" fill="#959B9E" />
+                                    </g>
+                                    <mask id="mask2_1318_73" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="3" y="12" width="4" height="4">
+                                        <rect x="3" y="12" width="4" height="4" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask2_1318_73)">
+                                        <path d="M5.70495 15.7704L4.02734 14.094L5.70495 12.4175L6.00273 12.7151L4.62289 14.094L6.00273 15.4728L5.70495 15.7704Z" fill="white" />
+                                    </g>
+                                    <mask id="mask3_1318_73" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="10" y="12" width="4" height="4">
+                                        <rect x="14" y="16" width="4" height="4" transform="rotate(-180 14 16)" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask3_1318_73)">
+                                        <path d="M11.4083 12.4176L13.0859 14.094L11.4083 15.7705L11.1106 15.4729L12.4904 14.094L11.1106 12.7151L11.4083 12.4176Z" fill="#939EA3" />
+                                    </g>
+                                    <mask id="mask4_1318_73" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="17" y="12" width="4" height="4">
+                                        <rect x="17" y="12" width="4" height="4" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask4_1318_73)">
+                                        <path d="M19.1253 15.4353C18.7506 15.4353 18.4333 15.3054 18.1732 15.0455C17.9132 14.7857 17.7832 14.4685 17.7832 14.0941C17.7832 13.7197 17.9132 13.4026 18.1732 13.1427C18.4333 12.8829 18.7506 12.7529 19.1253 12.7529C19.3182 12.7529 19.5028 12.7927 19.6789 12.8724C19.855 12.952 20.006 13.0659 20.1319 13.214V12.7529H20.4674V13.9265H19.293V13.5912H19.9976C19.9082 13.4347 19.7858 13.3118 19.6307 13.2223C19.4755 13.1329 19.307 13.0882 19.1253 13.0882C18.8457 13.0882 18.608 13.186 18.4123 13.3816C18.2166 13.5772 18.1187 13.8147 18.1187 14.0941C18.1187 14.3735 18.2166 14.611 18.4123 14.8066C18.608 15.0022 18.8457 15.1 19.1253 15.1C19.3406 15.1 19.5349 15.0385 19.7083 14.9156C19.8816 14.7926 20.0032 14.6306 20.0731 14.4294H20.4254C20.3471 14.7256 20.1878 14.9673 19.9473 15.1545C19.7069 15.3417 19.4329 15.4353 19.1253 15.4353Z" fill="white" />
+                                    </g>
+                                    <rect x="32" y="11" width="367" height="6" rx="1.5" fill="#38454C" />
+                                    <mask id="mask5_1318_73" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="33" y="12" width="4" height="4">
+                                        <rect x="33" y="12" width="4" height="4" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask5_1318_73)">
+                                        <path d="M33.9993 15.7706C33.9077 15.7706 33.8292 15.7378 33.7639 15.6721C33.6987 15.6064 33.666 15.5275 33.666 15.4353V13.7588C33.666 13.6666 33.6987 13.5877 33.7639 13.522C33.8292 13.4564 33.9077 13.4235 33.9993 13.4235H34.166V13.0882C34.166 12.8563 34.2473 12.6586 34.4098 12.4952C34.5723 12.3317 34.7688 12.25 34.9993 12.25C35.2299 12.25 35.4264 12.3317 35.5889 12.4952C35.7514 12.6586 35.8327 12.8563 35.8327 13.0882V13.4235H35.9993C36.091 13.4235 36.1695 13.4564 36.2348 13.522C36.3 13.5877 36.3327 13.6666 36.3327 13.7588V15.4353C36.3327 15.5275 36.3 15.6064 36.2348 15.6721C36.1695 15.7378 36.091 15.7706 35.9993 15.7706H33.9993ZM33.9993 15.4353H35.9993V13.7588H33.9993V15.4353ZM34.9993 14.9324C35.091 14.9324 35.1695 14.8995 35.2348 14.8339C35.3 14.7682 35.3327 14.6893 35.3327 14.5971C35.3327 14.5049 35.3 14.4259 35.2348 14.3603C35.1695 14.2946 35.091 14.2618 34.9993 14.2618C34.9077 14.2618 34.8292 14.2946 34.7639 14.3603C34.6987 14.4259 34.666 14.5049 34.666 14.5971C34.666 14.6893 34.6987 14.7682 34.7639 14.8339C34.8292 14.8995 34.9077 14.9324 34.9993 14.9324ZM34.4993 13.4235H35.4993V13.0882C35.4993 12.9485 35.4507 12.8298 35.3535 12.732C35.2563 12.6342 35.1382 12.5853 34.9993 12.5853C34.8605 12.5853 34.7424 12.6342 34.6452 12.732C34.548 12.8298 34.4993 12.9485 34.4993 13.0882V13.4235Z" fill="white" />
+                                    </g>
+                                    <mask id="mask6_1318_73" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="567" y="12" width="4" height="4">
+                                        <rect x="567" y="12" width="4" height="4" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask6_1318_73)">
+                                        <path d="M569.001 15.4353C568.91 15.4353 568.831 15.4025 568.766 15.3368C568.701 15.2711 568.668 15.1922 568.668 15.1C568.668 15.0078 568.701 14.9288 568.766 14.8632C568.831 14.7975 568.91 14.7647 569.001 14.7647C569.093 14.7647 569.171 14.7975 569.237 14.8632C569.302 14.9288 569.335 15.0078 569.335 15.1C569.335 15.1922 569.302 15.2711 569.237 15.3368C569.171 15.4025 569.093 15.4353 569.001 15.4353ZM569.001 14.4294C568.91 14.4294 568.831 14.3966 568.766 14.3309C568.701 14.2652 568.668 14.1863 568.668 14.0941C568.668 14.0019 568.701 13.923 568.766 13.8573C568.831 13.7916 568.91 13.7588 569.001 13.7588C569.093 13.7588 569.171 13.7916 569.237 13.8573C569.302 13.923 569.335 14.0019 569.335 14.0941C569.335 14.1863 569.302 14.2652 569.237 14.3309C569.171 14.3966 569.093 14.4294 569.001 14.4294ZM569.001 13.4235C568.91 13.4235 568.831 13.3907 568.766 13.325C568.701 13.2594 568.668 13.1804 568.668 13.0882C568.668 12.996 568.701 12.9171 568.766 12.8514C568.831 12.7858 568.91 12.7529 569.001 12.7529C569.093 12.7529 569.171 12.7858 569.237 12.8514C569.302 12.9171 569.335 12.996 569.335 13.0882C569.335 13.1804 569.302 13.2594 569.237 13.325C569.171 13.3907 569.093 13.4235 569.001 13.4235Z" fill="white" />
+                                    </g>
+                                </svg>
+                            </div>
+                        ))}
+
+                    </Slider>
+                    <div className="container-carousel-nav">
+                        <button className="carousel-btn" onClick={() => slider?.current?.slickPrev()}>
+                            <ChevronBack className="icon-dark carousel-nav-icon" />
+                        </button>
+                        <button className="carousel-btn" onClick={() => slider?.current?.slickNext()}>
+                            <ChevronForward className="icon-dark carousel-nav-icon" />
+                        </button>
+                    </div>
+                </div>
+            )
+
     }
 
 }

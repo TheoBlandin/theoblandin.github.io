@@ -192,27 +192,27 @@ export default function About() {
                                     <ul>
                                         <li>
                                             <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">
-                                                <u>[Site web] Contrast checker</u> <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
+                                                [Site web] Contrast checker <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://app.contrast-finder.org/?lang=fr" target="_blank" rel="noopener noreferrer">
-                                                <u>[Site web] Contrast finder</u> <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
+                                                [Site web] Contrast finder <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=fr" target="_blank" rel="noopener noreferrer">
-                                                <u>[Extension] Lighthouse</u> <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
+                                                [Extension] Lighthouse <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_blank" rel="noopener noreferrer">
-                                                <u>[Site web] All WCAG 2.1 Understanding Docs</u> <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
+                                                [Site web] All WCAG 2.1 Understanding Docs <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.figma.com/community/plugin/748533339900865323/contrast" target="_blank" rel="noopener noreferrer">
-                                                <u>[Plugin Figma] Contrast</u> <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
+                                                [Plugin Figma] Contrast <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>open_in_new</span>
                                             </a>
                                         </li>
                                     </ul>
