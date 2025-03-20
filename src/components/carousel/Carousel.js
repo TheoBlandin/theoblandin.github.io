@@ -48,7 +48,7 @@ function Carousel(props) {
     const images = getProjectImages(project.linkName);
     var responsiveMobile = []
     var settings = {
-        dots: false,
+        dots: true,
         speed: 300, // duration in ms
         slidesToScroll: 1,
         centerMode: true,

@@ -47,7 +47,7 @@ html {
   --yellow-light: #F7E3B1;
   --orange: #F08845;
   --orange-light: #FDBF8F;
-  --green: #20A392;
+  --green: #1DB79D;
   --green-light: #92D1C9;
   --blue: #C6DEF1;
   --manger-de-saison: #E4F2E4;
@@ -71,7 +71,8 @@ a {
   color: var(--dark);
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -119,7 +120,8 @@ ul {
     font-weight: bold;
   }
 
-  .display-S, h2 {
+  .display-S,
+  h2 {
     font-size: 1.25rem;
     margin: 0;
     font-weight: 400;
@@ -167,7 +169,8 @@ ul {
     font-weight: bold;
   }
 
-  .display-S, h2 {
+  .display-S,
+  h2 {
     font-size: 1.625rem;
     margin: 0;
     font-weight: 400;

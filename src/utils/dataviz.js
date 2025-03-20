@@ -24,6 +24,19 @@ const theme = {
             "outlineWidth": 0,
             "outlineColor": "transparent"
         }
+    },
+    "tooltip": {
+        "wrapper": {},
+        "container": {
+            "background": "#FCFCFC",
+            "color": "#201708",
+            "fontSize": 14
+        },
+        "basic": {},
+        "chip": {},
+        "table": {},
+        "tableCell": {},
+        "tableCellValue": {}
     }
 };
 

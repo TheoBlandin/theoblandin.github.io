@@ -42,6 +42,7 @@
 
     .features-container {
         gap: 16px;
+        width: 85%;
     }
 
     .container-want {

@@ -4,6 +4,7 @@ import About from './pages/about/about'
 import Home from './pages/home/home'
 import MangerDeSaison from './pages/manger-de-saison/manger-de-saison'
 import SWAP from './pages/swap/swap'
+import BorneOrange from './pages/borne-orange/borne-orange'
 import { setConfiguration } from 'react-grid-system';
 import "./fonts/MADE_Sunflower.otf";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
@@ -45,6 +46,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/manger-de-saison" element={<MangerDeSaison />} />
           <Route path="/swap" element={<SWAP />} />
+          <Route path="/borne-orange" element={<BorneOrange />} />
         </Routes>
         <Footer />
       </div>

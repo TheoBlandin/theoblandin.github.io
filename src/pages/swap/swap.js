@@ -52,25 +52,25 @@ export default function Swap() {
     }, []);
 
     const data01 = [
-        { id: 'Lycée professionel', value: 3 },
-        { id: 'BTS', value: 1 },
-        { id: 'Lycée général', value: 2 },
+        { id: 'Lycée professionel ', value: 3 },
+        { id: 'BTS ', value: 1 },
+        { id: 'Lycée général ', value: 2 },
     ];
 
     const data02 = [
-        { id: 'Contractuel', value: 1 },
-        { id: 'Titulaire', value: 5 },
+        { id: 'Contractuel ', value: 1 },
+        { id: 'Titulaire ', value: 5 },
     ];
 
     const data03 = [
-        { id: 'Privée', value: 1 },
-        { id: 'Public', value: 5 },
+        { id: 'Privée ', value: 1 },
+        { id: 'Public ', value: 5 },
     ];
 
     const data04 = [
-        { id: '0-1 an', value: 1 },
-        { id: '5-10 ans', value: 1 },
-        { id: '10+ ans', value: 4 },
+        { id: '0-1 an ', value: 1 },
+        { id: '5-10 ans ', value: 1 },
+        { id: '10+ ans ', value: 4 },
     ];
 
     const words = [
@@ -100,7 +100,7 @@ export default function Swap() {
         { value: 'Travail payant sur le long terme', count: 3 },
     ]
 
-    const COLORS = ['#F08845', '#E9C46A', '#20A392'];
+    const COLORS = ['#F08845', '#E9C46A', '#1DB79D'];
 
     return (
         <>
@@ -493,9 +493,7 @@ export default function Swap() {
                                         <h1 style={{ marginTop: '-8px' }}>Prototypage</h1>
                                     </div>
                                     <div className="ps-4">
-                                        <p className="mb-2">À partir du zoning et du Design System, une maquette interactive haute fidélité, reproduisant au plus près le fonctionnement souhaité pour <i>SWAP</i>, a été élaborée. Elle permet de naviguer entre les différentes pages du site et d'interagir avec divers éléments.</p>
-
-                                        <p className="mb-2">Une démonstration scénarisée a également été préparée pour la présentation de ce projet en soutenance. La maquette Figma est disponible sur ce lien.</p>
+                                        <p className="mb-2">À partir du zoning et du Design System, une maquette interactive haute fidélité a été élaborée, émulant au mieux le fonctionnement imaginé pour <i>SWAP</i>. Elle permet de naviguer entre les différentes pages du site et d'interagir avec divers éléments.</p>
                                     </div>
                                 </div>
                             </Col>

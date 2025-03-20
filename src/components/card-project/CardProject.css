@@ -3,6 +3,10 @@
     overflow: hidden;
 }
 
+.card:hover .thumbnail {
+    transform: scale(1.05);
+}
+
 .project-title {
     margin-top: 32px;
 }
@@ -15,6 +19,7 @@
     display: flex;
     height: 100%;
     filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.25));
+    transition: transform 0.3s ease-in-out;
 }
 
 .thumbnail.mobile,

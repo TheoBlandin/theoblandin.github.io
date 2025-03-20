@@ -3,12 +3,14 @@ import './PresentationProject.css';
 import { Container, Row, Col } from 'react-grid-system';
 import { ReactComponent as GitHub } from './../../assets/icons/github.svg'
 import { ReactComponent as Figma } from './../../assets/icons/figma_mono.svg'
+import { ReactComponent as Video } from './../../assets/icons/video.svg'
 
 function PresentationProject(props) {
     const project = props.project
     const icons = {
         'github': <GitHub className="icon-L icon-dark" />,
-        'figma': <Figma className="icon-L icon-dark" />
+        'figma': <Figma className="icon-L icon-dark" />,
+        'video': <Video className="icon-L icon-dark" />
     }
 
     return (

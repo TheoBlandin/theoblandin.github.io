@@ -61,7 +61,7 @@ export default function About() {
 
                         <p className="mb-2">J'apporte une attention toute particulière à l'accessibilité numérique, spécialité que j'ai pu explorer lors de mon stage chez Vially à Dublin, une entreprise spécialisé dans le domaine.</p>
 
-                        <p className="mb-2">Actuellement, je participe à la création d'une startup au sein de l'incubateur de startup de l'INRIA à Rennes. Cette startup est la suite directe du projet de recherche A4LL qui vise à employer l'IA afin d'analyser les écrits des apprenants en langues et d'ainsi fournir une analyse détaillée sous forme de tableau de bord. J'y occupe un travail d'UX Designer et de Développeur Front-End.</p>
+                        <p className="mb-2">Depuis janvier 2025, je travaille à la création d'une startup au sein de l'INRIA Startup Studio à Rennes, où nous développons une solution numérique à destination des enseignants de langue. Cette solution utilise l'intelligence artificielle pour fournir un diagnostic linguistique détaillé des écrits des apprenants d'une classe, permettant ainsi à l'enseignant d'adopter sa pédagogie à ses élèves. J'occupe le rôle d'UX Designer et de Développeur Front-End au sein de ce projet.</p>
 
                         <a href="/assets/CV_Theo_Blandin.pdf" aria-label="Visualiser mon CV"
                             target="_blank" rel="noopener noreferrer">
@@ -86,31 +86,31 @@ export default function About() {
                                 <img src={DesignTools} className="category-tools-icon icon-dark" alt="" />
                                 <span className="lead bold">Design</span>
                                 <div className="container-chips-tools d-flex flex-wrap justify-content-center">
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Figma} className="icon-tools" alt="" />
                                         Figma
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={DesignThinking} className="icon-tools" alt="" />
                                         Design thinking
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Empathy} className="icon-tools" alt="" />
                                         Empathie
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Inkscape} className="icon-tools" alt="" />
                                         Inkscape
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Notebook} className="icon-tools" alt="" />
                                         Mon carnet
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Canva} className="icon-tools" alt="" />
                                         Canva
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Creativity} className="icon-tools" alt="" />
                                         Créativité
                                     </div>
@@ -122,35 +122,35 @@ export default function About() {
                                 <img className="category-tools-icon icon-dark" src={DevTools} alt="" />
                                 <span className="lead bold">Développement</span>
                                 <div className="container-chips-tools d-flex flex-wrap justify-content-center">
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={HTML} className="icon-tools" alt="" />
                                         HTML
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={CSS} className="icon-tools" alt="" />
                                         CSS
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={JavaScript} className="icon-tools" alt="" />
                                         JavaScript
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Angular} className="icon-tools" alt="" />
                                         Angular
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={ReactLogo} className="icon-tools" alt="" />
                                         React
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Bootstrap} className="icon-tools" alt="" />
                                         Bootstrap
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Flutter} className="icon-tools" alt="" />
                                         Flutter
                                     </div>
-                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                    <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Responsive} className="icon-tools" alt="" />
                                         Responsive design
                                     </div>
@@ -165,23 +165,23 @@ export default function About() {
                                     <img className="category-tools-icon icon-dark" src={AccessibilityTools} alt="" />
                                     <span className="lead bold">Accessibilité numérique</span>
                                     <div className="container-chips-tools d-flex flex-wrap justify-content-center">
-                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                             <img src={WCAG} className="icon-tools" alt="" />
                                             WCAG
                                         </div>
-                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                             <img src={Audit} className="icon-tools" alt="" />
                                             Audit d'accessibilité
                                         </div>
-                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                             <img src={RGAA} className="icon-tools" alt="" />
                                             RGAA
                                         </div>
-                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                             <img src={Analysis} className="icon-tools" alt="" />
                                             Esprit d'analyse
                                         </div>
-                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-3 py-2 br-4">
+                                        <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                             <img src={Disabilities} className="icon-tools" alt="" />
                                             Connaissance des handicaps
                                         </div>
