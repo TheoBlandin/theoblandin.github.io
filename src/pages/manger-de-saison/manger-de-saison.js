@@ -12,7 +12,8 @@ import Part02_Illu02 from './../../assets/illustrations/manger-de-saison/part02_
 import Part02_Illu03 from './../../assets/illustrations/manger-de-saison/part02_illu03.png';
 import Part03_Illu01 from './../../assets/illustrations/manger-de-saison/part03_illu01.png';
 import { ReactComponent as Forward } from './../../assets/icons/forward.svg'
-import ModalImage from "react-modal-image";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 export default function MangerDeSaison() {
     useEffect(() => {
@@ -65,27 +66,34 @@ export default function MangerDeSaison() {
                         <Row justify="center">
                             <Col xl={9} className="d-flex align-items-center justify-content-center gap-20 multiple-illu-container w-100">
                                 <div className="d-flex flex-column align-items-center gap-2 d-flex flex-column align-items-cneter flex-1">
-                                    <img
-                                        src={Part02_Illu01}
-                                        alt="Maquette sur papier de l'application avec annotations"
-                                        className="w-100"
-                                    />
+                                    <Zoom zoomMargin={32}>
+                                        <img
+                                            alt="Maquette sur papier de l'application avec annotations"
+                                            src={Part02_Illu01}
+                                            className="w-100"
+                                        />
+                                    </Zoom>
                                     <span aria-hidden="true" className="small">
                                         Maquette sur papier
                                     </span>
                                 </div>
                                 <div className="d-flex flex-column align-items-center gap-2 flex-1">
                                     <div className="double-illu d-flex gap-20 w-100">
-                                        <img
-                                            src={Part02_Illu02}
-                                            alt="Maquette sur Figma de l'écran d'accueil de l'application"
-                                            className="w-100"
-                                        />
-                                        <img
-                                            src={Part02_Illu03}
-                                            alt="Maquette sur Figma de l'écran d'accueil de l'application avec un modal affichant les informations de l'élément sélectionné"
-                                            className="w-100"
-                                        />
+                                        <Zoom zoomMargin={32} className="illu-of-double-illu">
+                                            <img
+                                                alt="Maquette sur Figma de l'écran d'accueil de l'application"
+                                                src={Part02_Illu02}
+                                                className="w-100"
+                                            />
+                                        </Zoom>
+
+                                        <Zoom zoomMargin={32} className="illu-of-double-illu">
+                                            <img
+                                                alt="Maquette sur Figma de l'écran d'accueil de l'application avec un modal affichant les informations de l'élément sélectionné"
+                                                src={Part02_Illu03}
+                                                className="w-100"
+                                            />
+                                        </Zoom>
                                     </div>
                                     <span aria-hidden="true" className="small">
                                         Maquette sur Figma
@@ -113,13 +121,13 @@ export default function MangerDeSaison() {
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <ModalImage
-                                    small={Part03_Illu01}
-                                    large={Part03_Illu01}
-                                    alt="Création d'une illustration sur Inkscape"
-                                    hideDownload="true"
-                                    style={{ width: '100%', zIndex: 9999 }}
-                                />
+                                <Zoom zoomMargin={32}>
+                                    <img
+                                        alt="Création d'une illustration sur Inkscape"
+                                        src={Part03_Illu01}
+                                        className="w-100"
+                                    />
+                                </Zoom>
                                 <span aria-hidden="true" className="small">
                                     Création d'une illustration sur Inkscape
                                 </span>
