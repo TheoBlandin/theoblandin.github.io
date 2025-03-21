@@ -12,8 +12,8 @@ import { useEffect } from "react";
 
 
 setConfiguration({
-  breakpoints: [320, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl 
-  containerWidths: [300, 450, 738, 984, 1180, 1300], 
+  breakpoints: [360, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl 
+  containerWidths: [350, 450, 738, 984, 1180, 1300], 
   gutterWidth: 20,
   gridColumns: 12,
 });

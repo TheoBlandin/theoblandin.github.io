@@ -1,7 +1,7 @@
 {
     "displayName": "Borne de sécurité mobile",
     "linkName": "borne-orange",
-    "device": "large-desktop",
+    "device": "hybrid",
     "intro": [
         "J'ai eu l'occasion de réaliser mon stage de fin d'études chez Orange Innovation, la filiale R&D du groupe Orange. On m'y a confié le projet de refonte d'une borne d'audit de sécurité mobile, développé par l'équipe sécurité dans laquelle j'étais intégré.",
         "La borne correspond à un écran d'ordinateur relié à un Raspberry Pi. Pour auditer un appareil, on va connecter celui-ci au réseau Wi-Fi de la borne à travers une Livebox reliée au Raspberry Pi. Une fois l'appareil connecté, le Raspberry Pi va intercepter les communications entre l'appareil et Internet. Les informations interceptées sont ensuite analysées et formatées avant d'être affichées sur l'écran de la borne à destination de l'utilisateur. Les informations sont mises à jour au fur et à mesure des activités de l'appareil connecté, permettant une analyse en direct.",

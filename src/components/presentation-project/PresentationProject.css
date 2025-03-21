@@ -20,6 +20,10 @@
     .sub-info-col {
         flex-direction: row;
     }
+
+    .alinea {
+        padding-left: 0px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -30,6 +34,10 @@
 
     .info-col, .sub-info-col {
         flex-direction: row;
+    }
+
+    .alinea {
+        padding-left: 16px;
     }
 }
 

@@ -122,7 +122,7 @@ export default function Swap() {
                                         <span className="display-S">01</span>
                                         <h1 style={{ marginTop: '-8px' }}>Planification</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Dans un premier temps, nous avons étudié notre population cible pour identifier les différentes problématiques rencontrées dans la vie professionnelle des enseignants. Nous avons par ce biais identifié 8 sujets pertinents à aborder avec nos utilisateurs.</p>
 
                                         <p className="mb-2">Pour cela, nous avons pris contact avec plusieurs établissements scolaires de la ville du Mans, dans le but de privilégier les entretiens en présentiel. Au total, 10 établissements ont été contacté.</p>
@@ -202,7 +202,7 @@ export default function Swap() {
                                         <span className="display-S">02</span>
                                         <h1 style={{ marginTop: '-8px' }}>Entretiens utilisateurs</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Au total, 5 entretiens utilisateurs avec 6 utilisateurs en tout ont pu être réalisé (un entretien était un double entretien). Ces entretiens se sont déroulés en présentiel, avec une personne chargé de la prise de note et une personne chargée de mener la discussion avec le ou les utilisateurs. </p>
 
                                         <p className="mb-2">Ces entretiens se sont basés sur la trame d'entretien rédigé à partir des sujets précédemment identifiés, permettant d'aborder différents thèmes pouvant donner lieu à l'apparition de pain points. En plus de suivre la trame, des informations ont été relevées sur chacun des interviewés afin de mettre en perspective les données récoltées.</p>
@@ -308,7 +308,7 @@ export default function Swap() {
                                         <span className="display-S">03</span>
                                         <h1 style={{ marginTop: '-8px' }}>Analyse</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Les différents entretiens utilisateurs ont été analysés afin d'identifier une problématique commune. Chaque prise de note a été examinée afin de mettre en évidence les thèmes récurrents, représentés sous forme de nuage de mots. Des verbatims ont également été extraits pour illustrer et appuyer les observations.</p>
 
                                         <p className="mb-2">La problématique retenue est la suivante : <b>Comment pourrions-nous favoriser la collaboration et le partage de ressources pédagogiques entre les enseignants ?</b></p>
@@ -341,7 +341,7 @@ export default function Swap() {
                                         <span className="display-S">04</span>
                                         <h1 style={{ marginTop: '-8px' }}>Idéation</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">L'idéation s'est faite en binôme sous forme d'un brainstorming. Le but étant de répondre à la problématique précédemment établie à travers une solution numérique. C'est à ce moment là qu'est né <i>SWAP</i>.</p>
 
                                         <p className="mb-2">La contrainte d'une solution numérique découlait directement de notre contexte : en tant qu'étudiants en école d'informatique, une maquette d'application numérique était attendue de notre part. Sans cette exigence, la solution aurait pu prendre une tout autre forme.</p>
@@ -356,7 +356,7 @@ export default function Swap() {
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
                                 <img
                                     src={Part04_Illu01}
-                                    alt="Photo du brainstorming du projet réalisé sur un tableau blanc."
+                                    alt="Brainstorming du projet réalisé sur un tableau blanc."
                                     className="w-100"
                                 />
                                 <span aria-hidden="true" className="small">
@@ -385,8 +385,8 @@ export default function Swap() {
                                         <span className="display-S">05</span>
                                         <h1 style={{ marginTop: '-8px' }}>Personas</h1>
                                     </div>
-                                    <div className="ps-4">
-                                        <p className="mb-2">Trois personas furent créés, se basant sur les profils rencontrés lors des entretiens utilisateurs. Chacun se focalise sur une des fonctionnalités clés de SWAP.</p>
+                                    <div className="alinea">
+                                        <p className="mb-2">Trois personas furent créés, se basant sur les profils rencontrés lors des entretiens utilisateurs. Chacun se focalise sur une des fonctionnalités clés de <i>SWAP</i>.</p>
                                     </div>
                                 </div>
                             </Col>
@@ -414,7 +414,7 @@ export default function Swap() {
                                         <span className="display-S">06</span>
                                         <h1 style={{ marginTop: '-8px' }}>Parcours utilisateur</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Voici un parcours utilisateur simplifié, illustrant les principales fonctionnalités et étapes de navigation sur SWAP.</p>
 
                                         <p className="mb-2">Les actions effectuées par l'utilisateur sont représentées en orange avec des angles droits, tandis que les réponses du système apparaissent en jaune avec des angles arrondis. Les actions nécessitant la connexion de l'utilisateur sont mises en évidence par un encadré rouge.</p>
@@ -444,7 +444,7 @@ export default function Swap() {
                                         <span className="display-S">07</span>
                                         <h1 style={{ marginTop: '-8px' }}>Wireframes</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Les wireframes ont d'abord été dessinés sur papier, puis formalisé et approfondi sur Figma.</p>
 
                                         <p className="mb-2">Chacun d'entre nous a esquissé les pages principales de SWAP (Accueil, Résultats de recherche, etc.), puis nous avons confronté nos idées pour en créer une troisième version, intégrant les meilleurs éléments de chacune.</p>
@@ -462,7 +462,7 @@ export default function Swap() {
                                         <span className="display-S">08</span>
                                         <h1 style={{ marginTop: '-8px' }}>Design System</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Le Design System a été conçu pour offrir une maquette proche d'un rendu professionnel, de tel manière à faciliter les itérations d'un potentiel graphiste externe tout en assurant la cohérence visuelle du design.</p>
 
                                         <p className="mb-2">Inspiré du Design System de Google, il reprend des codes visuels largement connus, ce qui le rend plus accessible pour une majorité d'utilisateurs. Comme notre produit s'adresse à un public varié ce choix nous a paru être le plus pertinent.</p>
@@ -492,7 +492,7 @@ export default function Swap() {
                                         <span className="display-S">09</span>
                                         <h1 style={{ marginTop: '-8px' }}>Prototypage</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">À partir du zoning et du Design System, une maquette interactive haute fidélité a été élaborée, émulant au mieux le fonctionnement imaginé pour <i>SWAP</i>. Elle permet de naviguer entre les différentes pages du site et d'interagir avec divers éléments.</p>
                                     </div>
                                 </div>
@@ -508,7 +508,7 @@ export default function Swap() {
                                         <span className="display-S">10</span>
                                         <h1 style={{ marginTop: '-8px' }}>Ce que ça m'a apporté</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Ce projet a représenté pour moi une véritable immersion dans la méthode du Design Thinking, me permettant de découvrir chaque étape de manière concrète et active. J'ai eu l'opportunité d'interagir directement avec de vrais utilisateurs, d'apprendre à les comprendre et de concevoir une solution en réponse à leurs besoins, en suivant le principe fondamental suivant : <b>s'il n'y a pas de problème, il n'y a pas de solution.</b></p>
 
                                         <p className="mb-2">J'ai également créé mon premier Design System pour <i>SWAP</i>, ce qui m'a permis de perfectionner ma maîtrise de Figma. Enfin, ce projet m'a offert l'occasion d'apprendre à présenter mon travail de façon claire, synthétique et pédagogique, y compris à un public parfois peu initié, que ce soit à travers des rapports écrits ou des présentations orales.</p>

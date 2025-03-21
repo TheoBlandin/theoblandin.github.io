@@ -37,7 +37,7 @@ export default function MangerDeSaison() {
                                     <span className="display-S">01</span>
                                     <h1 style={{ marginTop: '-8px' }}>Benchmark</h1>
                                 </div>
-                                <div className="ps-4">
+                                <div className="alinea">
                                     <p className="mb-2">Il existe plusieurs applications et sites web similaires à Manger de saison. J'en ai analysé plusieurs, principalement francophones, pour avoir une vision claire de l'offre actuelle.</p>
 
                                     <p className="mb-2">Les retours utilisateurs sur ces applications mobiles ont également été pris en compte pour enrichir mon étude.</p>
@@ -54,7 +54,7 @@ export default function MangerDeSaison() {
                                         <span className="display-S">02</span>
                                         <h1 style={{ marginTop: '-8px' }}>Maquettages</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">La première version de la maquette de l'application a été réalisée sur papier lors de la phase d'idéation, puis transférée sur Figma. Elle n'est pas destinée à être reproduite exactement à l'identique, mais plutôt à servir de point de départ. Au fil du développement, le design s'est affiné parallèlement à l'évolution de mes compétences.</p>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@ export default function MangerDeSaison() {
                                         <span className="display-S">03</span>
                                         <h1 style={{ marginTop: '-8px' }}>Illustrations</h1>
                                     </div>
-                                    <div className="ps-4">
+                                    <div className="alinea">
                                         <p className="mb-2">Les illustrations des différents fruits et légumes recensés dans le calendrier furent réalisées sous forme de dessin vectoriel à laide du logiciel Inkscape. L'objectif étant de créer un design attractif pour l'utilisateur, tout en lui permettant de reconnaître facilement chaque aliment.</p>
 
                                         <p className="mb-2">En attendant que l'ensemble des illustrations soit complété, des émojis sont employés, ou un point d'interrogation lorsque aucun émoji n'est disponible dans la bibliothèque utilisée.</p>
@@ -138,7 +138,7 @@ export default function MangerDeSaison() {
                                     <span className="display-S">04</span>
                                     <h1 style={{ marginTop: '-8px' }}>Développement</h1>
                                 </div>
-                                <div className="ps-4">
+                                <div className="alinea">
                                     <p className="mb-2"><i>Manger de Saison</i> est ma deuxième application mobile développée avec Flutter, destinée aux téléphones Android.</p>
 
                                     <p className="mb-2">Les données sur les aliments ainsi que les préférences des utilisateurs sont stockées localement sur l'appareil, garantissant un accès continu aux informations tout en réduisant les coûts.</p>
@@ -154,7 +154,7 @@ export default function MangerDeSaison() {
                                     <span className="display-S">05</span>
                                     <h1 style={{ marginTop: '-8px' }}>Ce que ça m'a apporté</h1>
                                 </div>
-                                <div className="ps-4">
+                                <div className="alinea">
                                     <p className="mb-2"><i>Manger de saison</i> est ma deuxième application mobile, un projet qui m'a permis de progresser à la fois en développement, en approfondissant mes compétences en Flutter, et en design, notamment grâce à la création des illustrations des fruits et légumes.</p>
 
                                     <p className="mb-2">Ce travail d'illustration, toujours en cours, m'a permis de mieux maîtriser le logiciel Inkscape tout en développant mon propre style graphique. L'application a également traversé plusieurs refontes, reflétant l'évolution continue de mes compétences en design d'interface.</p>

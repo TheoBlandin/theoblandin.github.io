@@ -36,7 +36,7 @@ export default function Home() {
                                 </h2>
                             </div>
                         </Col>
-                        <Col xl={6} style={{ textAlign: 'center' }}>
+                        <Col xl={5} xxl={6} style={{ textAlign: 'center' }}>
                             <img className="picture w-100" src={Picture} alt="Auto-portrait dessiné numériquement" />
                         </Col>
                     </Row>

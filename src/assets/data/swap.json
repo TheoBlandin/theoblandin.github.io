@@ -1,7 +1,7 @@
 {
     "displayName": "SWAP",
     "linkName": "swap",
-    "device": "small-desktop",
+    "device": "desktop",
     "intro": [
         "Au cours de ma cinquième et dernière année d'études à l'ENSIM, nous avons été amenés à réaliser un projet au cours de notre dernier semestre d'études. Mon binôme et moi avons décidé de faire de ce projet une occasion d'appliquer étape par étape et de manière concrète la démarche Design Thinking étudiée en cours.",
         "Pour cela, nous avons décidé de nous concentrer sur l'étude d'une population spécifique : les professeurs de collège et de lycée général, technologique et professionnel (allant jusqu'au BTS). Notre but à travers l'étude de cette communauté est d'identifier une problématique à laquelle il serait possible de répondre via une solution numérique.",

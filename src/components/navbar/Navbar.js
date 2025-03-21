@@ -29,14 +29,12 @@ function Navbar() {
 
     return (
         <nav role="navigation" className={`navigation ${menuOpen ? 'open' : ''} ${scrolled ? 'scrolled' : ''}`}>
-            <Container>
-                <Row className="desktop-nav d-flex justify-content-right">
-                    <Link to="/" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Accueil</Link>
-                    <a href="/#projects" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Mes projets</a>
-                    <Link to="/about" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>À propos</Link>
-                </Row>
-            </Container>
-            <div className="mobile-nav w-100 px-4">
+            <div className="desktop-nav d-flex px-4 justify-content-right">
+                <Link to="/" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Accueil</Link>
+                <a href="/#projects" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>Mes projets</a>
+                <Link to="/about" className={`nav-link ${scrolled ? 'scrolled' : ''}`}>À propos</Link>
+            </div>
+            <div className="mobile-nav w-100 px-3">
                 <button className="burger-menu" onClick={toggleMenu} aria-label="Ouvrir le menu de navigation">
                     {menuOpen ?
                         <Close style={{ fill: 'var(--light)', width: '32px', height: '32px' }} />

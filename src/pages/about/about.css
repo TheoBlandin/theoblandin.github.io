@@ -40,7 +40,6 @@
 }
 
 .tools-accessibility {
-    padding: 16px;
     gap: 20px;
 }
 
@@ -104,5 +103,13 @@
 
     .photos-col, .photos-row {
         gap: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .tools-accessibility {
+        padding: 16px;
+        flex-direction: row;
     }
 }

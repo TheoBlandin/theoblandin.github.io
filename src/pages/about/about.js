@@ -160,7 +160,7 @@ export default function About() {
                     </Row>
                     <Row justify="center">
                         <Col xl={10}>
-                            <div className="tools-accessibility bg-green-light d-flex flex-row">
+                            <div className="tools-accessibility bg-green-light d-flex">
                                 <div className="tools d-flex flex-column align-items-center gap-4">
                                     <img className="category-tools-icon icon-dark" src={AccessibilityTools} alt="" />
                                     <span className="lead bold">Accessibilité numérique</span>
