@@ -10,12 +10,15 @@ import Personas from './../../assets/data/personas.json';
 import { Container, Row, Col } from 'react-grid-system';
 import { ResponsivePie } from '@nivo/pie'
 import { TagCloud } from 'react-tagcloud'
-import Part04_Illu01 from './../../assets/illustrations/swap/part04_illu01.png';
 import Part04_Illu02 from './../../assets/illustrations/swap/part04_illu02.png';
 import Part06_Illu01 from './../../assets/illustrations/swap/part06_illu01.png';
+import Part07_Illu01 from './../../assets/illustrations/swap/part07_illu01.png'
+import Part07_Illu02 from './../../assets/illustrations/swap/part07_illu02.png'
 import Part08_Illu01 from './../../assets/illustrations/swap/part08_illu01.png';
 import { ReactComponent as Forward } from './../../assets/icons/forward.svg'
 import theme from './../../utils/dataviz.js';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 
 export default function Swap() {
@@ -136,24 +139,24 @@ export default function Swap() {
                                 <div className="d-flex flex-column plan-container ">
                                     <div className="plan-row d-flex">
                                         <div className="plan-sub-row flex-1 d-flex">
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Le métier</span>
                                                 <span className="text-center">Ressenti face au métier, expériences</span>
                                             </div>
 
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Les élèves</span>
                                                 <span className="text-center">Élèves en difficulté, isolés et/ou atypiques</span>
                                             </div>
                                         </div>
 
                                         <div className="plan-sub-row flex-1 d-flex">
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Vie pro/perso</span>
                                                 <span className="text-center">Horaires, charge de travail en dehors des cours</span>
                                             </div>
 
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Programme</span>
                                                 <span className="text-center">
                                                     Préparation des cours, programme scolaire</span>
@@ -163,25 +166,25 @@ export default function Swap() {
 
                                     <div className="plan-row d-flex">
                                         <div className="plan-sub-row flex-1 d-flex">
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Illectronisme</span>
                                                 <span className="text-center">
                                                     Enseignement et utilisation du numérique</span>
                                             </div>
 
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">Les parents</span>
                                                 <span className="text-center">Contact avec les parents, réunions parent-prof</span>
                                             </div>
                                         </div>
 
                                         <div className="plan-sub-row flex-1 d-flex">
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">RPS</span>
                                                 <span className="text-center">Risques psychosociaux, accompagnement</span>
                                             </div>
 
-                                            <div className="px-4 py-4 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
+                                            <div className="px-3 py-3 d-flex flex-column gap-3 align-items-center b-solid bw-2 b-dark flex-1" style={{ maxWidth: '215px', minWidth: '192px' }}>
                                                 <span className="px-4 py-3 d-flex flex-row justify-content-center bg-yellow">L'attention</span>
                                                 <span className="text-center">Attention des élèves, participation en classe</span>
                                             </div>
@@ -355,18 +358,6 @@ export default function Swap() {
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
                                 <img
-                                    src={Part04_Illu01}
-                                    alt="Brainstorming du projet réalisé sur un tableau blanc."
-                                    className="w-100"
-                                />
-                                <span aria-hidden="true" className="small">
-                                    Résultat du brainstorming
-                                </span>
-                            </Col>
-                        </Row>
-                        <Row justify="center">
-                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <img
                                     src={Part04_Illu02}
                                     alt="Mind map d'idéation reprenant les idées du brainstorming. Il y a 4 noeuds principaux : Formulaire d'ajout, Ressource, Recherche et Profil. Ceux-ci sont reliés entre eux par de plus petites fonctionnalités."
                                     className="w-100"
@@ -453,6 +444,32 @@ export default function Swap() {
                             </Col>
                             <Col xl={2} xxl={3}></Col>
                         </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex align-items-center justify-content-center gap-20 multiple-illu-container w-100">
+                                <div className="d-flex flex-column align-items-center gap-2">
+                                    <div className="double-illu align-items-end d-flex gap-20 w-100">
+                                        <Zoom zoomMargin={32}>
+                                            <img
+                                                alt="Wireframe de la page d'accueil pour un format desktop"
+                                                src={Part07_Illu01}
+                                                className="w-100"
+                                            />
+                                        </Zoom>
+
+                                        <Zoom zoomMargin={32}>
+                                            <img
+                                                alt="Wireframe de la page d'accueil pour un format mobile"
+                                                src={Part07_Illu02}
+                                                className="w-100"
+                                            />
+                                        </Zoom>
+                                    </div>
+                                    <span aria-hidden="true" className="small">
+                                        Wireframes desktop et mobile de la page d'accueil
+                                    </span>
+                                </div>
+                            </Col>
+                        </Row>
                     </div>
                     <div className="section d-flex flex-column gap-4">
                         <Row justify="center">
@@ -473,11 +490,13 @@ export default function Swap() {
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <img
-                                    src={Part08_Illu01}
-                                    alt="Extrait du Design System reprenant les éléments principaux"
-                                    className="w-100"
-                                />
+                                <Zoom zoomMargin={32}>
+                                    <img
+                                        alt="Extrait du Design System reprenant les éléments principaux"
+                                        src={Part08_Illu01}
+                                        className="w-100"
+                                    />
+                                </Zoom>
                                 <span aria-hidden="true" className="small">
                                     Extrait du Design System
                                 </span>

@@ -11,7 +11,7 @@ import DesignThinking from './../../assets/icons/design-thinking.svg'
 import Empathy from './../../assets/icons/empathy.svg'
 import Inkscape from './../../assets/icons/inkscape.svg'
 import Notebook from './../../assets/icons/notebook.svg'
-import Canva from './../../assets/icons/canva.svg'
+import Survey from './../../assets/icons/survey.svg'
 import Creativity from './../../assets/icons/creativity.svg'
 import HTML from './../../assets/icons/html.svg'
 import CSS from './../../assets/icons/css.svg'
@@ -103,12 +103,12 @@ export default function About() {
                                         Inkscape
                                     </div>
                                     <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
-                                        <img src={Notebook} className="icon-tools" alt="" />
-                                        Mon carnet
+                                        <img src={Survey} className="icon-tools" alt="" />
+                                        Entretiens utilisateurs
                                     </div>
                                     <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
-                                        <img src={Canva} className="icon-tools" alt="" />
-                                        Canva
+                                        <img src={Notebook} className="icon-tools" alt="" />
+                                        Mon carnet
                                     </div>
                                     <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Creativity} className="icon-tools" alt="" />

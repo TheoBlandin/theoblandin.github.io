@@ -46,7 +46,7 @@ function Carousel(props) {
             if (cleanImagePath.includes('/')) {
                 let imageType = cleanImagePath.split('/')[0]
 
-                if (images[imageType] == undefined) {
+                if (images[imageType] === undefined) {
                     images[imageType] = []
                 }
                 images[imageType].push(imagesContext(imagePath))
@@ -116,7 +116,7 @@ function Carousel(props) {
                 {
                     breakpoint: 1440,
                     settings: {
-                        slidesToShow: 3
+                        slidesToShow: 2
                     }
                 },
                 {
@@ -151,7 +151,7 @@ function Carousel(props) {
                 }
             ];
 
-            settings.slidesToShow = 3;
+            settings.slidesToShow = 2;
             settings.responsive = responsiveMobile
             break;
 
@@ -160,7 +160,7 @@ function Carousel(props) {
                 {
                     breakpoint: 1440,
                     settings: {
-                        slidesToShow: 3
+                        slidesToShow: 2
                     }
                 },
                 {
@@ -195,10 +195,11 @@ function Carousel(props) {
                 }
             ];
 
-            settings.slidesToShow = 3;
+            settings.slidesToShow = 2;
             settings.responsive = responsiveMobile
-            // settings.variableWidth = true;
             settings.adaptativeHeight = true;
+            break;
+        default:
             break;
     }
 
@@ -221,6 +222,8 @@ function Carousel(props) {
                 for (let image of images[type]) {
                     carouselImages.push(buildLargeDesktopMockup(image))
                 }
+                break;
+            default:
                 break;
         }
     }
