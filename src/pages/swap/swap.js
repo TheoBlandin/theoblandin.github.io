@@ -357,13 +357,93 @@ export default function Swap() {
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <img
-                                    src={Part04_Illu02}
-                                    alt="Mind map d'idéation reprenant les idées du brainstorming. Il y a 4 noeuds principaux : Formulaire d'ajout, Ressource, Recherche et Profil. Ceux-ci sont reliés entre eux par de plus petites fonctionnalités."
-                                    className="w-100"
-                                />
+                                <div className='d-flex fig-ideation'>
+                                    <div className='d-flex flex-column gap-5 flex-1'>
+                                        <div className='d-flex justify-content-center'>
+                                            <span className='lead bg-yellow p-4 w-auto'>
+                                                Navigation
+                                            </span>
+                                        </div>
+                                        <div className='d-flex flex-column gap-4 flex-1'>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-yellow-light px-4 py-3 text-center justify-content-center'>
+                                                    À travers la page d'accueil
+                                                </div>
+                                                <span className='small'>Nouveautés, recommandations personnalisées, ressources populaires</span>
+                                            </div>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-yellow-light px-4 py-3 text-center justify-content-center'>
+                                                    À travers la barre de navigation
+                                                </div>
+                                                <span className='small'>Ressources classées par un ensemble de catégorie et de sous-catégorie</span>
+                                            </div>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-yellow-light px-4 py-3 text-center justify-content-center'>
+                                                    À travers le champ de recherche
+                                                </div>
+                                                <span className='small'>Recherche avancée avec des filtres sur les caractéristiques</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='d-flex flex-column gap-5 flex-1'>
+                                        <div className='d-flex justify-content-center'>
+                                            <span className='lead bg-orange p-4 w-auto'>
+                                                Ressource
+                                            </span>
+                                        </div>
+                                        <div className='d-flex flex-column gap-4 flex-1'>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-orange-light px-4 py-3 text-center justify-content-center'>
+                                                    Possède des caractéristiques
+                                                </div>
+                                                <span className='small'>Prix, langue(s), format, catégorie, lien externe</span>
+                                            </div>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-orange-light px-4 py-3 text-center justify-content-center'>
+                                                    Est noté par les utilisateurs et utilisatrices
+                                                </div>
+                                                <span className='small'>+1 ou -1 sur la note d'une ressource, à la manière de Reddit</span>
+                                            </div>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-orange-light px-4 py-3 text-center justify-content-center'>
+                                                    Peut être signalé
+                                                </div>
+                                                <span className='small'>Pour contenu inapproprié ou erroné</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='d-flex flex-column gap-5 flex-1'>
+                                        <div className='d-flex justify-content-center'>
+                                            <span className='lead bg-green p-4 w-auto'>
+                                                Utilisateur·ice
+                                            </span>
+                                        </div>
+                                        <div className='d-flex flex-column gap-4 flex-1'>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-green-light px-4 py-3 text-center justify-content-center'>
+                                                    Peut ajouter une nouvelle ressource
+                                                </div>
+                                                <span className='small'>Saisie des caractéristiques via un formulaire d'ajout</span>
+                                            </div>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-green-light px-4 py-3 text-center justify-content-center'>
+                                                    Peut ajouter une ressource à une liste
+                                                </div>
+                                                <span className='small'>Listes personnelles crées par l'utilisateur·ice</span>
+                                            </div>
+                                            <div className='d-flex flex-column px-4 gap-2 ideation-el'>
+                                                <div className='d-flex bg-green-light px-4 py-3 text-center justify-content-center'>
+                                                    A des recommandations personnalisées
+                                                </div>
+                                                <span className='small'>En fonction de ses recherches, de ses notes et de ses listes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <span aria-hidden="true" className="small">
-                                    Mind map d'idéation mise au propre
+                                    Fonctionnement de SWAP
                                 </span>
                             </Col>
                         </Row>
@@ -448,7 +528,7 @@ export default function Swap() {
                             <Col xl={9} className="d-flex align-items-center justify-content-center gap-20 multiple-illu-container w-100">
                                 <div className="d-flex flex-column align-items-center gap-2">
                                     <div className="double-illu align-items-end d-flex gap-20 w-100">
-                                        <Zoom zoomMargin={32}>
+                                        <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
                                             <img
                                                 alt="Wireframe de la page d'accueil pour un format desktop"
                                                 src={Part07_Illu01}
@@ -456,7 +536,7 @@ export default function Swap() {
                                             />
                                         </Zoom>
 
-                                        <Zoom zoomMargin={32}>
+                                        <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
                                             <img
                                                 alt="Wireframe de la page d'accueil pour un format mobile"
                                                 src={Part07_Illu02}
@@ -490,7 +570,7 @@ export default function Swap() {
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <Zoom zoomMargin={32}>
+                                <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
                                     <img
                                         alt="Extrait du Design System reprenant les éléments principaux"
                                         src={Part08_Illu01}
@@ -542,7 +622,7 @@ export default function Swap() {
                     <div className="d-flex flex-row justify-content-end align-items-center gap-2">
                         <Link to='/borne-orange'>
                             <div className="d-flex flex-row justify-content-end align-items-center gap-2 py-4">
-                                <span className="">Vers le prochain projet</span>
+                                <span className="next">Vers le prochain projet</span>
                                 <Forward className="icon-M icon-dark" />
                             </div>
                         </Link>

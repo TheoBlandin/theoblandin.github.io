@@ -56,7 +56,6 @@ function Carousel(props) {
     };
 
     const images = getProjectImages(project.linkName);
-    console.log(">>> ", images)
     var responsiveMobile = []
     var settings = {
         dots: true,
@@ -206,7 +205,6 @@ function Carousel(props) {
     let carouselImages = []
 
     for (let type of Object.keys(images)) {
-        console.log("type : ", type)
         switch (type) {
             case 'mobile':
                 for (let image of images[type]) {
@@ -253,7 +251,6 @@ function Carousel(props) {
 export default Carousel
 
 function buildMobileMockup(imageUrl) {
-    console.log("build mobile mockup of ", imageUrl)
     return (
         <svg
             className="mockup-svg"
@@ -280,7 +277,6 @@ function buildMobileMockup(imageUrl) {
 }
 
 function buildSmallDesktopMockup(imageUrl) {
-    console.log("build small desktop mockup of ", imageUrl)
     return (
         <svg
             className="mockup-svg"
@@ -353,7 +349,6 @@ function buildSmallDesktopMockup(imageUrl) {
 }
 
 function buildLargeDesktopMockup(imageUrl) {
-    console.log("build large desktop mockup of ", imageUrl)
     return (
         <svg
             className="mockup-svg"

@@ -18,7 +18,7 @@ function PresentationProject(props) {
             <Row justify="center">
                 <Col xl={7} xxl={6}>
                     <div className="d-flex flex-column gap-3 paragraph">
-                        <span className="lead bold">Projet</span>
+                        <span className="lead"><strong>Projet</strong></span>
                         <div className="alinea">
                             {project.intro.map((el, index) => (
                                 <p
@@ -34,7 +34,7 @@ function PresentationProject(props) {
                     <div className="info-col d-flex">
                         <div className="sub-info-col d-flex flex-1">
                             <div className="d-flex flex-column gap-3 flex-1">
-                                <span className="lead bold">Contexte</span>
+                                <span className="lead"><strong>Contexte</strong></span>
                                 <div className="alinea">
                                     {project.context.map((el, index) => (
                                         <p key={index} className="mb-2">
@@ -45,7 +45,7 @@ function PresentationProject(props) {
                             </div>
 
                             <div className="d-flex flex-column gap-3 flex-1">
-                                <span className="lead bold">Rôle</span>
+                                <span className="lead"><strong>Rôle</strong></span>
                                 <div className="alinea">
                                     {project.role.map((el, index) => (
                                         <p key={index} className="mb-2">
@@ -58,14 +58,14 @@ function PresentationProject(props) {
 
                         <div className="sub-info-col d-flex flex-1">
                             <div className="d-flex flex-column gap-3 flex-1">
-                                <span className="lead bold">Date</span>
+                                <span className="lead"><strong>Date</strong></span>
                                 <div className="alinea">
                                     <p className="mb-2">{project.date}</p>
                                 </div>
                             </div>
 
                             <div className="d-flex flex-column gap-3 flex-1">
-                                <span className="lead bold">{project.links.length > 1 ? "Liens" : "Lien"}</span>
+                                <span className="lead"><strong>{project.links.length > 1 ? "Liens" : "Lien"}</strong></span>
                                 <div className="alinea">
                                     {project.links.map((link, index) => (
                                         <p key={index} className="mb-2">

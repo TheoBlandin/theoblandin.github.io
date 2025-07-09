@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-grid-system';
 
 function Persona(props) {
     const persona = props.infoPersona
-    console.log(persona)
 
     const imagesContext = require.context(
         './../../assets/personas/',
@@ -37,14 +36,14 @@ function Persona(props) {
                     <div className="data-container">
                         {persona.data.map((data, index) => (
                             <div key={index} className={`d-flex flex-column container-${data.name}`} >
-                                <span className="lead bold">{data.title}</span>
+                                <span className="lead"><strong>{data.title}</strong></span>
                                 <span>{data.content}</span>
                             </div>
                         ))}
                     </div>
                 </Col>
                 <Col xxl={3} className="d-flex flex-column gap-2 col-right-container">
-                    <span className="lead bold">Biographie</span>
+                    <span className="lead"><strong>Biographie</strong></span>
                     <p>{persona.bio}</p>
                 </Col>
             </Row>

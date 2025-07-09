@@ -1,5 +1,11 @@
 .about {
-    margin-top: 64px;
+    margin-top: 82px;
+}
+
+.square {
+    background-color: var(--blue);
+    width: 90%;
+    height: 90%;
 }
 
 .CTA {
@@ -20,7 +26,7 @@
     height: 100%;
     background-color: var(--dark);
     z-index: 0;
-    transition: left 0.4s ease;
+    transition: left 0.5s ease;
 }
 
 .CTA:hover::before {
@@ -33,6 +39,17 @@
 
 .CTA span {
     z-index: 1;
+}
+
+.date {
+    background-color: var(--blue);
+    padding: 8px 12px;
+    border-radius: 16px;
+    width: auto;
+}
+
+.location {
+    color: var(--secondary);
 }
 
 .tools {

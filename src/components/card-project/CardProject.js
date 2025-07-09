@@ -29,9 +29,11 @@ function CardProject(props) {
                                     <p className="display-M project-title mb-3">{project.displayName}</p>
                                     <p>{project.description}</p>
                                 </div>
-                                <div className="cta-project d-flex flex-row justify-content-end align-items-center gap-2">
-                                    <span className="bold lead">En savoir plus</span>
-                                    <Forward className="icon-L icon-dark" />
+                                <div className="d-flex flex-row justify-content-end">
+                                    <div className="cta-project d-flex flex-row align-items-center gap-2">
+                                        <span className="lead"><strong>En savoir plus</strong></span>
+                                        <Forward className="icon-L icon-dark" />
+                                    </div>
                                 </div>
                             </div>
                             <div className={`thumbnail

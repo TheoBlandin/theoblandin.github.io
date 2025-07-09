@@ -50,10 +50,10 @@ export default function About() {
                 </Row>
                 <Row justify="center">
                     <Col lg={6} xl={4}>
-                        <img src={Self} className="w-100" alt="Selfie" />
+                        <img src={Self} alt="Selfie" className="w-100" />
                     </Col>
                     <Col xl={7} xxl={6}>
-                        <p className="lead bold mb-3">Je m'appelle Théo, je suis UX Designer et Développeur Front-End à Rennes, spécialisé en accessibilité numérique.</p>
+                        <p className="lead mb-3"><strong>Je m'appelle Théo, je suis UX Designer et Développeur Front-End à Rennes, spécialisé en accessibilité numérique.</strong></p>
 
                         <p className="mb-2">Je suis passionné par la conception orientée utilisateur et m'efforce de créer des interfaces intuitives, esthétiques et accessibles dans mon travail.</p>
 
@@ -61,7 +61,7 @@ export default function About() {
 
                         <p className="mb-2">J'apporte une attention toute particulière à l'accessibilité numérique, spécialité que j'ai pu explorer lors de mon stage chez Vially à Dublin, une entreprise spécialisé dans le domaine.</p>
 
-                        <p className="mb-2">Depuis janvier 2025, je travaille à la création d'une startup au sein de l'INRIA Startup Studio à Rennes, où nous développons une solution numérique à destination des enseignants de langue. Cette solution utilise l'intelligence artificielle pour fournir un diagnostic linguistique détaillé des écrits des apprenants d'une classe, permettant ainsi à l'enseignant d'adopter sa pédagogie à ses élèves. J'occupe le rôle d'UX Designer et de Développeur Front-End au sein de ce projet.</p>
+                        <p className="mb-2">Depuis janvier 2025, je travaille à la création d'une startup au sein de l'INRIA Startup Studio à Rennes, où nous développons une solution numérique à destination des enseignants de langue. Cette solution utilise l'intelligence artificielle pour fournir un diagnostic linguistique détaillé des écrits des apprenants d'une classe, permettant ainsi à l'enseignant d'adapter sa pédagogie à ses élèves. J'occupe le rôle d'UX Designer et de Développeur Front-End au sein de ce projet.</p>
 
                         <a href="/assets/CV_Theo_Blandin.pdf" aria-label="Visualiser mon CV"
                             target="_blank" rel="noopener noreferrer">
@@ -84,7 +84,7 @@ export default function About() {
                         <Col lg={6} xl={5}>
                             <div className="tools d-flex flex-column align-items-center gap-4 h-100 bg-yellow-light">
                                 <img src={DesignTools} className="category-tools-icon icon-dark" alt="" />
-                                <span className="lead bold">Design</span>
+                                <span className="lead"><strong>Design</strong></span>
                                 <div className="container-chips-tools d-flex flex-wrap justify-content-center">
                                     <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={Figma} className="icon-tools" alt="" />
@@ -120,7 +120,7 @@ export default function About() {
                         <Col lg={6} xl={5}>
                             <div className="tools d-flex flex-column align-items-center gap-4 h-100 bg-orange-light">
                                 <img className="category-tools-icon icon-dark" src={DevTools} alt="" />
-                                <span className="lead bold">Développement</span>
+                                <span className="lead"><strong>Développement</strong></span>
                                 <div className="container-chips-tools d-flex flex-wrap justify-content-center">
                                     <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                         <img src={HTML} className="icon-tools" alt="" />
@@ -163,7 +163,7 @@ export default function About() {
                             <div className="tools-accessibility bg-green-light d-flex">
                                 <div className="tools d-flex flex-column align-items-center gap-4">
                                     <img className="category-tools-icon icon-dark" src={AccessibilityTools} alt="" />
-                                    <span className="lead bold">Accessibilité numérique</span>
+                                    <span className="lead"><strong>Accessibilité numérique</strong></span>
                                     <div className="container-chips-tools d-flex flex-wrap justify-content-center">
                                         <div className="d-flex flex-row align-items-center bg-light gap-2 px-4 py-2 br-4">
                                             <img src={WCAG} className="icon-tools" alt="" />
@@ -188,7 +188,7 @@ export default function About() {
                                     </div>
                                 </div>
                                 <div className="accessibility-links d-flex flex-column align-items-start gap-4">
-                                    <span className="lead bold">Ce que j'utilise au quotidien</span>
+                                    <span className="lead"><strong>Ce que j'utilise au quotidien</strong></span>
                                     <ul>
                                         <li>
                                             <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">
@@ -257,6 +257,6 @@ export default function About() {
                     </Col>
                 </Row>
             </section>
-        </Container>
+        </Container >
     )
 }

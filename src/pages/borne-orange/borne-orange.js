@@ -9,6 +9,8 @@ import Personas from './../../assets/data/personas.json';
 import { useEffect } from "react";
 import { Container, Row, Col } from 'react-grid-system';
 import Part03_Illu01 from './../../assets/illustrations/borne-orange/part03_illu01.png';
+import Part06_Illu01 from './../../assets/illustrations/borne-orange/part06_illu01.svg';
+import Part07_Illu01 from './../../assets/illustrations/borne-orange/part07_illu01.svg';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -88,7 +90,7 @@ export default function BorneOrange() {
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <Zoom zoomMargin={32}>
+                                <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
                                     <img
                                         alt="Interface initiale de la borne"
                                         src={Part03_Illu01}
@@ -175,6 +177,20 @@ export default function BorneOrange() {
                             </Col>
                             <Col xl={2} xxl={3}></Col>
                         </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
+                                    <img
+                                        alt="Carte mentale d'idéation sur le score de sécurité"
+                                        src={Part06_Illu01}
+                                        className="w-100"
+                                    />
+                                </Zoom>
+                                <span aria-hidden="true" className="small">
+                                    Carte mentale d'idéation sur le score de sécurité
+                                </span>
+                            </Col>
+                        </Row>
                     </div>
 
                     <div className="section d-flex flex-column gap-4">
@@ -194,6 +210,20 @@ export default function BorneOrange() {
                             </Col>
                             <Col xl={2} xxl={3}></Col>
                         </Row>
+                        <Row justify="center">
+                            <Col xl={9} className="d-flex flex-column align-items-center gap-2">
+                                <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
+                                    <img
+                                        alt="Workflow simplifié"
+                                        src={Part07_Illu01}
+                                        className="w-100"
+                                    />
+                                </Zoom>
+                                <span aria-hidden="true" className="small">
+                                    Workflow simplifié
+                                </span>
+                            </Col>
+                        </Row>
                     </div>
 
                     <div className="section d-flex flex-column gap-4">
@@ -209,7 +239,7 @@ export default function BorneOrange() {
 
                                         <p className="mb-2">
                                             <ul>
-                                                <li>La maquette destinée à l'écran de la borne, en 1920 par 1080px strictrement</li>
+                                                <li>La maquette destinée à l'écran de la borne, en 1920px par 1080px strictement</li>
                                                 <li>La maquette destinée au mobile, optimisée pour un affichage sur téléphone en mode portrait</li>
                                             </ul>
                                         </p>

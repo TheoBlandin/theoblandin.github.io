@@ -52,7 +52,7 @@ export default function Home() {
                 </Container>
             </div>
 
-            <div className="my-5" id="projects" style={{ scrollMarginTop: "60px" }}>
+            <div className="my-5" id="projects" style={{ scrollMarginTop: "68px" }}>
                 <Container className="mb-5 projects-title">
                     <Row justify="center">
                         <Col xl={10}>

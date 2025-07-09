@@ -66,7 +66,7 @@ export default function MangerDeSaison() {
                         <Row justify="center">
                             <Col xl={9} className="d-flex align-items-center justify-content-center gap-20 multiple-illu-container w-100">
                                 <div className="d-flex flex-column align-items-center gap-2 d-flex flex-column align-items-cneter flex-1">
-                                    <Zoom zoomMargin={32}>
+                                    <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
                                         <img
                                             alt="Maquette sur papier de l'application avec annotations"
                                             src={Part02_Illu01}
@@ -121,7 +121,7 @@ export default function MangerDeSaison() {
                         </Row>
                         <Row justify="center">
                             <Col xl={9} className="d-flex flex-column align-items-center gap-2">
-                                <Zoom zoomMargin={32}>
+                                <Zoom zoomMargin={32} a11yNameButtonUnzoom="Réduire l'image" a11yNameButtonZoom="Agrandir l'image">
                                     <img
                                         alt="Création d'une illustration sur Inkscape"
                                         src={Part03_Illu01}
@@ -169,11 +169,9 @@ export default function MangerDeSaison() {
                         <Col xl={2} xxl={3}></Col>
                     </Row>
                     <div className="d-flex flex-row justify-content-end align-items-center gap-2">
-                        <Link to='/swap'>
-                            <div className="d-flex flex-row justify-content-end align-items-center gap-2 py-4">
-                                <span className="">Vers le prochain projet</span>
-                                <Forward className="icon-M icon-dark" />
-                            </div>
+                        <Link to='/swap' className="d-flex flex-row justify-content-end align-items-center gap-2 py-4 next">
+                            <span>Vers le prochain projet</span>
+                            <Forward className="icon-M icon-dark" />
                         </Link>
                     </div>
                 </Container>

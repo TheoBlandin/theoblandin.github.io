@@ -1,11 +1,17 @@
 .card {
     padding: 32px;
     overflow: hidden;
+    transition: 0.5s ease;
 }
 
-.card:hover .thumbnail {
+/* .card:hover {
+    transform: translateX(16px);
+    transition: 0.5s ease;
+} */
+
+/* .card:hover .thumbnail {
     transform: scale(1.05);
-}
+} */
 
 .project-title {
     margin-top: 32px;

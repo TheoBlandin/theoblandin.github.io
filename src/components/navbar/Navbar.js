@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ReactComponent as Menu } from './../../assets/icons/menu.svg'
 import { ReactComponent as Close } from './../../assets/icons/close.svg'
+import { Container, Row, Col } from 'react-grid-system';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +18,6 @@ function Navbar() {
     };
 
     useEffect(() => {
-        console.log(location.pathname)
         if (location.pathname == '/about') {
             setAboutPage(true);
         }
@@ -41,23 +41,25 @@ function Navbar() {
 
     return (
         <nav role="navigation" className={`navigation ${menuOpen ? 'open' : ''} ${scrolled || aboutPage ? 'scrolled' : ''}`}>
-            <div className="desktop-nav d-flex px-4 gap-5 justify-content-right">
-                <Link to="/" className={`nav-link ${scrolled || aboutPage ? 'scrolled' : ''}`}>Accueil</Link>
-                <a href="/#projects" className={`nav-link ${scrolled || aboutPage ? 'scrolled' : ''}`}>Mes projets</a>
-                <Link to="/about" className={`nav-link ${scrolled || aboutPage ? 'scrolled' : ''}`}>À propos</Link>
-            </div>
-            <div className="mobile-nav w-100 px-3">
-                <button className="burger-menu" onClick={toggleMenu} aria-label="Ouvrir le menu de navigation">
-                    {menuOpen ?
-                        <Close style={{ fill: 'var(--light)', width: '32px', height: '32px' }} />
-                        : <Menu style={{ fill: scrolled || aboutPage ? 'var(--light)' : 'var(--dark)', width: '32px', height: '32px' }} />}
-                </button>
-                <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-                    <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Accueil</Link>
-                    <a href="/#projects" className="nav-link" onClick={() => setMenuOpen(false)}>Mes projets</a>
-                    <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>À propos</Link>
+            <Container>
+                <div className="desktop-nav d-flex px-4 gap-5 justify-content-right">
+                    <Link to="/" className={`nav-link ${scrolled || aboutPage ? 'scrolled' : ''}`}>Accueil</Link>
+                    <a href="/#projects" className={`nav-link ${scrolled || aboutPage ? 'scrolled' : ''}`}>Mes projets</a>
+                    <Link to="/about" className={`nav-link ${scrolled || aboutPage ? 'scrolled' : ''}`}>À propos</Link>
                 </div>
-            </div>
+                <div className="mobile-nav w-100 px-3">
+                    <button className="burger-menu" onClick={toggleMenu} aria-label="Ouvrir le menu de navigation">
+                        {menuOpen ?
+                            <Close style={{ fill: 'var(--light)', width: '32px', height: '32px' }} />
+                            : <Menu style={{ fill: scrolled || aboutPage ? 'var(--light)' : 'var(--dark)', width: '32px', height: '32px' }} />}
+                    </button>
+                    <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+                        <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Accueil</Link>
+                        <a href="/#projects" className="nav-link" onClick={() => setMenuOpen(false)}>Mes projets</a>
+                        <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>À propos</Link>
+                    </div>
+                </div>
+            </Container>
         </nav>
     );
 }

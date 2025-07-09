@@ -9,18 +9,41 @@
 
 .cloud-1 {
     fill: rgba(255, 255, 255, 200);
+    animation-delay: 0s;
 }
 
 .cloud-2 {
     fill: rgba(255, 255, 255, 100);
+    animation-delay: 2s;
 }
 
 .cloud-3 {
     fill: rgba(255, 255, 255, 120);
+    animation-delay: 4s;
 }
 
 .cloud-4 {
     fill: rgba(255, 255, 255, 180);
+    animation-delay: 1s;
+}
+
+@keyframes float-left-right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* déplacement vers la droite */
+    }
+    100% {
+        transform: translateX(0); /* retour à la position initiale */
+    }
+}
+
+.cloud-1,
+.cloud-2,
+.cloud-3,
+.cloud-4 {
+    animation: float-left-right 6s ease-in-out infinite;
 }
 
 @media (min-width: 320px) {
@@ -43,7 +66,7 @@
 
     .cloud-4 {
         width: 150px;
-        left: 52%;
+        left: 45%;
         top: 23%;
     }
 }
@@ -68,7 +91,7 @@
 
     .cloud-4 {
         width: 180px;
-        left: 60%;
+        left: 56%;
         top: 10%;
     }
 }
