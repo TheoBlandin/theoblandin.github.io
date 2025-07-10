@@ -8,6 +8,16 @@
 @import "./styles/borders.css";
 @import "./styles/text.css";
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
 body {
   margin: 0;
   font-family: "Urbanist", sans-serif;

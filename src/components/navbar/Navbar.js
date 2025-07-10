@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ReactComponent as Menu } from './../../assets/icons/menu.svg'
 import { ReactComponent as Close } from './../../assets/icons/close.svg'
-import { Container, Row, Col } from 'react-grid-system';
+import { Container } from 'react-grid-system';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ function Navbar() {
     };
 
     useEffect(() => {
-        if (location.pathname == '/about') {
+        if (location.pathname == '/about' || location.pathname == '/legals') {
             setAboutPage(true);
         }
         else {

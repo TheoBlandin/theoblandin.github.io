@@ -1,6 +1,7 @@
 import React from "react";
 import './Footer.css';
 import { Container, Row, Col } from 'react-grid-system';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Download } from './../../assets/icons/download.svg'
 import { ReactComponent as LinkedIn } from './../../assets/icons/linkedin.svg'
 
@@ -11,7 +12,7 @@ function Footer() {
                 <Row justify="between">
                     <Col lg={3} xxl={2} className="col-footer d-flex flex-column first-col">
                         <span>Théo Blandin ©2024</span>
-                        <span>Mentions légales</span>
+                        <Link to="/legals"><span>Mentions légales</span></Link>
                     </Col>
                     <Col lg={3} xxl={2} className="col-footer d-flex flex-column">
                         <a href="https://www.linkedin.com/in/th%C3%A9o-blandin-b71a15258/"
