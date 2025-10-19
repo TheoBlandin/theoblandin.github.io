@@ -7,7 +7,7 @@ import { DownloadSimple, LinkedinLogo } from "@phosphor-icons/react";
 function Footer() {
   return (
     <footer className="bg-surface py-8">
-      <Container>
+      <Container className="w-full">
         <Row justify="between">
           <Col lg={3} xxl={2} className="col-footer flex flex-col first-col">
             <span>Théo Blandin ©2025</span>
