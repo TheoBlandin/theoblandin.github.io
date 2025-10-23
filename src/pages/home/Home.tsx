@@ -2,19 +2,19 @@ import { useEffect } from "react";
 
 import { Col, Container, Row } from "react-grid-system";
 
-import Cloud from "./../assets/home/cloud.svg";
-import Picture from "./../assets/home/picture.svg";
-import ArrowMore from "./../assets/home/arrow-down.svg";
-import ArrowSelf from "./../assets/home/arrow-self.svg";
-import ArrowPoulpy from "./../assets/home/arrow-poulpy.svg";
+import Cloud from "./../../assets/home/cloud.svg";
+import Picture from "./../../assets/home/picture.svg";
+import ArrowMore from "./../../assets/home/arrow-down.svg";
+import ArrowSelf from "./../../assets/home/arrow-self.svg";
+import ArrowPoulpy from "./../../assets/home/arrow-poulpy.svg";
 
-import projectsJSON from "./../assets/projects.json";
+import projectsJSON from "./../../assets/projects.json";
 
 import "./Home.css";
 
-import CardProject from "../components/cardProject/CardProject";
+import CardProject from "../../components/cardProject/CardProject";
 
-import type { Project } from "../types/types";
+import type { Project } from "../../types/types";
 
 function Home() {
   const projects: Project[] = projectsJSON["projects"];
@@ -75,7 +75,7 @@ function Home() {
           <Row justify="center">
             <Col sm={12} xl={10} className="flex flex-col gap-4">
               <h2 id="projects-title">Mes projets</h2>
-              <Container className="!p-0" >
+              <Container className="!p-0">
                 <Row className="gap-y-6">
                   {projects.map((project, index) => (
                     <Col key={index} sm={12} lg={6}>

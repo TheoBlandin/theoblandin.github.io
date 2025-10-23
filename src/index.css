@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities; */
 
+/* Font */
+@font-face {
+  font-family: 'MADE_Sunflower';
+  src: local("MADE_Sunflower"),
+    url("/public/assets/MADE_Sunflower.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body,
 #root {
@@ -15,14 +24,20 @@ body {
   height: fit-content;
 }
 
-p, a, span, h1, h2, h3 {
+p,
+a,
+span,
+h1,
+h2,
+h3 {
   font-family: "Urbanist", sans-serif;
   line-height: 140%;
   font-size: 1rem;
   color: var(--dark);
 }
 
-body, #root {
+body,
+#root {
   margin: 0;
   background-color: var(--light);
   min-height: 100vh;
@@ -56,7 +71,9 @@ button {
 
 /* Typography */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: bold;
 }
@@ -71,6 +88,26 @@ h2 {
 
 h3 {
   font-size: 1.625rem;
+}
+
+.display {
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .display {
+    font-family: "MADE_Sunflower", serif;
+    font-size: 3.125rem;
+    line-height: 120%;
+  }
+}
+
+@media (min-width: 768px) {
+  .display {
+    font-family: "MADE_Sunflower", serif;
+    font-size: 5.625rem;
+    line-height: 120%;
+  }
 }
 
 .lead {

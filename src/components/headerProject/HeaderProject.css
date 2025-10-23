@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .header {
+        padding: 50px 0px 26px 0px;
+    }
+
+    .header-content {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 86px 0px 70px 0px;
+    }
+
+    .header-content {
+        gap: 32px;
+    }
+}

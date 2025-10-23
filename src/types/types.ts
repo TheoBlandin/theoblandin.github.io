@@ -5,3 +5,11 @@ export interface Project {
     tags: string[],
     link: string
 }
+
+export interface Presentation {
+    intro: string[],
+    context: string[],
+    tools: string[],
+    role: string[],
+    links: { link: string; label: string }[]
+}
