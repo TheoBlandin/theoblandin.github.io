@@ -47,13 +47,13 @@
 
 @media (max-width: 480px) {
    .arrow-poulpy {
-    top: 61%;
+    top: 60%;
     left: 63%;
     transform: scale(0.6);
   }
 
   .name-poulpy {
-    top: 61%;
+    top: 60%;
     left: 79%;
   }
 

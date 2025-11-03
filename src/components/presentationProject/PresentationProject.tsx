@@ -4,7 +4,6 @@ import type { Presentation } from "../../types/types";
 import { ArrowSquareOut } from "@phosphor-icons/react";
 
 function PresentationProject({ project }: { project: Presentation }) {
-  console.log(project);
   return (
     <Container className="w-full flex flex-col gap-4">
       <Row justify="center">
@@ -13,11 +12,12 @@ function PresentationProject({ project }: { project: Presentation }) {
         </Col>
       </Row>
       <Row justify="center">
-        <Col sm={12} xl={6} className="flex flex-col gap-1">
+        <Col sm={12} xl={5} className="flex flex-col gap-1 mb-3">
           {project.intro.map((el, index) => {
             return <p key={index} dangerouslySetInnerHTML={{ __html: el }}></p>;
           })}
         </Col>
+        <Col sm={0} xl={1}></Col>
         <Col sm={12} xl={4}>
           <div className="grid grid-cols-2 gap-6 w-full">
             <div className="flex flex-col gap-2">

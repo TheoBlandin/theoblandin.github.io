@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import type { Project } from "../../types/types";
+import type { ProjectOverview } from "../../types/types";
 
-function CardProject({ project }: { project: Project }) {
+function CardProject({ project }: { project: ProjectOverview }) {
   return (
     <Link to={project.link}>
       <div className="flex flex-col gap-1">

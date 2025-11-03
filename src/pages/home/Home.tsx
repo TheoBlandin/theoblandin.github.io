@@ -14,10 +14,10 @@ import "./Home.css";
 
 import CardProject from "../../components/cardProject/CardProject";
 
-import type { Project } from "../../types/types";
+import type { ProjectOverview } from "../../types/types";
 
 function Home() {
-  const projects: Project[] = projectsJSON["projects"];
+  const projects: ProjectOverview[] = projectsJSON["projects"];
 
   useEffect(() => {
     document.title = "Théo Blandin - Portfolio";
@@ -78,8 +78,8 @@ function Home() {
               <Container className="!p-0">
                 <Row className="gap-y-6">
                   {projects.map((project, index) => (
-                    <Col key={index} sm={12} lg={6}>
-                      <CardProject project={project} />
+                    <Col key={`project-overview-${index}`} sm={12} lg={6}>
+                      <CardProject key={index} project={project} />
                     </Col>
                   ))}
                 </Row>
