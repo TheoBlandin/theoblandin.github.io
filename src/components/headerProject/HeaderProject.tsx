@@ -1,10 +1,10 @@
 import { Col, Container, Row } from "react-grid-system";
 
-import './HeaderProject.css';
+import "./HeaderProject.css";
 
 import { ArrowLeft } from "@phosphor-icons/react";
 
-function HeaderProject({ color, name }: { color: string, name: string }) {
+function HeaderProject({ color, name }: { color: string; name: string }) {
   return (
     <div className="header" style={{ backgroundColor: color }}>
       <Container>
@@ -17,7 +17,7 @@ function HeaderProject({ color, name }: { color: string, name: string }) {
               <ArrowLeft size={20} />
               Retour
             </a>
-            <h1 className="display">{name}</h1>
+            <h1 className="display-L">{name}</h1>
           </Col>
         </Row>
       </Container>

@@ -14,7 +14,7 @@ function Footer() {
             <Link to="/legals"><span>Mentions légales</span></Link>
           </Col>
           <Col lg={3} xxl={2} className="col-footer flex flex-col">
-            <a href="https://www.linkedin.com/in/th%C3%A9o-blandin-b71a15258/"
+            <a href="https://www.linkedin.com/in/th%C3%A9o-blandin/"
               aria-label="Visitez mon profil LinkedIn" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-row items-center gap-2">
                 <LinkedinLogo size={20} className="t-default" />

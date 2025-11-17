@@ -1,69 +1,15 @@
 {
-  "presentation": {
-    "intro": [
-      "C'est dans l'optique d'améliorer à la fois mon alimentation et mon empreinte carbone que j'ai créé <i>Manger de saison</i>. Cette application mobile propose un calendrier complet des fruits et légumes de saison, basé sur une localisation en France métropolitaine et personnalisable suivant les gouts de l'utilisateur, dans l'optique de l'accompagner dans son alimentation.",
-      "L'application a été réalisée avec Flutter, et chaque aliment possède une illustration créée sur Inkscape."
-    ],
-    "context": ["Projet personnel", "Application mobile"],
-    "tools": ["Figma", "Inkscape", "Flutter"],
-    "role": ["UX Designer", "Graphiste", "Développeur"],
-    "links": [
-      {
-        "link": "https://github.com/TheoBlandin/manger_de_saison",
-        "label": "Projet GitHub"
-      }
-    ]
-  },
-  "flow": [
+  "intro": [
+    "C'est dans l'optique d'améliorer à la fois mon alimentation et mon empreinte carbone que j'ai créé <i>Manger de saison</i>. Cette application mobile propose un calendrier complet des fruits et légumes de saison, basé sur une localisation en France métropolitaine et personnalisable suivant les gouts de l'utilisateur, dans l'optique de l'accompagner dans son alimentation.",
+    "L'application a été réalisée avec Flutter, et chaque aliment possède une illustration créée sur Inkscape."
+  ],
+  "context": ["Projet personnel", "Application mobile"],
+  "tools": ["Figma", "Inkscape", "Flutter"],
+  "role": ["UX Designer", "Graphiste", "Développeur"],
+  "links": [
     {
-      "title": "Problème",
-      "text": [
-        "En 2019, près de deux adultes sur trois n'atteignaient pas les recommandations nutritionnelles (Source : CREDOC, CCAF, 2019).",
-        "Manger des aliments de saison est, en plus d'un impératif écologique, un moyen d'accéder à des produits riches en nutriments, savoureux, et bien souvent plus économiques.",
-        "Comment accompagner les utilisateurs dans une consommation plus responsable des fruits et légumes, tout en les encourageant à en intégrer davantage dans leur alimentation ?"
-      ]
-    },
-    {
-      "title": "Solution",
-      "text": [
-        "Manger de saison s'articule autour de trois points clés :",
-        "<ul class='list-disc list-outside ms-8 flex flex-col gap-1'><li><span class='bold'>Un accès permanent</span> : le calendrier est consultable directement depuis son téléphone, sans avoir besoin d'une connexion Internet.</li><li><span class='bold'>Des visuels engageants</span> : les illustrations sont douces et colorées, pour donner envie de redécouvrir des aliments qu'on a pu laisser de côté.</li><li><span class='bold'>Une expérience personnalisée</span> : l'utilisateur peut renseigner ses préférences afin de filtrer les aliments affichés et d'adapter le contenu à ses goûts.</li></ul>"
-      ]
-    },
-    {
-      "title": "Maquettage",
-      "text": [
-        "Les premiers brouillons ont été réalisés à la main, avant d'être mis au propre sur Figma."
-      ],
-      "images": [
-        {
-          "src": "src/assets/projects/manger_de_saison/hand_drawn.png",
-          "alt": "Croquis à la main présentant les premières idées d'interface et de fonctionnalités pour le projet."
-        },
-        {
-          "src": "src/assets/projects/manger_de_saison/figma.png",
-          "alt": "Maquettes Figma haute fidélité, accompagnées de commentaires sur le fonctionnement de l'application."
-        }
-      ]
-    },
-    {
-      "title": "Illustrations",
-      "text": [
-        "Chaque illustration est réalisée au format SVG sur le logiciel open source Inkscape."
-      ],
-      "images": [
-        {
-          "src": "src/assets/projects/manger_de_saison/inkscape.png",
-          "alt": "Capture d'écran d'Inkscape montrant la création de l'illustration d'une paire de cerises."
-        }
-      ]
-    },
-    {
-      "title": "Développement",
-      "text": [
-        "L'application a été développé avec Flutter.",
-        "Les données des utilisateurs sont directement stockées sur leur appareil."
-      ]
+      "link": "https://github.com/TheoBlandin/manger_de_saison",
+      "label": "Projet GitHub"
     }
   ]
 }

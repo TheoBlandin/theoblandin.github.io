@@ -39,7 +39,7 @@ function Navbar() {
     <header>
       <nav
         role="navigation"
-        className={`flex flex-row justify-center navigation ${
+        className={`flex flex-row justify-center navigation select-none ${
           menuOpen ? "open" : ""
         } ${scrolled || solidNavbar ? "scrolled" : ""}`}
       >

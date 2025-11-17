@@ -1,0 +1,16 @@
+{
+    "intro": [
+      "Cette plateforme imaginaire est le résultat de mon projet de fin d'études à l'ENSIM. Réalisé en binôme, ce projet avait pour objectif la mise en place de la démarche Design Thinking appliquée à une population spécifique.",
+      "<i>SWAP</i>, pour Site Web Annuaire de ressources Pédagogiques, est le produit que nous avons imaginé à l'issue de ce processus. Il a pour but de recenser des ressources pédagogiques à destination des professeurs afin de les aider dans leur travail. Cette solution repose sur une base de collaboration, où chacun peut venir ajouter des ressources qu'il considère utiles."
+    ],
+    "context": ["Projet scolaire", "Travail en binôme"],
+    "tools": ["Figma"],
+    "role": ["UX Researcher", "UX Designer"],
+    "links": [
+      {
+        "link": "https://www.figma.com/design/VvqOd05wya8qIULu7e4gBY/SWAP?node-id=153-207&t=hv9vdYg4oyb06pPB-1",
+        "label": "Fichier Figma"
+      }
+    ]
+  }
+  

@@ -1,0 +1,624 @@
+import { useEffect } from "react";
+
+import HeaderProject from "../../components/headerProject/HeaderProject";
+import PresentationProject from "../../components/presentationProject/PresentationProject";
+
+import Data from "./../../assets/projects/swap/project.json";
+import type { Presentation } from "../../types/types";
+
+import { Col, Container, Row } from "react-grid-system";
+
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from "chart.js";
+import { Pie } from "react-chartjs-2";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+import PersonaComponent from "../../components/persona/PersonaComponent";
+
+ChartJS.register(ArcElement, Tooltip, Legend, Title, ChartDataLabels);
+
+function Swap() {
+  useEffect(() => {
+    document.title = "SWAP - Théo Blandin";
+  }, []);
+
+  const presentationProject: Presentation = Data;
+
+  // Planification data
+  const domains = [
+    {
+      title: "Le métier",
+      details: "Ressenti face au métier, expériences",
+    },
+    {
+      title: "Les élèves",
+      details: "Élèves en difficulté, isolés ou atypiques",
+    },
+    {
+      title: "Vie pro/perso",
+      details: "Horaires, charge de travail en dehors des cours",
+    },
+    {
+      title: "Programme",
+      details: "Préparation des cours, programme scolaire",
+    },
+    {
+      title: "Illectronisme",
+      details: "Enseignement et utilisation du numérique",
+    },
+    {
+      title: "Les parents",
+      details: "Contact avec les parents, réunions parent-prof",
+    },
+    {
+      title: "RPS",
+      details: "Risques psychosociaux, accompagnement",
+    },
+    {
+      title: "L'attention",
+      details: "Attention des élèves, participation en classe",
+    },
+  ];
+
+  // Pie chart option
+  const options = {
+    plugins: {
+      tooltip: { enabled: false },
+      legend: {
+        position: "bottom" as const,
+        labels: {
+          color: "#201708",
+          font: {
+            size: 13,
+            family: "Urbanist",
+          },
+        },
+      },
+      datalabels: {
+        color: "#201708",
+        font: {
+          size: 20,
+          family: "Urbanist",
+        },
+        formatter: (value: string) => value,
+      },
+    },
+    elements: {
+      arc: {
+        hoverOffset: 0,
+      },
+    },
+  };
+
+  return (
+    <>
+      <HeaderProject color="#FFC857" name="SWAP" />
+
+      <div className="my-8 flex flex-col gap-8">
+        <PresentationProject project={presentationProject} />
+
+        {/* Visuals */}
+        <div className="w-full flex flex-row justify-center">
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-3 px-3 w-full max-w-[1440px]">
+            <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
+              <img
+                className="w-full"
+                src="src/assets/projects/swap/mockup.png"
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col gap-2 w-full lg:w-[33%]">
+              <img
+                className="w-full"
+                src="src/assets/projects/swap/color-primary.png"
+                alt=""
+              />
+              <img
+                className="w-full"
+                src="src/assets/projects/swap/color-secondary.png"
+                alt=""
+              />
+              <img
+                className="w-full"
+                src="src/assets/projects/swap/color-accent.png"
+                alt=""
+              />
+              <img
+                className="w-full"
+                src="src/assets/projects/swap/color-text.png"
+                alt=""
+              />
+              <img
+                className="w-full"
+                src="src/assets/projects/swap/color-background.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <Container className="w-full flex flex-col gap-12">
+          {/* Planification */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Planification</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    Afin de se préparer aux entretiens utilisateurs, nous avons
+                    commencé par identifier les différents domaines pouvant être
+                    sources de problématiques dans la vie professionnelle des
+                    enseignants.
+                  </p>
+                  <p>Huit domaines ont été identifiés.</p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+
+            <Row justify="center">
+              <Col sm={12} xl={10}>
+                <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 md:grid-rows-4 lg:grid-rows-2 gap-4 ld:gap-6">
+                  {domains.map((d, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="stroke-dark !border-2 p-3 flex flex-col gap-2"
+                      >
+                        <div className="bg-yellow flex flex-row justify-center px-4 py-2 bold">
+                          {d.title}
+                        </div>
+                        <p className="text-center">{d.details}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* Entretiens utilisateurs */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Entretiens utilisateurs</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    Six enseignants ont accepté de participer à notre projet.
+                    Chaque entretien, mené en présentiel, s'est appuyé sur les
+                    domaines de friction identifiés au préalable.
+                  </p>
+                  <p>
+                    Nous avons également recueilli le profil de chaque
+                    enseignant afin de pouvoir contextualiser et mettre en
+                    perspective leurs réponses.
+                  </p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+
+            <Row justify="center">
+              <Col sm={12} xl={10}>
+                <div className="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-5">
+                  {/* Chart 1 */}
+                  <div className="flex flex-col items-center flex-1 lg:px-10">
+                    <Pie
+                      data={{
+                        labels: ["Lycée professionel", "BTS", "Lycée général"],
+                        datasets: [
+                          {
+                            data: [3, 1, 2],
+                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
+                            hoverBackgroundColor: [
+                              "#F08845",
+                              "#E9C46A",
+                              "#1DB79D",
+                            ],
+                            hoverBorderColor: "white",
+                            borderColor: "white",
+                            borderWidth: 2,
+                            hoverBorderWidth: 2,
+                          },
+                        ],
+                      }}
+                      options={options}
+                    />
+                    <span className="small">Type d'enseignement</span>
+                  </div>
+                  {/* Chart 2 */}
+                  <div className="flex flex-col items-center flex-1 lg:px-10">
+                    <Pie
+                      data={{
+                        labels: ["Contractuel", "Titulaire"],
+                        datasets: [
+                          {
+                            data: [1, 5],
+                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
+                            hoverBackgroundColor: [
+                              "#F08845",
+                              "#E9C46A",
+                              "#1DB79D",
+                            ],
+                            hoverBorderColor: "white",
+                            borderColor: "white",
+                            borderWidth: 2,
+                            hoverBorderWidth: 2,
+                          },
+                        ],
+                      }}
+                      options={options}
+                    />
+                    <span className="small">Contractuel et titulaire</span>
+                  </div>
+                  {/* Chart 3 */}
+                  <div className="flex flex-col items-center flex-1 lg:px-10">
+                    <Pie
+                      data={{
+                        labels: ["Privé", "Public"],
+                        datasets: [
+                          {
+                            data: [1, 5],
+                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
+                            hoverBackgroundColor: [
+                              "#F08845",
+                              "#E9C46A",
+                              "#1DB79D",
+                            ],
+                            hoverBorderColor: "white",
+                            borderColor: "white",
+                            borderWidth: 2,
+                            hoverBorderWidth: 2,
+                          },
+                        ],
+                      }}
+                      options={options}
+                    />
+                    <span className="small">Type d'établissement</span>
+                  </div>
+                  {/* Chart 4 */}
+                  <div className="flex flex-col items-center flex-1 lg:px-10">
+                    <Pie
+                      data={{
+                        labels: ["0-1 an", "5-10 ans, 10+ ans"],
+                        datasets: [
+                          {
+                            data: [1, 1, 4],
+                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
+                            hoverBackgroundColor: [
+                              "#F08845",
+                              "#E9C46A",
+                              "#1DB79D",
+                            ],
+                            hoverBorderColor: "white",
+                            borderColor: "white",
+                            borderWidth: 2,
+                            hoverBorderWidth: 2,
+                          },
+                        ],
+                      }}
+                      options={options}
+                    />
+                    <span className="small">Ancienneté</span>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* Analyse des entretiens */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Analyse des entretiens</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    À partir de chaque entretien, nous avons extrait les
+                    principaux thèmes, ensuite synthétisés dans un nuage de mots
+                    permettant d'identifier les éléments les plus fréquemment
+                    évoqués.
+                  </p>
+                  <p>
+                    Après analyse des données récoltées, la problématique que
+                    nous avons retenue est la suivante :{" "}
+                    <span className="bold">
+                      Comment pourrions-nous favoriser la collaboration et le
+                      partage de ressources pédagogiques entre les enseignants ?
+                    </span>
+                  </p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <div className="w-full h-fit flex flex-row justify-center">
+                  <img
+                    src="src/assets/projects/swap/word-cloud.png"
+                    alt="Nuages de mots avec la notion d'entraide comme notion la plus importante"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* Idéation */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Idéation</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    Le principe de <i>SWAP</i> a été imaginé au cours d'un
+                    brainstorming en binôme.
+                  </p>
+                  <p>
+                    La contrainte principale était le contexte d'une solution
+                    numérique, afin de pouvoir créer une maquette dans le cadre
+                    de notre projet.
+                  </p>
+                  <p>
+                    Nous n'avions pas d'autres contraintes, <i>SWAP</i> n'étant
+                    pas destiné à être développé ou économiquement viable.
+                  </p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <div className="w-full h-fit flex flex-row justify-center">
+                  <img
+                    src="src/assets/projects/swap/brainstorming.png"
+                    alt="Schéma des notions principales de SWAP. Les notions principales sont la ressource, le profil, la recherche et le formulaire d'ajout."
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* Personas */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Personas</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    Trois personas furent créés, se basant sur les profils
+                    rencontrés lors des entretiens utilisateurs. Chacun se
+                    focalise sur une des fonctionnalités clés de <i>SWAP</i>.
+                  </p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <PersonaComponent
+                  persona={{
+                    img: "src/assets/projects/swap/sophie-garnier.png",
+                    color: "yellow",
+                    name: "Sophie Garnier",
+                    features: [
+                      "Ouverte",
+                      "29 ans",
+                      "Veille pédagogique",
+                      "Connectée à l'actualité",
+                      "Dynamique",
+                      "Voyage",
+                    ],
+                    bio: "Sophie, 29 ans, est professeure d'espagnol dans un lycée général depuis 6 ans. Dynamique et ouverte d'esprit, elle prend plaisir à enseigner sa matière en connectant ses cours à l'actualité. Passionnée par les voyages et grande amoureuse des animaux, elle nourrit constamment sa curiosité à travers la veille pédagogique pour enrichir ses pratiques en classe. Elle préfère néanmoins ne pas passer trop de temps sur l'ordinateur.",
+                    data: {
+                      want: {
+                        title: "Ce qu'elle veut faire",
+                        content:
+                          "Dynamiser ses cours avec de nouvelles approches",
+                      },
+                      need: {
+                        title: "Ce qu'elle souhaiterait",
+                        content:
+                          "Trouver les nouveautés qui l'intéressent rapidement",
+                      },
+                      use: {
+                        title: "Ce qu'elle va utiliser",
+                        content: "Les listes de ressources enregistrées",
+                      },
+                      block: {
+                        title: "Ce qui la bloque",
+                        content: "Le temps passé sur l'ordinateur",
+                      },
+                    },
+                  }}
+                />
+                <PersonaComponent
+                  persona={{
+                    img: "src/assets/projects/swap/karine-bernier.png",
+                    color: "orange",
+                    name: "Karine Bernier",
+                    features: [
+                      "Partage",
+                      "56 ans",
+                      "Ouverture au changement",
+                      "Amélioration continue",
+                      "Organisation",
+                      "Suite office",
+                    ],
+                    bio: "Karine, 56 ans, est professeure de sciences de la vie et de la terre en lycée général depuis 18 ans. Très organisée et méthodique, elle utilise fréquemment la suite Office pour structurer ses cours et partager des ressources pédagogiques avec ses collègues. Passionnée par les cailloux, elle est également dans une dynamique d'amélioration continue, toujours prête à adopter de nouvelles approches pour enrichir son enseignement.",
+                    data: {
+                      want: {
+                        title: "Ce qu'elle veut faire",
+                        content:
+                          "Dynamiser ses cours avec de nouvelles approches",
+                      },
+                      need: {
+                        title: "Ce qu'elle souhaiterait",
+                        content:
+                          "Vérifier que sa ressource n'a pas déjà été publiée",
+                      },
+                      use: {
+                        title: "Ce qu'elle va utiliser",
+                        content: "Le formulaire de publication de ressources",
+                      },
+                      block: {
+                        title: "Ce qui la bloque",
+                        content: "La compétition entre les utilisateurs",
+                      },
+                    },
+                  }}
+                />
+                <PersonaComponent
+                  persona={{
+                    img: "src/assets/projects/swap/damien-leroux.png",
+                    color: "green",
+                    name: "Damien Leroux",
+                    features: [
+                      "Innovation",
+                      "37 ans",
+                      "Optimisation du temps",
+                      "Apprentissage concret",
+                      "Réorientation",
+                      "Canva",
+                    ],
+                    bio: "Damien, 37 ans, est un nouveau professeur en lycée professionnel après une carrière dans la vente. Il privilégie un apprentissage concret et pratique pour transmettre ses connaissances en marketing dans un lycée professionnel. Passionné par les nouvelles technologies, il utilise des outils comme Canva et cherche constamment à optimiser son temps. Grand amateur de sports d'équipe, il allie efficacité et modernité dans son enseignement dans un soucis d'efficacité.",
+                    data: {
+                      want: {
+                        title: "Ce qu'il veut faire",
+                        content: "Construire sa pédagogie de manière efficace",
+                      },
+                      need: {
+                        title: "Ce qu'il souhaiterait",
+                        content: "Avoir des suggestions pertinentes",
+                      },
+                      use: {
+                        title: "Ce qu'il va utiliser",
+                        content: "La barre de recherche et les filtres",
+                      },
+                      block: {
+                        title: "Ce qui le bloque",
+                        content: "La répétivité des informations",
+                      },
+                    },
+                  }}
+                />
+              </Col>
+            </Row>
+          </div>
+
+          {/* Parcours utilisateur */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Parcours utilisateur</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    Parcours utilisateur simplifié, illustrant les principales
+                    fonctionnalités et étapes de navigation sur <i>SWAP</i>.
+                  </p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <div className="w-full h-fit flex flex-row justify-center">
+                  <img
+                    src="src/assets/projects/swap/userflow.png"
+                    alt="Schéma montrant les actions possibles depuis la page d'accueil : choisir une catégorie, rechercher, se connecter ou s'inscrire, publier une ressource ou consulter son profil. Le parcours détaille aussi la navigation vers une ressource, ses options comme consulter, voter, ajouter à une liste, partager ou signaler, avec indication des actions nécessitant une connexion."
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* Wireframes */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Wireframes</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    Les premiers wireframes ont été dessinés individuellement
+                    sur papier afin de comparer notre vision du produit.
+                  </p>
+                  <p>
+                    La version mise en commun a ensuite été mise au propre sur
+                    Figma et enrichie de nouvelles pages et de commentaires sur
+                    le fonctionnement de <i>SWAP</i>.
+                  </p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <div className="w-full h-fit flex flex-row justify-center">
+                  <img
+                    src="src/assets/projects/swap/wireframe.png"
+                    alt="Maquette Figma basse fidélité, accompagnée de commentaires sur le fonctionnement de l'application."
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* Design System */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Design System</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    Un design system a été conçu sur le projet afin de garantir
+                    la cohérence visuel d'un projet de groupe.
+                  </p>
+                  <p>Celui-ci se base sur le design system de Google.</p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <div className="w-full h-fit flex flex-row justify-center">
+                  <img
+                    src="src/assets/projects/swap/design-system.png"
+                    alt="Extrait de composants du design system créé pour le projet"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* Maquette interactive */}
+          <div className="flex flex-col gap-5">
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2>Maquette interactive</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    La finalité du projet était la création d'une maquette
+                    interactive haute fidélité, s'approchant au plus près
+                    possible du fonctionnement souhaité pour SWAP.
+                  </p>
+                  <p>Celle-ci a été réalisée sur Figma.</p>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <div className="w-full h-fit flex flex-row justify-center">
+                  <iframe
+                    width="100%"
+                    className="h-[227px] sm:h-[235px] md:h-[307px] lg:h-[511px] xl:h-[584px] xxl:h-[686px]"
+                    src="https://embed.figma.com/proto/VvqOd05wya8qIULu7e4gBY/SWAP?page-id=32%3A2&node-id=417-7793&p=f&viewport=30%2C-242%2C0.54&scaling=scale-down-width&starting-point-node-id=417%3A7793&embed-host=portfolio&page-selector=false"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </div>
+    </>
+  );
+}
+
+export default Swap;

@@ -97,12 +97,21 @@ h3 {
   font-size: 1.625rem;
 }
 
-.display {
+.display-M {
+  font-weight: bold;
+}
+
+.display-L {
   font-weight: normal;
 }
 
 @media (max-width: 768px) {
-  .display {
+  .display-M {
+    font-size: 1.875rem;
+    line-height: 120%;
+  }
+
+  .display-L {
     font-family: "MADE_Sunflower", serif;
     font-size: 3.125rem;
     line-height: 120%;
@@ -110,7 +119,12 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .display {
+  .display-M {
+    font-size: 3.125rem;
+    line-height: 120%;
+  }
+
+  .display-L {
     font-family: "MADE_Sunflower", serif;
     font-size: 5.625rem;
     line-height: 120%;
@@ -141,4 +155,34 @@ h3 {
 
 .bg-surface {
   background-color: var(--surface);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-light-yellow {
+  background-color: var(--yellow-light);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-light-orange {
+  background-color: var(--orange-light);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-light-green {
+  background-color: var(--green-light);
+}
+
+
+/* Strokes */
+.stroke-dark {
+  border: 1px solid var(--dark);
 }

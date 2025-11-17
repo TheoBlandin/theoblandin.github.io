@@ -9,6 +9,7 @@ import Home from "./pages/home/Home";
 import { useEffect } from "react";
 import Footer from "./components/footer/Footer";
 import MangerDeSaison from "./pages/mangerDeSaison/MangerDeSaison";
+import Swap from "./pages/swap/Swap";
 
 setConfiguration({
   breakpoints: [360, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl
@@ -46,6 +47,7 @@ function App() {
           {/* Page 404 à faire */}
           <Route path="/" element={<Home />} />
           <Route path="/manger_de_saison" element={<MangerDeSaison />} />
+          <Route path="/swap" element={<Swap />} />
         </Routes>
       </main>
       <Footer />

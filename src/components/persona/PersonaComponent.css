@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    .data-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-want {
+        top: 0;
+        left: 0;
+        margin-left: 20px;
+    }
+
+    .container-need {
+        top: 25%;
+        left: 0;
+    }
+
+    .container-use {
+        top: 0;
+        right: 0%;
+        margin-right: 20px;
+    }
+
+    .container-block {
+        top: 25%;
+        right: 0;
+    }
+
+    .container-want,
+    .container-need,
+    .container-use,
+    .container-block {
+        position: absolute;
+        width: 210px;
+    }
+}
