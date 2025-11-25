@@ -19,7 +19,9 @@
     "react-chartjs-2": "^5.3.1",
     "react-dom": "^18.3.1",
     "react-grid-system": "^8.2.1",
+    "react-player": "^3.4.0",
     "react-router-dom": "^7.9.4",
+    "recharts": "^3.5.0",
     "tailwindcss": "^4.1.14"
   },
   "devDependencies": {

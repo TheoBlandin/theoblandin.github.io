@@ -79,7 +79,7 @@ function Home() {
                 <Row className="gap-y-6">
                   {projects.map((project, index) => (
                     <Col key={`project-overview-${index}`} sm={12} lg={6}>
-                      <CardProject key={index} project={project} />
+                      <CardProject project={project} />
                     </Col>
                   ))}
                 </Row>

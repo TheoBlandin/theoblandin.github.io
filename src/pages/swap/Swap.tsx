@@ -8,12 +8,16 @@ import type { Presentation } from "../../types/types";
 
 import { Col, Container, Row } from "react-grid-system";
 
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from "chart.js";
-import { Pie } from "react-chartjs-2";
-import ChartDataLabels from "chartjs-plugin-datalabels";
-import PersonaComponent from "../../components/persona/PersonaComponent";
+import {
+  PieChart,
+  Pie,
+  ResponsiveContainer,
+  Cell,
+  LabelList,
+  Tooltip,
+} from "recharts";
 
-ChartJS.register(ArcElement, Tooltip, Legend, Title, ChartDataLabels);
+import PersonaComponent from "../../components/persona/PersonaComponent";
 
 function Swap() {
   useEffect(() => {
@@ -58,35 +62,7 @@ function Swap() {
     },
   ];
 
-  // Pie chart option
-  const options = {
-    plugins: {
-      tooltip: { enabled: false },
-      legend: {
-        position: "bottom" as const,
-        labels: {
-          color: "#201708",
-          font: {
-            size: 13,
-            family: "Urbanist",
-          },
-        },
-      },
-      datalabels: {
-        color: "#201708",
-        font: {
-          size: 20,
-          family: "Urbanist",
-        },
-        formatter: (value: string) => value,
-      },
-    },
-    elements: {
-      arc: {
-        hoverOffset: 0,
-      },
-    },
-  };
+  const COLORS = ["#F08845", "#E9C46A", "#1DB79D"];
 
   return (
     <>
@@ -200,103 +176,197 @@ function Swap() {
               <Col sm={12} xl={10}>
                 <div className="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-5">
                   {/* Chart 1 */}
-                  <div className="flex flex-col items-center flex-1 lg:px-10">
-                    <Pie
-                      data={{
-                        labels: ["Lycée professionel", "BTS", "Lycée général"],
-                        datasets: [
-                          {
-                            data: [3, 1, 2],
-                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
-                            hoverBackgroundColor: [
-                              "#F08845",
-                              "#E9C46A",
-                              "#1DB79D",
-                            ],
-                            hoverBorderColor: "white",
-                            borderColor: "white",
-                            borderWidth: 2,
-                            hoverBorderWidth: 2,
-                          },
-                        ],
-                      }}
-                      options={options}
-                    />
+                  <div className="flex flex-col items-center flex-1">
+                    <ResponsiveContainer width="100%" aspect={1}>
+                      <PieChart>
+                        <Pie
+                          data={[
+                            { name: "Lycée professionnel", value: 3 },
+                            { name: "BTS", value: 1 },
+                            { name: "Lycée général", value: 2 },
+                          ]}
+                          dataKey="value"
+                          nameKey="name"
+                          outerRadius="70%"
+                          stroke="#FCFCFC"
+                          strokeWidth={3}
+                        >
+                          <LabelList
+                            dataKey="name"
+                            position="outside"
+                            fill="#201708"
+                            offset={16}
+                            style={{
+                              fontSize: 16,
+                              fontFamily: "Urbanist",
+                              fontWeight: 400,
+                            }}
+                          />
+
+                          <Tooltip
+                            contentStyle={{
+                              backgroundColor: "#FCFCFC",
+                              border: "1px solid #EBEBEB",
+                              fontFamily: "Urbanist",
+                              fontSize: "16px",
+                              color: "#201708",
+                              padding: "4px 8px",
+                            }}
+                            formatter={(value, name) => [value, name]}
+                          />
+
+                          {COLORS.map((color, index) => (
+                            <Cell key={index} fill={color} />
+                          ))}
+                        </Pie>
+                      </PieChart>
+                    </ResponsiveContainer>
                     <span className="small">Type d'enseignement</span>
                   </div>
                   {/* Chart 2 */}
-                  <div className="flex flex-col items-center flex-1 lg:px-10">
-                    <Pie
-                      data={{
-                        labels: ["Contractuel", "Titulaire"],
-                        datasets: [
-                          {
-                            data: [1, 5],
-                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
-                            hoverBackgroundColor: [
-                              "#F08845",
-                              "#E9C46A",
-                              "#1DB79D",
-                            ],
-                            hoverBorderColor: "white",
-                            borderColor: "white",
-                            borderWidth: 2,
-                            hoverBorderWidth: 2,
-                          },
-                        ],
-                      }}
-                      options={options}
-                    />
+                  <div className="flex flex-col items-center flex-1">
+                    <ResponsiveContainer width="100%" aspect={1}>
+                      <PieChart>
+                        <Pie
+                          data={[
+                            { name: "Contractuel", value: 1 },
+                            { name: "Titulaire", value: 5 },
+                          ]}
+                          dataKey="value"
+                          nameKey="name"
+                          outerRadius="70%"
+                          stroke="#FCFCFC"
+                          startAngle={90}
+                          endAngle={-270}
+                          strokeWidth={3}
+                        >
+                          <LabelList
+                            dataKey="name"
+                            position="outside"
+                            fill="#201708"
+                            offset={16}
+                            style={{
+                              fontSize: 16,
+                              fontFamily: "Urbanist",
+                              fontWeight: 400,
+                            }}
+                          />
+
+                          <Tooltip
+                            contentStyle={{
+                              backgroundColor: "#FCFCFC",
+                              border: "1px solid #EBEBEB",
+                              fontFamily: "Urbanist",
+                              fontSize: "16px",
+                              color: "#201708",
+                              padding: "4px 8px",
+                            }}
+                            formatter={(value, name) => [value, name]}
+                          />
+
+                          {COLORS.map((color, index) => (
+                            <Cell key={index} fill={color} />
+                          ))}
+                        </Pie>
+                      </PieChart>
+                    </ResponsiveContainer>
                     <span className="small">Contractuel et titulaire</span>
                   </div>
                   {/* Chart 3 */}
-                  <div className="flex flex-col items-center flex-1 lg:px-10">
-                    <Pie
-                      data={{
-                        labels: ["Privé", "Public"],
-                        datasets: [
-                          {
-                            data: [1, 5],
-                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
-                            hoverBackgroundColor: [
-                              "#F08845",
-                              "#E9C46A",
-                              "#1DB79D",
-                            ],
-                            hoverBorderColor: "white",
-                            borderColor: "white",
-                            borderWidth: 2,
-                            hoverBorderWidth: 2,
-                          },
-                        ],
-                      }}
-                      options={options}
-                    />
+                  <div className="flex flex-col items-center flex-1">
+                    <ResponsiveContainer width="100%" aspect={1}>
+                      <PieChart>
+                        <Pie
+                          data={[
+                            { name: "Privé", value: 1 },
+                            { name: "Public", value: 5 },
+                          ]}
+                          dataKey="value"
+                          nameKey="name"
+                          outerRadius="70%"
+                          stroke="#FCFCFC"
+                          startAngle={90}
+                          endAngle={-270}
+                          strokeWidth={3}
+                        >
+                          <LabelList
+                            dataKey="name"
+                            position="outside"
+                            fill="#201708"
+                            offset={16}
+                            style={{
+                              fontSize: 16,
+                              fontFamily: "Urbanist",
+                              fontWeight: 400,
+                            }}
+                          />
+
+                          <Tooltip
+                            contentStyle={{
+                              backgroundColor: "#FCFCFC",
+                              border: "1px solid #EBEBEB",
+                              fontFamily: "Urbanist",
+                              fontSize: "16px",
+                              color: "#201708",
+                              padding: "4px 8px",
+                            }}
+                            formatter={(value, name) => [value, name]}
+                          />
+
+                          {COLORS.map((color, index) => (
+                            <Cell key={index} fill={color} />
+                          ))}
+                        </Pie>
+                      </PieChart>
+                    </ResponsiveContainer>
                     <span className="small">Type d'établissement</span>
                   </div>
                   {/* Chart 4 */}
-                  <div className="flex flex-col items-center flex-1 lg:px-10">
-                    <Pie
-                      data={{
-                        labels: ["0-1 an", "5-10 ans, 10+ ans"],
-                        datasets: [
-                          {
-                            data: [1, 1, 4],
-                            backgroundColor: ["#F08845", "#E9C46A", "#1DB79D"],
-                            hoverBackgroundColor: [
-                              "#F08845",
-                              "#E9C46A",
-                              "#1DB79D",
-                            ],
-                            hoverBorderColor: "white",
-                            borderColor: "white",
-                            borderWidth: 2,
-                            hoverBorderWidth: 2,
-                          },
-                        ],
-                      }}
-                      options={options}
-                    />
+                  <div className="flex flex-col items-center flex-1">
+                    <ResponsiveContainer width="100%" aspect={1}>
+                      <PieChart>
+                        <Pie
+                          data={[
+                            { name: "0-1 an", value: 1 },
+                            { name: "5-10 ans", value: 1 },
+                            { name: "10+ ans", value: 4 },
+                          ]}
+                          dataKey="value"
+                          nameKey="name"
+                          outerRadius="70%"
+                          stroke="#FCFCFC"
+                          strokeWidth={3}
+                        >
+                          <LabelList
+                            dataKey="name"
+                            position="outside"
+                            fill="#201708"
+                            offset={16}
+                            style={{
+                              fontSize: 16,
+                              fontFamily: "Urbanist",
+                              fontWeight: 400,
+                            }}
+                          />
+
+                          <Tooltip
+                            contentStyle={{
+                              backgroundColor: "#FCFCFC",
+                              border: "1px solid #EBEBEB",
+                              fontFamily: "Urbanist",
+                              fontSize: "16px",
+                              color: "#201708",
+                              padding: "4px 8px",
+                            }}
+                            formatter={(value, name) => [value, name]}
+                          />
+
+                          {COLORS.map((color, index) => (
+                            <Cell key={index} fill={color} />
+                          ))}
+                        </Pie>
+                      </PieChart>
+                    </ResponsiveContainer>
                     <span className="small">Ancienneté</span>
                   </div>
                 </div>

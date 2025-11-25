@@ -1,0 +1,27 @@
+{
+  "intro": [
+    "J'ai réalisé mon stage de fin d'études chez Orange Innovation, la filiale R&D du groupe Orange. J'y ai contribué à la refonte d'une interface web d'audit de sécurité mobile, développée au sein de l'équipe de cybersécurité dans laquelle j'étais intégré.",
+    "À l'origine, ce projet était conçu à des fins de recherche et son interface n'était pas destinée à un public non technique. Mon travail a consisté à repenser cette interface pour la rendre accessible à un public plus large, dans une démarche de sensibilisation à la cybersécurité.",
+    "L'application permet à un utilisateur de connecter son smartphone au réseau d'une Livebox et de visualiser les informations collectées sur son appareil via cette connexion : identité du téléphone, volume et type de trafic, applications concernées, destinations, etc."
+  ],
+  "context": [
+    "Stage",
+    "Interface web"
+  ],
+  "tools": [
+    "Figma",
+    "Angular",
+    "Bootstrap"
+  ],
+  "role": [
+    "UX Researcher",
+    "UX Designer",
+    "Développeur"
+  ],
+  "links": [
+    {
+      "link": "https://youtu.be/1kTZcAuLMqk",
+      "label": "Vidéo démo"
+    }
+  ]
+}
