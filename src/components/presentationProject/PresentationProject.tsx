@@ -5,7 +5,7 @@ import { ArrowSquareOut } from "@phosphor-icons/react";
 
 function PresentationProject({ project }: { project: Presentation }) {
   return (
-    <Container className="w-full flex flex-col gap-4">
+    <Container className="w-full flex flex-col gap-2">
       <Row justify="center">
         <Col sm={12} xl={10}>
           <h2>Projet</h2>

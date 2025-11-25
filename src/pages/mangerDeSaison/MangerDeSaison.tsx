@@ -136,11 +136,11 @@ function MangerDeSaison() {
                     écologique, un moyen d'accéder à des produits riches en
                     nutriments, savoureux, et bien souvent plus économiques.
                   </p>
-                  <p>
-                    Comment accompagner les utilisateurs dans une consommation
-                    plus responsable des fruits et légumes, tout en les
-                    encourageant à en intégrer davantage dans leur alimentation
-                    ?
+                  <p className="bold">
+                    Comment pourrions-nous accompagner les utilisateurs dans une
+                    consommation plus responsable des fruits et légumes, tout en
+                    les encourageant à en intégrer davantage dans leur
+                    alimentation ?
                   </p>
                 </div>
               </Col>
