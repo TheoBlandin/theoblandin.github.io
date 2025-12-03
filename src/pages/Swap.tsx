@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
-import HeaderProject from "../../components/headerProject/HeaderProject";
-import PresentationProject from "../../components/presentationProject/PresentationProject";
+import HeaderProject from "../components/headerProject/HeaderProject";
+import PresentationProject from "../components/presentationProject/PresentationProject";
 
-import Data from "./../../assets/projects/swap/project.json";
-import type { Presentation } from "../../types/types";
+import Data from "../assets/projects/swap/project.json";
+import type { Presentation } from "../types/types";
 
 import { Col, Container, Row } from "react-grid-system";
 
@@ -17,7 +17,7 @@ import {
   Tooltip,
 } from "recharts";
 
-import PersonaComponent from "../../components/persona/PersonaComponent";
+import PersonaComponent from "../components/persona/PersonaComponent";
 
 function Swap() {
   useEffect(() => {

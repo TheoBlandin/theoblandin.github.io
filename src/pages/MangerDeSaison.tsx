@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
-import HeaderProject from "../../components/headerProject/HeaderProject";
-import PresentationProject from "../../components/presentationProject/PresentationProject";
+import HeaderProject from "../components/headerProject/HeaderProject";
+import PresentationProject from "../components/presentationProject/PresentationProject";
 
-import Data from "./../../assets/projects/manger_de_saison/project.json";
-import type { Presentation } from "../../types/types";
+import Data from "../assets/projects/manger_de_saison/project.json";
+import type { Presentation } from "../types/types";
 
 import { Col, Container, Row } from "react-grid-system";
 

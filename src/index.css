@@ -43,6 +43,11 @@ ul {
   color: var(--dark);
 }
 
+a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 body,
 #root {
   margin: 0;

@@ -24,6 +24,7 @@
   color: var(--dark);
   transition: 0.5s;
   position: relative;
+  text-decoration: none;
 }
 
 .nav-link::before {
