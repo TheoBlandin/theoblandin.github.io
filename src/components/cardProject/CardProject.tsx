@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import type { ProjectOverview } from "../../types/types";
 
+import './CardProject.css'
+
 function CardProject({ project }: { project: ProjectOverview }) {
   return (
-    <Link to={project.link}>
+    <Link to={project.link} className="project-link">
       <div className="flex flex-col gap-1">
         <img src={project.image} className="rounded-sm" alt="" />
         <div>
