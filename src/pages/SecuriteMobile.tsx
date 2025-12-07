@@ -30,15 +30,37 @@ function SecuriteMobile() {
           <div className="flex flex-col-reverse md:flex-row gap-2 lg:gap-3 px-3 w-full max-w-[1440px]">
             <div className="bg-surface flex items-center justify-center py-6 px-4 lg:px-10 md:w-[25%]">
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/securite_mobile/mockup_mobile.png"
+                src="src/assets/projects/securite_mobile/mockup_mobile-1280.webp"
+                srcSet="
+                src/assets/projects/securite_mobile/mockup_mobile-480.webp 480w,
+                src/assets/projects/securite_mobile/mockup_mobile-768.webp 768w,
+                src/assets/projects/securite_mobile/mockup_mobile-1280.webp 1280w
+                "
+                sizes="
+                (max-width: 480px) 100vw,
+                (max-width: 768px) 100vw,
+                768px
+                "
                 alt=""
               />
             </div>
             <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/securite_mobile/mockup_monitor.png"
+                src="src/assets/projects/securite_mobile/mockup_monitor-1280.webp"
+                srcSet="
+                src/assets/projects/securite_mobile/mockup_monitor-480.webp 480w,
+                src/assets/projects/securite_mobile/mockup_monitor-768.webp 768w,
+                src/assets/projects/securite_mobile/mockup_monitor-1280.webp 1280w
+                "
+                sizes="
+                (max-width: 480px) 100vw,
+                (max-width: 768px) 100vw,
+                768px
+                "
                 alt=""
               />
             </div>
@@ -133,7 +155,18 @@ function SecuriteMobile() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/securite_mobile/old_ui.png"
+                    loading="lazy"
+                    src="src/assets/projects/securite_mobile/old_ui-1280.webp"
+                    srcSet="
+                    src/assets/projects/securite_mobile/old_ui-480.webp 480w,
+                    src/assets/projects/securite_mobile/old_ui-768.webp 768w,
+                    src/assets/projects/securite_mobile/old_ui-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Ancienne interface du projet accompagnée de commentaires"
                   />
                 </div>
@@ -160,7 +193,7 @@ function SecuriteMobile() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/securite_mobile/ines-paillez.png",
+                    img: "src/assets/projects/securite_mobile/ines_paillez-1280.webp",
                     color: "yellow",
                     name: "Inès Paillez",
                     features: [
@@ -194,7 +227,7 @@ function SecuriteMobile() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/securite_mobile/charlie-obel.png",
+                    img: "src/assets/projects/securite_mobile/charlie_obel-1280.webp",
                     color: "orange",
                     name: "Charlie Obel",
                     features: [
@@ -229,7 +262,7 @@ function SecuriteMobile() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/securite_mobile/oscar-blot.png",
+                    img: "src/assets/projects/securite_mobile/oscar_blot-1280.webp",
                     color: "green",
                     name: "Oscar Blot",
                     features: [
@@ -322,7 +355,18 @@ function SecuriteMobile() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/securite_mobile/userflow.png"
+                    loading="lazy"
+                    src="src/assets/projects/securite_mobile/userflow-1280.webp"
+                    srcSet="
+                    src/assets/projects/securite_mobile/userflow-480.webp 480w,
+                    src/assets/projects/securite_mobile/userflow-768.webp 768w,
+                    src/assets/projects/securite_mobile/userflow-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Schéma illustrant le parcours utilisateur depuis l'écran de connexion : l'utilisateur commence par scanner le QR Code pour se connecter au réseau. Sur l'écran de la borne, un écran de chargement apparaît avant l'affichage du tableau de bord, tandis que le site web mobile s'ouvre automatiquement sur le téléphone. Depuis cette interface, l'utilisateur peut télécharger le compte rendu, consulter le détail du score, visualiser les conseils de sécurité, explorer la carte et l'historique de connexion. À tout moment, il peut se déconnecter pour revenir à l'écran de connexion sur la borne."
                   />
                 </div>
@@ -350,7 +394,18 @@ function SecuriteMobile() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/securite_mobile/figma_evolution.png"
+                    loading="lazy"
+                    src="src/assets/projects/securite_mobile/figma_evolution-1280.webp"
+                    srcSet="
+                    src/assets/projects/securite_mobile/figma_evolution-480.webp 480w,
+                    src/assets/projects/securite_mobile/figma_evolution-768.webp 768w,
+                    src/assets/projects/securite_mobile/figma_evolution-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Trois versions successives de la maquette avec annotations, illustrant le processus itératif et les ajustements réalisés suite aux retours de l'équipe et des testeurs."
                   />
                 </div>
@@ -411,7 +466,10 @@ function SecuriteMobile() {
             <Row justify="center">
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
-                  <div className="w-full" style={{ position: "relative", paddingTop: "56.25%" }}>
+                  <div
+                    className="w-full"
+                    style={{ position: "relative", paddingTop: "56.25%" }}
+                  >
                     <ReactPlayer
                       src="https://youtu.be/1kTZcAuLMqk"
                       width="100%"

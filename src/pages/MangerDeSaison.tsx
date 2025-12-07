@@ -45,38 +45,109 @@ function MangerDeSaison() {
                 style={{ height: height ?? "auto" }}
               >
                 <img
+                  loading="lazy"
                   className="w-full lg:w-auto lg:h-full"
-                  src="src/assets/projects/manger_de_saison/mockup-1.png"
+                  src="src/assets/projects/manger_de_saison/mockup-1-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/mockup-1-480.webp 480w,
+                    src/assets/projects/manger_de_saison/mockup-1-768.webp 768w,
+                    src/assets/projects/manger_de_saison/mockup-1-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                   alt=""
                 />
               </div>
               <div
                 ref={showcaseRef}
-                className="flex-1 hidden lg:grid grid-cols-2 gap-3 h-fit"
+                className="flex-1 grid grid-cols-2 gap-3 h-fit"
               >
                 <img
-                  src="src/assets/projects/manger_de_saison/fruit-1.png"
-                  alt=""
+                  loading="lazy"
+                  src="src/assets/projects/manger_de_saison/fruit_1-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/fruit_1-480.webp 480w,
+                    src/assets/projects/manger_de_saison/fruit_1-768.webp 768w,
+                    src/assets/projects/manger_de_saison/fruit_1-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                 />
                 <img
-                  src="src/assets/projects/manger_de_saison/fruit-2.png"
-                  alt=""
+                  loading="lazy"
+                  src="src/assets/projects/manger_de_saison/fruit_2-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/fruit_2-480.webp 480w,
+                    src/assets/projects/manger_de_saison/fruit_2-768.webp 768w,
+                    src/assets/projects/manger_de_saison/fruit_2-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                 />
                 <img
-                  src="src/assets/projects/manger_de_saison/fruit-3.png"
-                  alt=""
+                  loading="lazy"
+                  src="src/assets/projects/manger_de_saison/fruit_3-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/fruit_3-480.webp 480w,
+                    src/assets/projects/manger_de_saison/fruit_3-768.webp 768w,
+                    src/assets/projects/manger_de_saison/fruit_3-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                 />
                 <img
-                  src="src/assets/projects/manger_de_saison/fruit-4.png"
-                  alt=""
+                  loading="lazy"
+                  src="src/assets/projects/manger_de_saison/fruit_4-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/fruit_4-480.webp 480w,
+                    src/assets/projects/manger_de_saison/fruit_4-768.webp 768w,
+                    src/assets/projects/manger_de_saison/fruit_4-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                 />
                 <img
-                  src="src/assets/projects/manger_de_saison/fruit-5.png"
-                  alt=""
+                  loading="lazy"
+                  src="src/assets/projects/manger_de_saison/fruit_5-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/fruit_5-480.webp 480w,
+                    src/assets/projects/manger_de_saison/fruit_5-768.webp 768w,
+                    src/assets/projects/manger_de_saison/fruit_5-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                 />
                 <img
-                  src="src/assets/projects/manger_de_saison/fruit-6.png"
-                  alt=""
+                  loading="lazy"
+                  src="src/assets/projects/manger_de_saison/fruit_6-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/fruit_6-480.webp 480w,
+                    src/assets/projects/manger_de_saison/fruit_6-768.webp 768w,
+                    src/assets/projects/manger_de_saison/fruit_6-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                 />
               </div>
               <div
@@ -84,37 +155,21 @@ function MangerDeSaison() {
                 style={{ height: height ?? "auto" }}
               >
                 <img
+                  loading="lazy"
                   className="w-full lg:w-auto lg:h-full"
-                  src="src/assets/projects/manger_de_saison/mockup-2.png"
-                  alt=""
+                  src="src/assets/projects/manger_de_saison/mockup-2-1280.webp"
+                  srcSet="
+                    src/assets/projects/manger_de_saison/mockup-2-480.webp 480w,
+                    src/assets/projects/manger_de_saison/mockup-2-768.webp 768w,
+                    src/assets/projects/manger_de_saison/mockup-2-1280.webp 1280w
+                  "
+                  sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                  "
                 />
               </div>
-            </div>
-            <div className="flex-1 grid lg:hidden grid-cols-2 md:grid-cols-3 gap-3 h-fit">
-              <img
-                src="src/assets/projects/manger_de_saison/fruit-1.png"
-                alt=""
-              />
-              <img
-                src="src/assets/projects/manger_de_saison/fruit-2.png"
-                alt=""
-              />
-              <img
-                src="src/assets/projects/manger_de_saison/fruit-3.png"
-                alt=""
-              />
-              <img
-                src="src/assets/projects/manger_de_saison/fruit-4.png"
-                alt=""
-              />
-              <img
-                src="src/assets/projects/manger_de_saison/fruit-5.png"
-                alt=""
-              />
-              <img
-                src="src/assets/projects/manger_de_saison/fruit-6.png"
-                alt=""
-              />
             </div>
           </div>
         </div>
@@ -200,13 +255,35 @@ function MangerDeSaison() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/manger_de_saison/hand_drawn.png"
+                    loading="lazy"
+                    src="src/assets/projects/manger_de_saison/hand_drawn-1280.webp"
+                    srcSet="
+                    src/assets/projects/manger_de_saison/hand_drawn-480.webp 480w,
+                    src/assets/projects/manger_de_saison/hand_drawn-768.webp 768w,
+                    src/assets/projects/manger_de_saison/hand_drawn-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Croquis à la main présentant les premières idées d'interface et de fonctionnalités pour le projet."
                   />
                 </div>
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/manger_de_saison/figma.png"
+                    loading="lazy"
+                    src="src/assets/projects/manger_de_saison/figma-1280.webp"
+                    srcSet="
+                    src/assets/projects/manger_de_saison/figma-480.webp 480w,
+                    src/assets/projects/manger_de_saison/figma-768.webp 768w,
+                    src/assets/projects/manger_de_saison/figma-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Maquettes Figma haute fidélité, accompagnées de commentaires sur le fonctionnement de l'application."
                   />
                 </div>
@@ -232,7 +309,18 @@ function MangerDeSaison() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/manger_de_saison/inkscape.png"
+                    loading="lazy"
+                    src="src/assets/projects/manger_de_saison/inkscape-1280.webp"
+                    srcSet="
+                    src/assets/projects/manger_de_saison/inkscape-480.webp 480w,
+                    src/assets/projects/manger_de_saison/inkscape-768.webp 768w,
+                    src/assets/projects/manger_de_saison/inkscape-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Capture d'écran d'Inkscape montrant la création de l'illustration d'une paire de cerises."
                   />
                 </div>

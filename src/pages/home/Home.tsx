@@ -31,10 +31,10 @@ function Home() {
         className="bg-blue hero-banner"
       >
         <Container className="w-full">
-          <img src={Cloud} className="absolute h-auto cloud-1" alt="" />
-          <img src={Cloud} className="absolute h-auto cloud-2" alt="" />
-          <img src={Cloud} className="absolute h-auto cloud-3" alt="" />
-          <img src={Cloud} className="absolute h-auto cloud-4" alt="" />
+          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-1" alt="" />
+          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-2" alt="" />
+          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-3" alt="" />
+          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-4" alt="" />
           <Row>
             <Col xl={7} xxl={6}>
               <div className="h-full flex flex-col justify-center gap-1">
@@ -47,6 +47,7 @@ function Home() {
             </Col>
             <Col xl={5} xxl={6} style={{ textAlign: "center" }}>
               <img
+              loading="lazy"
                 className="aspect-square max-w-[470px] w-full mx-auto picture"
                 src={Picture}
                 alt="Auto-portrait dessiné numériquement"
@@ -55,12 +56,12 @@ function Home() {
           </Row>
           <Row justify="center">
             <a href="#projects">
-              <img src={ArrowMore} alt="Aller à la section principale" />
+              <img loading="lazy" src={ArrowMore} alt="Aller à la section principale" />
             </a>
           </Row>
 
-          <img className="arrow-self absolute" src={ArrowSelf} alt="" />
-          <img className="arrow-poulpy absolute" src={ArrowPoulpy} alt="" />
+          <img loading="lazy" className="arrow-self absolute" src={ArrowSelf} alt="" />
+          <img loading="lazy" className="arrow-poulpy absolute" src={ArrowPoulpy} alt="" />
           <span className="lead name-poulpy absolute">Poulpy</span>
         </Container>
       </section>

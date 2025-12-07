@@ -76,35 +76,101 @@ function Swap() {
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-3 px-3 w-full max-w-[1440px]">
             <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/mockup.png"
+                src="src/assets/projects/swap/mockup-1280.webp"
+                srcSet="
+                  src/assets/projects/swap/mockup-480.webp 480w,
+                  src/assets/projects/swap/mockup-768.webp 768w,
+                  src/assets/projects/swap/mockup-1280.webp 1280w
+                  "
+                sizes="
+                  (max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  768px
+                  "
                 alt=""
               />
             </div>
             <div className="flex flex-col gap-2 w-full lg:w-[33%]">
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color-primary.png"
+                src="src/assets/projects/swap/color_primary-1280.webp"
+                srcSet="
+                  src/assets/projects/swap/color_primary-480.webp 480w,
+                  src/assets/projects/swap/color_primary-768.webp 768w,
+                  src/assets/projects/swap/color_primary-1280.webp 1280w
+                  "
+                sizes="
+                  (max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  768px
+                  "
                 alt=""
               />
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color-secondary.png"
+                src="src/assets/projects/swap/color_secondary-1280.webp"
+                srcSet="
+                  src/assets/projects/swap/color_secondary-480.webp 480w,
+                  src/assets/projects/swap/color_secondary-768.webp 768w,
+                  src/assets/projects/swap/color_secondary-1280.webp 1280w
+                  "
+                sizes="
+                  (max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  768px
+                  "
                 alt=""
               />
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color-accent.png"
+                src="src/assets/projects/swap/color_accent-1280.webp"
+                srcSet="
+                  src/assets/projects/swap/color_accent-480.webp 480w,
+                  src/assets/projects/swap/color_accent-768.webp 768w,
+                  src/assets/projects/swap/color_accent-1280.webp 1280w
+                  "
+                sizes="
+                  (max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  768px
+                  "
                 alt=""
               />
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color-text.png"
+                src="src/assets/projects/swap/color_text-1280.webp"
+                srcSet="
+                  src/assets/projects/swap/color_text-480.webp 480w,
+                  src/assets/projects/swap/color_text-768.webp 768w,
+                  src/assets/projects/swap/color_text-1280.webp 1280w
+                  "
+                sizes="
+                  (max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  768px
+                  "
                 alt=""
               />
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color-background.png"
+                src="src/assets/projects/swap/color_background-1280.webp"
+                srcSet="
+                  src/assets/projects/swap/color_background-480.webp 480w,
+                  src/assets/projects/swap/color_background-768.webp 768w,
+                  src/assets/projects/swap/color_background-1280.webp 1280w
+                  "
+                sizes="
+                  (max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  768px
+                  "
                 alt=""
               />
             </div>
@@ -402,7 +468,18 @@ function Swap() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/swap/word-cloud.png"
+                    loading="lazy"
+                    src="src/assets/projects/swap/word_cloud-1280.webp"
+                    srcSet="
+                    src/assets/projects/swap/word_cloud-480.webp 480w,
+                    src/assets/projects/swap/word_cloud-768.webp 768w,
+                    src/assets/projects/swap/word_cloud-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Nuages de mots avec la notion d'entraide comme notion la plus importante"
                   />
                 </div>
@@ -437,7 +514,18 @@ function Swap() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/swap/brainstorming.png"
+                    loading="lazy"
+                    src="src/assets/projects/swap/brainstorming-1280.webp"
+                    srcSet="
+                      src/assets/projects/swap/brainstorming-480.webp 480w,
+                      src/assets/projects/swap/brainstorming-768.webp 768w,
+                      src/assets/projects/swap/brainstorming-1280.webp 1280w
+                      "
+                    sizes="
+                      (max-width: 480px) 100vw,
+                      (max-width: 768px) 100vw,
+                      768px
+                      "
                     alt="Schéma des notions principales de SWAP. Les notions principales sont la ressource, le profil, la recherche et le formulaire d'ajout."
                   />
                 </div>
@@ -464,7 +552,7 @@ function Swap() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/swap/sophie-garnier.png",
+                    img: "src/assets/projects/swap/sophie_garnier-1280.webp",
                     color: "yellow",
                     name: "Sophie Garnier",
                     features: [
@@ -500,7 +588,7 @@ function Swap() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/swap/karine-bernier.png",
+                    img: "src/assets/projects/swap/karine_bernier-1280.webp",
                     color: "orange",
                     name: "Karine Bernier",
                     features: [
@@ -536,7 +624,7 @@ function Swap() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/swap/damien-leroux.png",
+                    img: "src/assets/projects/swap/damien_leroux-1280.webp",
                     color: "green",
                     name: "Damien Leroux",
                     features: [
@@ -590,7 +678,18 @@ function Swap() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/swap/userflow.png"
+                    loading="lazy"
+                    src="src/assets/projects/swap/userflow-1280.webp"
+                    srcSet="
+                      src/assets/projects/swap/userflow-480.webp 480w,
+                      src/assets/projects/swap/userflow-768.webp 768w,
+                      src/assets/projects/swap/userflow-1280.webp 1280w
+                      "
+                    sizes="
+                      (max-width: 480px) 100vw,
+                      (max-width: 768px) 100vw,
+                      768px
+                      "
                     alt="Schéma montrant les actions possibles depuis la page d'accueil : choisir une catégorie, rechercher, se connecter ou s'inscrire, publier une ressource ou consulter son profil. Le parcours détaille aussi la navigation vers une ressource, ses options comme consulter, voter, ajouter à une liste, partager ou signaler, avec indication des actions nécessitant une connexion."
                   />
                 </div>
@@ -621,7 +720,18 @@ function Swap() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/swap/wireframe.png"
+                    loading="lazy"
+                    src="src/assets/projects/swap/wireframe-1280.webp"
+                    srcSet="
+                      src/assets/projects/swap/wireframe-480.webp 480w,
+                      src/assets/projects/swap/wireframe-768.webp 768w,
+                      src/assets/projects/swap/wireframe-1280.webp 1280w
+                      "
+                    sizes="
+                      (max-width: 480px) 100vw,
+                      (max-width: 768px) 100vw,
+                      768px
+                      "
                     alt="Maquette Figma basse fidélité, accompagnée de commentaires sur le fonctionnement de l'application."
                   />
                 </div>
@@ -648,7 +758,18 @@ function Swap() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/swap/design-system.png"
+                    loading="lazy"
+                    src="src/assets/projects/swap/design_system-1280.webp"
+                    srcSet="
+                      src/assets/projects/swap/design_system-480.webp 480w,
+                      src/assets/projects/swap/design_system-768.webp 768w,
+                      src/assets/projects/swap/design_system-1280.webp 1280w
+                      "
+                    sizes="
+                      (max-width: 480px) 100vw,
+                      (max-width: 768px) 100vw,
+                      768px
+                    "
                     alt="Extrait de composants du design system créé pour le projet"
                   />
                 </div>

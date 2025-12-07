@@ -45,15 +45,37 @@ function Proficlais() {
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-3 px-3 w-full max-w-[1440px]">
             <div className="bg-surface flex items-center justify-center py-6 px-4 lg:px-6 lg:w-[33%]">
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/proficlais/chatbot.png"
+                src="src/assets/projects/proficlais/chatbot-1280.webp"
+                srcSet="
+                src/assets/projects/proficlais/chatbot-480.webp 480w,
+                src/assets/projects/proficlais/chatbot-768.webp 768w,
+                src/assets/projects/proficlais/chatbot-1280.webp 1280w
+                "
+                sizes="
+                (max-width: 480px) 100vw,
+                (max-width: 768px) 100vw,
+                768px
+                "
                 alt=""
               />
             </div>
             <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
               <img
+                loading="lazy"
                 className="w-full"
-                src="src/assets/projects/proficlais/admin_mockup.png"
+                src="src/assets/projects/proficlais/admin_mockup-1280.webp"
+                srcSet="
+                  src/assets/projects/proficlais/admin_mockup-480.webp 480w,
+                  src/assets/projects/proficlais/admin_mockup-768.webp 768w,
+                  src/assets/projects/proficlais/admin_mockup-1280.webp 1280w
+                  "
+                sizes="
+                  (max-width: 480px) 100vw,
+                  (max-width: 768px) 100vw,
+                  768px
+                  "
                 alt=""
               />
             </div>
@@ -204,7 +226,18 @@ function Proficlais() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/proficlais/visual_identity.png"
+                    loading="lazy"
+                    src="src/assets/projects/proficlais/visual_identity-1280.webp"
+                    srcSet="
+                    src/assets/projects/proficlais/visual_identity-480.webp 480w,
+                    src/assets/projects/proficlais/visual_identity-768.webp 768w,
+                    src/assets/projects/proficlais/visual_identity-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Logo, couleurs et typographie de Proficlais"
                   />
                 </div>
@@ -247,11 +280,24 @@ function Proficlais() {
                     width="100%"
                     height="100%"
                     loop={true}
+                    playing={true}
+                    muted={true}
                   />
                 </div>
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
-                    src="src/assets/projects/proficlais/palette_personnalisation.png"
+                    loading="lazy"
+                    src="src/assets/projects/proficlais/palette_personnalisation-1280.webp"
+                    srcSet="
+                    src/assets/projects/proficlais/palette_personnalisation-480.webp 480w,
+                    src/assets/projects/proficlais/palette_personnalisation-768.webp 768w,
+                    src/assets/projects/proficlais/palette_personnalisation-1280.webp 1280w
+                    "
+                    sizes="
+                    (max-width: 480px) 100vw,
+                    (max-width: 768px) 100vw,
+                    768px
+                    "
                     alt="Deux versions du chatbot côte à côté, l'une en violet et l'autre en vert. Le détails des couleurs est indiqués via des annotations."
                   />
                 </div>

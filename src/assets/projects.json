@@ -2,42 +2,42 @@
   "projects": [
     {
       "title": "Manger de saison",
-      "image": "src/assets/projects/manger_de_saison/overview.png",
+      "image": "src/assets/projects/manger_de_saison/overview-1280.webp",
       "description": "Application mobile d'un calendrier interactif des fruits et légumes en fonction de saison",
       "tags": ["Design", "Développement", "Mobile"],
       "link": "/manger_de_saison"
     },
     {
       "title": "SWAP",
-      "image": "src/assets/projects/swap/overview.png",
+      "image": "src/assets/projects/swap/overview-1280.webp",
       "description": "Mise en application de la démarche Design Thinking dans le cadre d'un projet de fin d'études",
       "tags": ["Design", "Figma", "UX Research"],
       "link": "/swap"
     },
     {
       "title": "Sécurité mobile",
-      "image": "src/assets/projects/securite_mobile/overview.png",
+      "image": "src/assets/projects/securite_mobile/overview-1280.webp",
       "description": "Refonte de l'interface graphique d'une borne d'audit de sécurité mobile développé par Orange Innovation",
       "tags": ["Design", "Développement", "UX Research"],
       "link": "/securite_mobile"
     },
     {
       "title": "Kerflow",
-      "image": "src/assets/projects/kerflow/overview.png",
+      "image": "src/assets/projects/kerflow/overview-1280.webp",
       "description": "Design System pour un projet de startup maturé à l'INRIA Startup Studio de Rennes",
       "tags": ["Design", "Figma", "Design System"],
       "link": "/kerflow"
     },
     {
       "title": "A4LL",
-      "image": "src/assets/projects/a4ll/overview.png",
+      "image": "src/assets/projects/a4ll/overview-1280.webp",
       "description": "Refonte de l'interface graphique d'un projet de recherche dédié à l'analyse du niveau d'anglais sur une classe",
       "tags": ["Design", "Développement", "UX Research"],
       "link": "/a4ll"
     },
     {
       "title": "Proficlais",
-      "image": "src/assets/projects/proficlais/overview.png",
+      "image": "src/assets/projects/proficlais/overview-1280.webp",
       "description": "Évaluation du niveau d'anglais via une interaction scénarisée avec un chatbot, visant à qualifier le profil de l'utilisateur",
       "tags": ["Design", "Développement", "UX Research"],
       "link": "/proficlais"

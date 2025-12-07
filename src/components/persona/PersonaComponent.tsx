@@ -1,16 +1,36 @@
 import { Col, Container, Row } from "react-grid-system";
 import type { Persona } from "../../types/types";
 
-import './PersonaComponent.css'
+import "./PersonaComponent.css";
 
 function PersonaComponent({ persona }: { persona: Persona }) {
+  const getSrcSet = (imagePath: string) => {
+    const base = imagePath.replace("-1280.webp", "");
+    return `
+      ${base}-480.webp 480w,
+      ${base}-768.webp 768w,
+      ${base}-1280.webp 1280w
+    `;
+  };
+
   return (
     <Container className="w-full py-3">
       <Row align="center">
-        <Col xl={12} xxl={9} className="flex flex-col items-center gap-5 mb-5 lg:mb-0">
+        <Col
+          xl={12}
+          xxl={9}
+          className="flex flex-col items-center gap-5 mb-5 lg:mb-0"
+        >
           <div className="flex flex-col gap-4">
             <img
+              loading="lazy"
               src={persona.img}
+              srcSet={getSrcSet(persona.img)}
+              sizes="
+                (max-width: 480px) 100vw,
+                (max-width: 768px) 100vw,
+                768px
+              "
               alt=""
               className="h-[120px] md:h-[150px] lg:h-[200px] object-contain"
             />
