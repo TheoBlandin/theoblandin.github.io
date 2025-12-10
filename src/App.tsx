@@ -12,6 +12,7 @@ import MangerDeSaison from "./pages/MangerDeSaison";
 import Swap from "./pages/Swap";
 import SecuriteMobile from "./pages/SecuriteMobile";
 import Proficlais from "./pages/Proficlais";
+import About from "./pages/about/About";
 
 setConfiguration({
   breakpoints: [360, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl
@@ -48,6 +49,7 @@ function App() {
           <Route path="*" element={<h1>Page non trouvée</h1>} />{" "}
           {/* Page 404 à faire */}
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/manger_de_saison" element={<MangerDeSaison />} />
           <Route path="/swap" element={<Swap />} />
           <Route path="/securite_mobile" element={<SecuriteMobile />} />

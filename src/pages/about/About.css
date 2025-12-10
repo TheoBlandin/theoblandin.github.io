@@ -1,0 +1,10 @@
+.tools-container {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 12px;
+    height: 64px;
+}

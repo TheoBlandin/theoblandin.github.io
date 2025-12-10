@@ -40,8 +40,7 @@ function Home() {
               <div className="h-full flex flex-col justify-center gap-1">
                 <h1 id="hero-title">Salut, moi c'est Théo&nbsp;!</h1>
                 <p className="catchphrase">
-                  UX Designer et Développeur Front-End Rennais spécialisé en
-                  accessibilité numérique
+                  UX Designer et Développeur Front-End Rennais
                 </p>
               </div>
             </Col>
