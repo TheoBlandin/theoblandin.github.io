@@ -11,6 +11,8 @@ import PersonaComponent from "../components/persona/PersonaComponent";
 
 import ReactPlayer from "react-player";
 
+import { getAsset } from "../utils/getAsset";
+
 function SecuriteMobile() {
   useEffect(() => {
     document.title = "Sécurité mobile - Théo Blandin";
@@ -32,17 +34,13 @@ function SecuriteMobile() {
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/securite_mobile/mockup_mobile-1280.webp"
-                srcSet="
-                src/assets/projects/securite_mobile/mockup_mobile-480.webp 480w,
-                src/assets/projects/securite_mobile/mockup_mobile-768.webp 768w,
-                src/assets/projects/securite_mobile/mockup_mobile-1280.webp 1280w
-                "
-                sizes="
-                (max-width: 480px) 100vw,
-                (max-width: 768px) 100vw,
-                768px
-                "
+                src={getAsset("/src/assets/projects/securite_mobile/mockup_mobile-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/securite_mobile/mockup_mobile-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/securite_mobile/mockup_mobile-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/securite_mobile/mockup_mobile-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
             </div>
@@ -50,17 +48,13 @@ function SecuriteMobile() {
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/securite_mobile/mockup_monitor-1280.webp"
-                srcSet="
-                src/assets/projects/securite_mobile/mockup_monitor-480.webp 480w,
-                src/assets/projects/securite_mobile/mockup_monitor-768.webp 768w,
-                src/assets/projects/securite_mobile/mockup_monitor-1280.webp 1280w
-                "
-                sizes="
-                (max-width: 480px) 100vw,
-                (max-width: 768px) 100vw,
-                768px
-                "
+                src={getAsset("/src/assets/projects/securite_mobile/mockup_monitor-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/securite_mobile/mockup_monitor-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/securite_mobile/mockup_monitor-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/securite_mobile/mockup_monitor-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
             </div>
@@ -156,17 +150,13 @@ function SecuriteMobile() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/securite_mobile/old_ui-1280.webp"
-                    srcSet="
-                    src/assets/projects/securite_mobile/old_ui-480.webp 480w,
-                    src/assets/projects/securite_mobile/old_ui-768.webp 768w,
-                    src/assets/projects/securite_mobile/old_ui-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset("/src/assets/projects/securite_mobile/old_ui-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/securite_mobile/old_ui-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/securite_mobile/old_ui-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/securite_mobile/old_ui-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Ancienne interface du projet accompagnée de commentaires"
                   />
                 </div>
@@ -193,7 +183,7 @@ function SecuriteMobile() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/securite_mobile/ines_paillez-1280.webp",
+                    img: "/src/assets/projects/securite_mobile/ines_paillez-1280.webp",
                     color: "yellow",
                     name: "Inès Paillez",
                     features: [
@@ -227,7 +217,7 @@ function SecuriteMobile() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/securite_mobile/charlie_obel-1280.webp",
+                    img: "/src/assets/projects/securite_mobile/charlie_obel-1280.webp",
                     color: "orange",
                     name: "Charlie Obel",
                     features: [
@@ -262,7 +252,7 @@ function SecuriteMobile() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/securite_mobile/oscar_blot-1280.webp",
+                    img: "/src/assets/projects/securite_mobile/oscar_blot-1280.webp",
                     color: "green",
                     name: "Oscar Blot",
                     features: [
@@ -356,17 +346,13 @@ function SecuriteMobile() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/securite_mobile/userflow-1280.webp"
-                    srcSet="
-                    src/assets/projects/securite_mobile/userflow-480.webp 480w,
-                    src/assets/projects/securite_mobile/userflow-768.webp 768w,
-                    src/assets/projects/securite_mobile/userflow-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset("/src/assets/projects/securite_mobile/userflow-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/securite_mobile/userflow-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/securite_mobile/userflow-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/securite_mobile/userflow-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Schéma illustrant le parcours utilisateur depuis l'écran de connexion."
                   />
                 </div>
@@ -395,17 +381,13 @@ function SecuriteMobile() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/securite_mobile/figma_evolution-1280.webp"
-                    srcSet="
-                    src/assets/projects/securite_mobile/figma_evolution-480.webp 480w,
-                    src/assets/projects/securite_mobile/figma_evolution-768.webp 768w,
-                    src/assets/projects/securite_mobile/figma_evolution-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset("/src/assets/projects/securite_mobile/figma_evolution-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/securite_mobile/figma_evolution-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/securite_mobile/figma_evolution-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/securite_mobile/figma_evolution-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Trois versions successives de la maquette avec annotations, illustrant le processus itératif et les ajustements réalisés suite aux retours de l'équipe et des testeurs."
                   />
                 </div>

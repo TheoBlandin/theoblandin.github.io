@@ -14,6 +14,8 @@ import {
 
 import "./About.css";
 
+import { getAsset } from "../../utils/getAsset";
+
 function About() {
   useEffect(() => {
     document.title = "À propos - Théo Blandin";
@@ -95,7 +97,7 @@ function About() {
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/figma.svg"
+                      src={getAsset("/src/assets/about/tools/figma.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -136,7 +138,7 @@ function About() {
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2 items-stretch">
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/html.svg"
+                      src={getAsset("/src/assets/about/tools/html.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -144,7 +146,7 @@ function About() {
                   </div>
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/css.svg"
+                      src={getAsset("/src/assets/about/tools/css.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -152,7 +154,7 @@ function About() {
                   </div>
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/javascript.svg"
+                      src={getAsset("/src/assets/about/tools/javascript.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -160,7 +162,7 @@ function About() {
                   </div>
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/typescript.svg"
+                      src={getAsset("/src/assets/about/tools/typescript.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -168,7 +170,7 @@ function About() {
                   </div>
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/react.svg"
+                      src={getAsset("/src/assets/about/tools/react.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -176,7 +178,7 @@ function About() {
                   </div>
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/angular.svg"
+                      src={getAsset("/src/assets/about/tools/angular.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -184,7 +186,7 @@ function About() {
                   </div>
                   <div className="tools-container">
                     <img
-                      src="src/assets/about/tools/tailwind.svg"
+                      src={getAsset("/src/assets/about/tools/tailwind.svg")}
                       alt=""
                       className="flex-shrink-0"
                     />
@@ -211,25 +213,25 @@ function About() {
           <Col sm={12} xl={10} className="flex flex-col lg:flex-row gap-3 lg:gap-5">
             <div className="flex flex-row gap-3 lg:gap-5">
               <div className="flex flex-col gap-3 lg:gap-5">
-                <img src="src/assets/about/photos/pool.png" alt="Piscine municipale vide" />
-                <img src="src/assets/about/photos/puzzle.png" alt="Puzzle entamé" />
+                <img src={getAsset("/src/assets/about/photos/pool.png")} alt="Piscine municipale vide" />
+                <img src={getAsset("/src/assets/about/photos/puzzle.png")} alt="Puzzle entamé" />
               </div>
 
               <div className="flex flex-col gap-3 lg:gap-5">
-                <img src="src/assets/about/photos/sea.png" alt="Vagues qui s'écrasent sur des rochers" />
-                <img src="src/assets/about/photos/cooking.png" alt="Madeleines avec une coque en chocolat" />
+                <img src={getAsset("/src/assets/about/photos/sea.png")} alt="Vagues qui s'écrasent sur des rochers" />
+                <img src={getAsset("/src/assets/about/photos/cooking.png")} alt="Madeleines avec une coque en chocolat" />
               </div>
             </div>
 
             <div className="flex flex-row gap-3 lg:gap-5">
               <div className="flex flex-col gap-3 lg:gap-5">
-                <img src="src/assets/about/photos/street_art.png" alt="Photo d'un street art où on voit un ours demander un calin" />
-                <img src="src/assets/about/photos/cat.png" alt="Gros plan d'un chat blanc qui dort" />
+                <img src={getAsset("/src/assets/about/photos/street_art.png")} alt="Photo d'un street art où on voit un ours demander un calin" />
+                <img src={getAsset("/src/assets/about/photos/cat.png")} alt="Gros plan d'un chat blanc qui dort" />
               </div>
 
               <div className="flex flex-col gap-3 lg:gap-5">
-                <img src="src/assets/about/photos/crafting.png" alt="Citrouille en papier" />
-                <img src="src/assets/about/photos/ice_cream.png" alt="Cornet de glace tenu à la main du point de vue du photographe" />
+                <img src={getAsset("/src/assets/about/photos/crafting.png")} alt="Citrouille en papier" />
+                <img src={getAsset("/src/assets/about/photos/ice_cream.png")} alt="Cornet de glace tenu à la main du point de vue du photographe" />
               </div>
             </div>
           </Col>

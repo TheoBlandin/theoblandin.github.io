@@ -1,12 +1,7 @@
 import { useEffect } from "react";
-
 import { Col, Container, Row } from "react-grid-system";
 
-import Cloud from "./../../assets/home/cloud.svg";
-import Picture from "./../../assets/home/picture.svg";
-import ArrowMore from "./../../assets/home/arrow-down.svg";
-import ArrowSelf from "./../../assets/home/arrow-self.svg";
-import ArrowPoulpy from "./../../assets/home/arrow-poulpy.svg";
+import { getAsset } from "../../utils/getAsset"
 
 import projectsJSON from "./../../assets/projects.json";
 
@@ -31,10 +26,10 @@ function Home() {
         className="bg-blue hero-banner"
       >
         <Container className="w-full">
-          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-1" alt="" />
-          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-2" alt="" />
-          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-3" alt="" />
-          <img loading="lazy" src={Cloud} className="absolute h-auto cloud-4" alt="" />
+          <img loading="lazy" src={getAsset('/src/assets/home/cloud.svg')} className="absolute h-auto cloud-1" alt="" />
+          <img loading="lazy" src={getAsset('/src/assets/home/cloud.svg')} className="absolute h-auto cloud-2" alt="" />
+          <img loading="lazy" src={getAsset('/src/assets/home/cloud.svg')} className="absolute h-auto cloud-3" alt="" />
+          <img loading="lazy" src={getAsset('/src/assets/home/cloud.svg')} className="absolute h-auto cloud-4" alt="" />
           <Row>
             <Col xl={7} xxl={6}>
               <div className="h-full flex flex-col justify-center gap-1">
@@ -48,20 +43,21 @@ function Home() {
               <img
               loading="lazy"
                 className="aspect-square max-w-[470px] w-full mx-auto picture"
-                src={Picture}
+                src={getAsset('/src/assets/home/picture.svg')} 
                 alt="Auto-portrait dessiné numériquement"
               />
             </Col>
           </Row>
           <Row justify="center">
             <a href="#projects">
-              <img loading="lazy" src={ArrowMore} alt="Aller à la section principale" />
+              <span className="sr-only">Aller au contenu principal</span>
+              <img aria-hidden={true} loading="lazy" src={getAsset('/src/assets/home/arrow-down.svg')} />
             </a>
           </Row>
 
-          <img loading="lazy" className="arrow-self absolute" src={ArrowSelf} alt="" />
-          <img loading="lazy" className="arrow-poulpy absolute" src={ArrowPoulpy} alt="" />
-          <span className="lead name-poulpy absolute">Poulpy</span>
+          <img loading="lazy" className="arrow-self absolute" src={getAsset('/src/assets/home/arrow-self.svg')}  alt="" />
+          <img loading="lazy" className="arrow-poulpy absolute" src={getAsset('/src/assets/home/arrow-poulpy.svg')}  alt="" />
+          <span aria-hidden={true} className="lead name-poulpy absolute">Poulpy</span>
         </Container>
       </section>
 

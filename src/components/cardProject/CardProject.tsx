@@ -1,30 +1,23 @@
 import { Link } from "react-router-dom";
 import type { ProjectOverview } from "../../types/types";
 
+import { getAsset } from "../../utils/getAsset";
+
 import "./CardProject.css";
 
 function CardProject({ project }: { project: ProjectOverview }) {
-  const getSrcSet = (imagePath: string) => {
-    const base = imagePath.replace("-1280.webp", "");
-    return `
-      ${base}-480.webp 480w,
-      ${base}-768.webp 768w,
-      ${base}-1280.webp 1280w
-    `;
-  };
-
   return (
     <Link to={project.link} className="project-link">
       <div className="flex flex-col gap-1">
         <img
           loading="lazy"
-          src={project.image}
-          srcSet={getSrcSet(project.image)}
-          sizes="
-            (max-width: 480px) 100vw,
-            (max-width: 768px) 100vw,
-            768px
-          "
+          src={getAsset(project.image)}
+          srcSet={`
+            ${getAsset(project.image.replace("1280", "480"))} 480w,
+            ${getAsset(project.image.replace("1280", "768"))} 768w,
+            ${getAsset(project.image)} 1280w
+          `}
+          sizes="(max-width: 768px) 100vw, 768px"
           className="rounded-sm"
           alt=""
         />

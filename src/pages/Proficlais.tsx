@@ -10,6 +10,8 @@ import { Col, Container, Row } from "react-grid-system";
 
 import ReactPlayer from "react-player";
 
+import { getAsset } from "../utils/getAsset";
+
 function Proficlais() {
   useEffect(() => {
     document.title = "Proficlais - Théo Blandin";
@@ -47,17 +49,21 @@ function Proficlais() {
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/proficlais/chatbot-1280.webp"
-                srcSet="
-                src/assets/projects/proficlais/chatbot-480.webp 480w,
-                src/assets/projects/proficlais/chatbot-768.webp 768w,
-                src/assets/projects/proficlais/chatbot-1280.webp 1280w
-                "
-                sizes="
-                (max-width: 480px) 100vw,
-                (max-width: 768px) 100vw,
-                768px
-                "
+                src={getAsset(
+                  "/src/assets/projects/proficlais/chatbot-1280.webp"
+                )}
+                srcSet={`
+                  ${getAsset(
+                    "/src/assets/projects/proficlais/chatbot-480.webp"
+                  )} 480w,
+                  ${getAsset(
+                    "/src/assets/projects/proficlais/chatbot-768.webp"
+                  )} 768w,
+                  ${getAsset(
+                    "/src/assets/projects/proficlais/chatbot-1280.webp"
+                  )} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
             </div>
@@ -65,17 +71,21 @@ function Proficlais() {
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/proficlais/admin_mockup-1280.webp"
-                srcSet="
-                  src/assets/projects/proficlais/admin_mockup-480.webp 480w,
-                  src/assets/projects/proficlais/admin_mockup-768.webp 768w,
-                  src/assets/projects/proficlais/admin_mockup-1280.webp 1280w
-                  "
-                sizes="
-                  (max-width: 480px) 100vw,
-                  (max-width: 768px) 100vw,
-                  768px
-                  "
+                src={getAsset(
+                  "/src/assets/projects/proficlais/admin_mockup-1280.webp"
+                )}
+                srcSet={`
+                  ${getAsset(
+                    "/src/assets/projects/proficlais/admin_mockup-480.webp"
+                  )} 480w,
+                  ${getAsset(
+                    "/src/assets/projects/proficlais/admin_mockup-768.webp"
+                  )} 768w,
+                  ${getAsset(
+                    "/src/assets/projects/proficlais/admin_mockup-1280.webp"
+                  )} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
             </div>
@@ -84,7 +94,10 @@ function Proficlais() {
 
         <Container className="w-full flex flex-col gap-12">
           {/* Problème */}
-          <section aria-labelledby="proficlais-section_1" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="proficlais-section_1"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="proficlais-section_1">Problème</h2>
@@ -125,7 +138,10 @@ function Proficlais() {
           </section>
 
           {/* Solution */}
-          <section aria-labelledby="proficlais-section_2" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="proficlais-section_2"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="proficlais-section_2">Solution</h2>
@@ -167,7 +183,10 @@ function Proficlais() {
           </section>
 
           {/* Analyse des besoins clients */}
-          <section aria-labelledby="proficlais-section_3" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="proficlais-section_3"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="proficlais-section_3">Analyse des besoins clients</h2>
@@ -207,7 +226,10 @@ function Proficlais() {
           </section>
 
           {/* Identité visuelle */}
-          <section aria-labelledby="proficlais-section_4" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="proficlais-section_4"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="proficlais-section_4">Identité visuelle</h2>
@@ -227,17 +249,21 @@ function Proficlais() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/proficlais/visual_identity-1280.webp"
-                    srcSet="
-                    src/assets/projects/proficlais/visual_identity-480.webp 480w,
-                    src/assets/projects/proficlais/visual_identity-768.webp 768w,
-                    src/assets/projects/proficlais/visual_identity-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset(
+                      "/src/assets/projects/proficlais/visual_identity-1280.webp"
+                    )}
+                    srcSet={`
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/visual_identity-480.webp"
+                      )} 480w,
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/visual_identity-768.webp"
+                      )} 768w,
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/visual_identity-1280.webp"
+                      )} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Logo, couleurs et typographie de Proficlais"
                   />
                 </div>
@@ -246,7 +272,10 @@ function Proficlais() {
           </section>
 
           {/* Personnalisation */}
-          <section aria-labelledby="proficlais-section_5" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="proficlais-section_5"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="proficlais-section_5">Personnalisation</h2>
@@ -276,7 +305,9 @@ function Proficlais() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <div className="w-full h-fit flex flex-row justify-center">
                   <ReactPlayer
-                    src="src/assets/projects/proficlais/personnalisation_widget.mp4"
+                    src={getAsset(
+                      "/src/assets/projects/proficlais/personnalisation_widget.mp4"
+                    )}
                     width="100%"
                     height="100%"
                     loop={true}
@@ -287,17 +318,21 @@ function Proficlais() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/proficlais/palette_personnalisation-1280.webp"
-                    srcSet="
-                    src/assets/projects/proficlais/palette_personnalisation-480.webp 480w,
-                    src/assets/projects/proficlais/palette_personnalisation-768.webp 768w,
-                    src/assets/projects/proficlais/palette_personnalisation-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset(
+                      "/src/assets/projects/proficlais/palette_personnalisation-1280.webp"
+                    )}
+                    srcSet={`
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/palette_personnalisation-480.webp"
+                      )} 480w,
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/palette_personnalisation-768.webp"
+                      )} 768w,
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/palette_personnalisation-1280.webp"
+                      )} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Deux versions du chatbot côte à côté, l'une en violet et l'autre en vert. Le détails des couleurs est indiqués via des annotations."
                   />
                 </div>
@@ -306,7 +341,10 @@ function Proficlais() {
           </section>
 
           {/* Développement */}
-          <section aria-labelledby="proficlais-section_6" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="proficlais-section_6"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="proficlais-section_6">Développement</h2>
@@ -338,7 +376,10 @@ function Proficlais() {
           </section>
 
           {/* Issue du projet */}
-          <section aria-labelledby="proficlais-section_7" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="proficlais-section_7"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="proficlais-section_7">Issue du projet</h2>

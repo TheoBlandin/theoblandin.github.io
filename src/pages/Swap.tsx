@@ -6,6 +6,8 @@ import PresentationProject from "../components/presentationProject/PresentationP
 import Data from "../assets/projects/swap/project.json";
 import type { Presentation } from "../types/types";
 
+import { getAsset } from "../utils/getAsset";
+
 import { Col, Container, Row } from "react-grid-system";
 
 import {
@@ -78,17 +80,13 @@ function Swap() {
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/mockup-1280.webp"
-                srcSet="
-                  src/assets/projects/swap/mockup-480.webp 480w,
-                  src/assets/projects/swap/mockup-768.webp 768w,
-                  src/assets/projects/swap/mockup-1280.webp 1280w
-                  "
-                sizes="
-                  (max-width: 480px) 100vw,
-                  (max-width: 768px) 100vw,
-                  768px
-                  "
+                src={getAsset("/src/assets/projects/swap/mockup-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/swap/mockup-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/swap/mockup-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/swap/mockup-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
             </div>
@@ -96,81 +94,61 @@ function Swap() {
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color_primary-1280.webp"
-                srcSet="
-                  src/assets/projects/swap/color_primary-480.webp 480w,
-                  src/assets/projects/swap/color_primary-768.webp 768w,
-                  src/assets/projects/swap/color_primary-1280.webp 1280w
-                  "
-                sizes="
-                  (max-width: 480px) 100vw,
-                  (max-width: 768px) 100vw,
-                  768px
-                  "
+                src={getAsset("/src/assets/projects/swap/color_primary-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/swap/color_primary-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/swap/color_primary-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/swap/color_primary-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color_secondary-1280.webp"
-                srcSet="
-                  src/assets/projects/swap/color_secondary-480.webp 480w,
-                  src/assets/projects/swap/color_secondary-768.webp 768w,
-                  src/assets/projects/swap/color_secondary-1280.webp 1280w
-                  "
-                sizes="
-                  (max-width: 480px) 100vw,
-                  (max-width: 768px) 100vw,
-                  768px
-                  "
+                src={getAsset("/src/assets/projects/swap/color_secondary-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/swap/color_secondary-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/swap/color_secondary-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/swap/color_secondary-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color_accent-1280.webp"
-                srcSet="
-                  src/assets/projects/swap/color_accent-480.webp 480w,
-                  src/assets/projects/swap/color_accent-768.webp 768w,
-                  src/assets/projects/swap/color_accent-1280.webp 1280w
-                  "
-                sizes="
-                  (max-width: 480px) 100vw,
-                  (max-width: 768px) 100vw,
-                  768px
-                  "
+                src={getAsset("/src/assets/projects/swap/color_accent-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/swap/color_accent-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/swap/color_accent-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/swap/color_accent-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color_text-1280.webp"
-                srcSet="
-                  src/assets/projects/swap/color_text-480.webp 480w,
-                  src/assets/projects/swap/color_text-768.webp 768w,
-                  src/assets/projects/swap/color_text-1280.webp 1280w
-                  "
-                sizes="
-                  (max-width: 480px) 100vw,
-                  (max-width: 768px) 100vw,
-                  768px
-                  "
+                src={getAsset("/src/assets/projects/swap/color_text-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/swap/color_text-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/swap/color_text-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/swap/color_text-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
               <img
                 loading="lazy"
                 className="w-full"
-                src="src/assets/projects/swap/color_background-1280.webp"
-                srcSet="
-                  src/assets/projects/swap/color_background-480.webp 480w,
-                  src/assets/projects/swap/color_background-768.webp 768w,
-                  src/assets/projects/swap/color_background-1280.webp 1280w
-                  "
-                sizes="
-                  (max-width: 480px) 100vw,
-                  (max-width: 768px) 100vw,
-                  768px
-                  "
+                src={getAsset("/src/assets/projects/swap/color_background-1280.webp")}
+                srcSet={`
+                  ${getAsset("/src/assets/projects/swap/color_background-480.webp")} 480w,
+                  ${getAsset("/src/assets/projects/swap/color_background-768.webp")} 768w,
+                  ${getAsset("/src/assets/projects/swap/color_background-1280.webp")} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
               />
             </div>
@@ -179,7 +157,10 @@ function Swap() {
 
         <Container className="w-full flex flex-col gap-12">
           {/* Planification */}
-          <section aria-labelledby="swap-section_1" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_1"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_1">Planification</h2>
@@ -217,7 +198,10 @@ function Swap() {
           </section>
 
           {/* Entretiens utilisateurs */}
-          <section aria-labelledby="swap-section_2" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_2"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_2">Entretiens utilisateurs</h2>
@@ -439,7 +423,10 @@ function Swap() {
           </section>
 
           {/* Analyse des entretiens */}
-          <section aria-labelledby="swap-section_3" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_3"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_3">Analyse des entretiens</h2>
@@ -467,17 +454,13 @@ function Swap() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/swap/word_cloud-1280.webp"
-                    srcSet="
-                    src/assets/projects/swap/word_cloud-480.webp 480w,
-                    src/assets/projects/swap/word_cloud-768.webp 768w,
-                    src/assets/projects/swap/word_cloud-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset("/src/assets/projects/swap/word_cloud-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/swap/word_cloud-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/swap/word_cloud-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/swap/word_cloud-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Nuages de mots avec la notion d'entraide comme notion la plus importante"
                   />
                 </div>
@@ -486,7 +469,10 @@ function Swap() {
           </section>
 
           {/* Idéation */}
-          <section aria-labelledby="swap-section_4" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_4"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_4">Idéation</h2>
@@ -513,17 +499,13 @@ function Swap() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/swap/brainstorming-1280.webp"
-                    srcSet="
-                      src/assets/projects/swap/brainstorming-480.webp 480w,
-                      src/assets/projects/swap/brainstorming-768.webp 768w,
-                      src/assets/projects/swap/brainstorming-1280.webp 1280w
-                      "
-                    sizes="
-                      (max-width: 480px) 100vw,
-                      (max-width: 768px) 100vw,
-                      768px
-                      "
+                    src={getAsset("/src/assets/projects/swap/brainstorming-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/swap/brainstorming-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/swap/brainstorming-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/swap/brainstorming-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Schéma des notions principales de SWAP. Les notions principales sont la ressource, le profil, la recherche et le formulaire d'ajout."
                   />
                 </div>
@@ -532,7 +514,10 @@ function Swap() {
           </section>
 
           {/* Personas */}
-          <section aria-labelledby="swap-section_5" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_5"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_5">Personas</h2>
@@ -550,7 +535,7 @@ function Swap() {
               <Col sm={12} xl={10} className="flex flex-col gap-5">
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/swap/sophie_garnier-1280.webp",
+                    img: "/src/assets/projects/swap/sophie_garnier-1280.webp",
                     color: "yellow",
                     name: "Sophie Garnier",
                     features: [
@@ -586,7 +571,7 @@ function Swap() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/swap/karine_bernier-1280.webp",
+                    img: "/src/assets/projects/swap/karine_bernier-1280.webp",
                     color: "orange",
                     name: "Karine Bernier",
                     features: [
@@ -622,7 +607,7 @@ function Swap() {
                 />
                 <PersonaComponent
                   persona={{
-                    img: "src/assets/projects/swap/damien_leroux-1280.webp",
+                    img: "/src/assets/projects/swap/damien_leroux-1280.webp",
                     color: "green",
                     name: "Damien Leroux",
                     features: [
@@ -659,7 +644,10 @@ function Swap() {
           </section>
 
           {/* Parcours utilisateur */}
-          <section aria-labelledby="swap-section_6" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_6"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_6">Parcours utilisateur</h2>
@@ -677,17 +665,13 @@ function Swap() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/swap/userflow-1280.webp"
-                    srcSet="
-                      src/assets/projects/swap/userflow-480.webp 480w,
-                      src/assets/projects/swap/userflow-768.webp 768w,
-                      src/assets/projects/swap/userflow-1280.webp 1280w
-                      "
-                    sizes="
-                      (max-width: 480px) 100vw,
-                      (max-width: 768px) 100vw,
-                      768px
-                      "
+                    src={getAsset("/src/assets/projects/swap/userflow-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/swap/userflow-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/swap/userflow-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/swap/userflow-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Schéma illustrant le parcours utilisateur simplifié depuis la page d'accueil."
                   />
                 </div>
@@ -696,7 +680,10 @@ function Swap() {
           </section>
 
           {/* Wireframes */}
-          <section aria-labelledby="swap-section_7" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_7"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_7">Wireframes</h2>
@@ -719,17 +706,13 @@ function Swap() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/swap/wireframe-1280.webp"
-                    srcSet="
-                      src/assets/projects/swap/wireframe-480.webp 480w,
-                      src/assets/projects/swap/wireframe-768.webp 768w,
-                      src/assets/projects/swap/wireframe-1280.webp 1280w
-                      "
-                    sizes="
-                      (max-width: 480px) 100vw,
-                      (max-width: 768px) 100vw,
-                      768px
-                      "
+                    src={getAsset("/src/assets/projects/swap/wireframe-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/swap/wireframe-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/swap/wireframe-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/swap/wireframe-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Maquette Figma basse fidélité, accompagnée de commentaires sur le fonctionnement de l'application."
                   />
                 </div>
@@ -738,7 +721,10 @@ function Swap() {
           </section>
 
           {/* Design System */}
-          <section aria-labelledby="swap-section_8" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_8"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_8">Design System</h2>
@@ -757,17 +743,13 @@ function Swap() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/swap/design_system-1280.webp"
-                    srcSet="
-                      src/assets/projects/swap/design_system-480.webp 480w,
-                      src/assets/projects/swap/design_system-768.webp 768w,
-                      src/assets/projects/swap/design_system-1280.webp 1280w
-                      "
-                    sizes="
-                      (max-width: 480px) 100vw,
-                      (max-width: 768px) 100vw,
-                      768px
-                    "
+                    src={getAsset("/src/assets/projects/swap/design_system-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/swap/design_system-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/swap/design_system-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/swap/design_system-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Extrait de composants du design system créé pour le projet"
                   />
                 </div>
@@ -776,7 +758,10 @@ function Swap() {
           </section>
 
           {/* Maquette interactive */}
-          <section aria-labelledby="swap-section_9" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="swap-section_9"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="swap-section_9">Maquette interactive</h2>

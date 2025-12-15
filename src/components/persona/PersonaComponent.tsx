@@ -3,15 +3,9 @@ import type { Persona } from "../../types/types";
 
 import "./PersonaComponent.css";
 
+import { getAsset } from "../../utils/getAsset";
+
 function PersonaComponent({ persona }: { persona: Persona }) {
-  const getSrcSet = (imagePath: string) => {
-    const base = imagePath.replace("-1280.webp", "");
-    return `
-      ${base}-480.webp 480w,
-      ${base}-768.webp 768w,
-      ${base}-1280.webp 1280w
-    `;
-  };
 
   return (
     <Container className="w-full py-3">
@@ -24,13 +18,13 @@ function PersonaComponent({ persona }: { persona: Persona }) {
           <div className="flex flex-col gap-4">
             <img
               loading="lazy"
-              src={persona.img}
-              srcSet={getSrcSet(persona.img)}
-              sizes="
-                (max-width: 480px) 100vw,
-                (max-width: 768px) 100vw,
-                768px
-              "
+              src={getAsset(persona.img)}
+              srcSet={`
+                ${getAsset(persona.img.replace("1280", "480"))} 480w,
+                ${getAsset(persona.img.replace("1280", "768"))} 768w,
+                ${getAsset(persona.img)} 1280w
+              `}
+              sizes="(max-width: 768px) 100vw, 768px"
               alt=""
               className="h-[120px] md:h-[150px] lg:h-[200px] object-contain"
             />

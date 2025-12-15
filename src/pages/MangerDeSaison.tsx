@@ -8,6 +8,8 @@ import type { Presentation } from "../types/types";
 
 import { Col, Container, Row } from "react-grid-system";
 
+import { getAsset } from "../utils/getAsset";
+
 function MangerDeSaison() {
   useEffect(() => {
     document.title = "Manger de saison - Théo Blandin";
@@ -47,17 +49,13 @@ function MangerDeSaison() {
                 <img
                   loading="lazy"
                   className="w-full lg:w-auto lg:h-full"
-                  src="src/assets/projects/manger_de_saison/mockup-1-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/mockup-1-480.webp 480w,
-                    src/assets/projects/manger_de_saison/mockup-1-768.webp 768w,
-                    src/assets/projects/manger_de_saison/mockup-1-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/mockup_1-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/mockup_1-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/mockup_1-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/mockup_1-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
                   alt=""
                 />
               </div>
@@ -67,87 +65,69 @@ function MangerDeSaison() {
               >
                 <img
                   loading="lazy"
-                  src="src/assets/projects/manger_de_saison/fruit_1-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/fruit_1-480.webp 480w,
-                    src/assets/projects/manger_de_saison/fruit_1-768.webp 768w,
-                    src/assets/projects/manger_de_saison/fruit_1-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/fruit_1-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_1-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_1-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_1-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  alt=""
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/projects/manger_de_saison/fruit_2-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/fruit_2-480.webp 480w,
-                    src/assets/projects/manger_de_saison/fruit_2-768.webp 768w,
-                    src/assets/projects/manger_de_saison/fruit_2-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/fruit_2-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_2-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_2-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_2-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  alt=""
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/projects/manger_de_saison/fruit_3-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/fruit_3-480.webp 480w,
-                    src/assets/projects/manger_de_saison/fruit_3-768.webp 768w,
-                    src/assets/projects/manger_de_saison/fruit_3-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/fruit_3-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_3-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_3-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_3-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  alt=""
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/projects/manger_de_saison/fruit_4-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/fruit_4-480.webp 480w,
-                    src/assets/projects/manger_de_saison/fruit_4-768.webp 768w,
-                    src/assets/projects/manger_de_saison/fruit_4-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/fruit_4-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_4-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_4-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_4-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  alt=""
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/projects/manger_de_saison/fruit_5-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/fruit_5-480.webp 480w,
-                    src/assets/projects/manger_de_saison/fruit_5-768.webp 768w,
-                    src/assets/projects/manger_de_saison/fruit_5-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/fruit_5-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_5-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_5-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_5-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  alt=""
                 />
                 <img
                   loading="lazy"
-                  src="src/assets/projects/manger_de_saison/fruit_6-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/fruit_6-480.webp 480w,
-                    src/assets/projects/manger_de_saison/fruit_6-768.webp 768w,
-                    src/assets/projects/manger_de_saison/fruit_6-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/fruit_6-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_6-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_6-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/fruit_6-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  alt=""
                 />
               </div>
               <div
@@ -157,17 +137,14 @@ function MangerDeSaison() {
                 <img
                   loading="lazy"
                   className="w-full lg:w-auto lg:h-full"
-                  src="src/assets/projects/manger_de_saison/mockup-2-1280.webp"
-                  srcSet="
-                    src/assets/projects/manger_de_saison/mockup-2-480.webp 480w,
-                    src/assets/projects/manger_de_saison/mockup-2-768.webp 768w,
-                    src/assets/projects/manger_de_saison/mockup-2-1280.webp 1280w
-                  "
-                  sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                  "
+                  src={getAsset("/src/assets/projects/manger_de_saison/mockup_2-1280.webp")}
+                  srcSet={`
+                    ${getAsset("/src/assets/projects/manger_de_saison/mockup_2-480.webp")} 480w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/mockup_2-768.webp")} 768w,
+                    ${getAsset("/src/assets/projects/manger_de_saison/mockup_2-1280.webp")} 1280w
+                  `}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  alt=""
                 />
               </div>
             </div>
@@ -256,34 +233,26 @@ function MangerDeSaison() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/manger_de_saison/hand_drawn-1280.webp"
-                    srcSet="
-                    src/assets/projects/manger_de_saison/hand_drawn-480.webp 480w,
-                    src/assets/projects/manger_de_saison/hand_drawn-768.webp 768w,
-                    src/assets/projects/manger_de_saison/hand_drawn-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset("/src/assets/projects/manger_de_saison/hand_drawn-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/manger_de_saison/hand_drawn-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/manger_de_saison/hand_drawn-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/manger_de_saison/hand_drawn-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Croquis à la main présentant les premières idées d'interface et de fonctionnalités pour le projet."
                   />
                 </div>
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/manger_de_saison/figma-1280.webp"
-                    srcSet="
-                    src/assets/projects/manger_de_saison/figma-480.webp 480w,
-                    src/assets/projects/manger_de_saison/figma-768.webp 768w,
-                    src/assets/projects/manger_de_saison/figma-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset("/src/assets/projects/manger_de_saison/figma-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/manger_de_saison/figma-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/manger_de_saison/figma-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/manger_de_saison/figma-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Maquettes Figma haute fidélité, accompagnées de commentaires sur le fonctionnement de l'application."
                   />
                 </div>
@@ -310,17 +279,13 @@ function MangerDeSaison() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src="src/assets/projects/manger_de_saison/inkscape-1280.webp"
-                    srcSet="
-                    src/assets/projects/manger_de_saison/inkscape-480.webp 480w,
-                    src/assets/projects/manger_de_saison/inkscape-768.webp 768w,
-                    src/assets/projects/manger_de_saison/inkscape-1280.webp 1280w
-                    "
-                    sizes="
-                    (max-width: 480px) 100vw,
-                    (max-width: 768px) 100vw,
-                    768px
-                    "
+                    src={getAsset("/src/assets/projects/manger_de_saison/inkscape-1280.webp")}
+                    srcSet={`
+                      ${getAsset("/src/assets/projects/manger_de_saison/inkscape-480.webp")} 480w,
+                      ${getAsset("/src/assets/projects/manger_de_saison/inkscape-768.webp")} 768w,
+                      ${getAsset("/src/assets/projects/manger_de_saison/inkscape-1280.webp")} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
                     alt="Capture d'écran d'Inkscape montrant la création de l'illustration d'une paire de cerises."
                   />
                 </div>
