@@ -179,10 +179,10 @@ function Swap() {
 
         <Container className="w-full flex flex-col gap-12">
           {/* Planification */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_1" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Planification</h2>
+                <h2 id="swap-section_1">Planification</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Afin de se préparer aux entretiens utilisateurs, nous avons
@@ -195,7 +195,6 @@ function Swap() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-
             <Row justify="center">
               <Col sm={12} xl={10}>
                 <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 md:grid-rows-4 lg:grid-rows-2 gap-4 ld:gap-6">
@@ -215,13 +214,13 @@ function Swap() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Entretiens utilisateurs */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_2" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Entretiens utilisateurs</h2>
+                <h2 id="swap-section_2">Entretiens utilisateurs</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Six enseignants ont accepté de participer à notre projet.
@@ -237,7 +236,6 @@ function Swap() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-
             <Row justify="center">
               <Col sm={12} xl={10}>
                 <div className="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-5">
@@ -438,13 +436,13 @@ function Swap() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Analyse des entretiens */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_3" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Analyse des entretiens</h2>
+                <h2 id="swap-section_3">Analyse des entretiens</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     À partir de chaque entretien, nous avons extrait les
@@ -485,13 +483,13 @@ function Swap() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Idéation */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_4" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Idéation</h2>
+                <h2 id="swap-section_4">Idéation</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Le principe de <i>SWAP</i> a été imaginé au cours d'un
@@ -531,13 +529,13 @@ function Swap() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Personas */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_5" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Personas</h2>
+                <h2 id="swap-section_5">Personas</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Trois personas furent créés, se basant sur les profils
@@ -658,13 +656,13 @@ function Swap() {
                 />
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Parcours utilisateur */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_6" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Parcours utilisateur</h2>
+                <h2 id="swap-section_6">Parcours utilisateur</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Parcours utilisateur simplifié, illustrant les principales
@@ -690,18 +688,18 @@ function Swap() {
                       (max-width: 768px) 100vw,
                       768px
                       "
-                    alt="Schéma montrant les actions possibles depuis la page d'accueil : choisir une catégorie, rechercher, se connecter ou s'inscrire, publier une ressource ou consulter son profil. Le parcours détaille aussi la navigation vers une ressource, ses options comme consulter, voter, ajouter à une liste, partager ou signaler, avec indication des actions nécessitant une connexion."
+                    alt="Schéma illustrant le parcours utilisateur simplifié depuis la page d'accueil."
                   />
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Wireframes */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_7" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Wireframes</h2>
+                <h2 id="swap-section_7">Wireframes</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Les premiers wireframes ont été dessinés individuellement
@@ -737,13 +735,13 @@ function Swap() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Design System */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_8" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Design System</h2>
+                <h2 id="swap-section_8">Design System</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Un design system a été conçu sur le projet afin de garantir
@@ -775,13 +773,13 @@ function Swap() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Maquette interactive */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="swap-section_9" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Maquette interactive</h2>
+                <h2 id="swap-section_9">Maquette interactive</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     La finalité du projet était la création d'une maquette
@@ -805,7 +803,7 @@ function Swap() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
         </Container>
       </div>
     </>

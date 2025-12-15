@@ -84,10 +84,10 @@ function Proficlais() {
 
         <Container className="w-full flex flex-col gap-12">
           {/* Problème */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="proficlais-section_1" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Problème</h2>
+                <h2 id="proficlais-section_1">Problème</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     La conversion de prospects est un enjeu central pour toute
@@ -122,13 +122,13 @@ function Proficlais() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Solution */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="proficlais-section_2" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Solution</h2>
+                <h2 id="proficlais-section_2">Solution</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     <i>Proficlais</i> propose d'allier utilité et simplicité
@@ -164,13 +164,13 @@ function Proficlais() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Analyse des besoins clients */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="proficlais-section_3" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Analyse des besoins clients</h2>
+                <h2 id="proficlais-section_3">Analyse des besoins clients</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Au cours de la création de notre produit, nous avons
@@ -204,13 +204,13 @@ function Proficlais() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Identité visuelle */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="proficlais-section_4" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Identité visuelle</h2>
+                <h2 id="proficlais-section_4">Identité visuelle</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     L'identité visuelle de <i>Proficlais</i> a été conçue pour
@@ -243,13 +243,13 @@ function Proficlais() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Personnalisation */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="proficlais-section_5" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Personnalisation</h2>
+                <h2 id="proficlais-section_5">Personnalisation</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Le widget est proposé en marque blanche, ce qui permet au
@@ -303,13 +303,13 @@ function Proficlais() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Développement */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="proficlais-section_6" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Développement</h2>
+                <h2 id="proficlais-section_6">Développement</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     L'interface de management et le widget ont été développés
@@ -335,13 +335,13 @@ function Proficlais() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Issue du projet */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="proficlais-section_7" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Issue du projet</h2>
+                <h2 id="proficlais-section_7">Issue du projet</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Ce projet a été porté et financé par l'INRIA Startup Studio
@@ -369,7 +369,7 @@ function Proficlais() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
         </Container>
       </div>
     </>

@@ -69,10 +69,10 @@ function SecuriteMobile() {
 
         <Container className="w-full flex flex-col gap-12">
           {/* Problème */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_1" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Problème</h2>
+                <h2 id="securite_mobile-section_1">Problème</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     La protection des données personnelles représente
@@ -102,13 +102,13 @@ function SecuriteMobile() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Solution */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_2" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Solution</h2>
+                <h2 id="securite_mobile-section_2">Solution</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     La nouvelle interface du produit se compose en réalité de
@@ -133,13 +133,13 @@ function SecuriteMobile() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Étude de l'existant */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_3" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Étude de l'existant</h2>
+                <h2 id="securite_mobile-section_3">Étude de l'existant</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     La première étape du processus de refonte a été l'étude de
@@ -172,13 +172,13 @@ function SecuriteMobile() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Personas */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_4" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Personas</h2>
+                <h2 id="securite_mobile-section_4">Personas</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Trois personas furent créés, se basant sur les profils
@@ -296,13 +296,13 @@ function SecuriteMobile() {
                 />
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Idéation */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_5" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Idéation</h2>
+                <h2 id="securite_mobile-section_5">Idéation</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Le programme déjà développé me donnait accès à un ensemble
@@ -334,13 +334,13 @@ function SecuriteMobile() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Parcours utilisateur */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_6" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Parcours utilisateur</h2>
+                <h2 id="securite_mobile-section_6">Parcours utilisateur</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Parcours utilisateur simplifié, représentant les actions
@@ -367,18 +367,18 @@ function SecuriteMobile() {
                     (max-width: 768px) 100vw,
                     768px
                     "
-                    alt="Schéma illustrant le parcours utilisateur depuis l'écran de connexion : l'utilisateur commence par scanner le QR Code pour se connecter au réseau. Sur l'écran de la borne, un écran de chargement apparaît avant l'affichage du tableau de bord, tandis que le site web mobile s'ouvre automatiquement sur le téléphone. Depuis cette interface, l'utilisateur peut télécharger le compte rendu, consulter le détail du score, visualiser les conseils de sécurité, explorer la carte et l'historique de connexion. À tout moment, il peut se déconnecter pour revenir à l'écran de connexion sur la borne."
+                    alt="Schéma illustrant le parcours utilisateur depuis l'écran de connexion."
                   />
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Maquettages */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_7" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Maquettages</h2>
+                <h2 id="securite_mobile-section_7">Maquettages</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Le travail de maquettage s'est déroulé en parallèle des
@@ -411,13 +411,13 @@ function SecuriteMobile() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Tests utilisateurs */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_8" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Tests utilisateurs</h2>
+                <h2 id="securite_mobile-section_8">Tests utilisateurs</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Des sessions de tests utilisateurs ont été organisées sur
@@ -441,13 +441,13 @@ function SecuriteMobile() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Développement */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="securite_mobile-section_9" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Développement</h2>
+                <h2 id="securite_mobile-section_9">Développement</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     La nouvelle interface a été développée avec le framework
@@ -481,7 +481,7 @@ function SecuriteMobile() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
         </Container>
       </div>
     </>

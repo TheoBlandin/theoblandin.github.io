@@ -13,6 +13,8 @@ import Swap from "./pages/Swap";
 import SecuriteMobile from "./pages/SecuriteMobile";
 import Proficlais from "./pages/Proficlais";
 import About from "./pages/about/About";
+import Page404 from "./pages/Page404";
+import Legals from "./pages/Legals";
 
 setConfiguration({
   breakpoints: [360, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl
@@ -46,10 +48,10 @@ function App() {
       <ScrollToTop />
       <main className="flex-grow">
         <Routes>
-          <Route path="*" element={<h1>Page non trouvée</h1>} />{" "}
-          {/* Page 404 à faire */}
+          <Route path="*" element={<Page404 /> } />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/legals" element={<Legals />} />
           <Route path="/manger_de_saison" element={<MangerDeSaison />} />
           <Route path="/swap" element={<Swap />} />
           <Route path="/securite_mobile" element={<SecuriteMobile />} />

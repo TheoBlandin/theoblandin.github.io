@@ -12,6 +12,8 @@ function Navbar() {
 
   const location = useLocation(); // current user location
 
+  const validPath = ['/', '/manger_de_saison', '/swap', '/securite_mobile', '/proficlais']
+
   // If user scoll more than 50px, navbar background go from transparent to dark color
   useEffect(() => {
     const handleScroll = () => {
@@ -28,10 +30,10 @@ function Navbar() {
 
   // Navbar has dark background when user is on specific pages (with no colored header)
   useEffect(() => {
-    if (location.pathname == "/about" || location.pathname == "/legals") {
-      setSolidNavbar(true);
-    } else {
+    if (validPath.includes(location.pathname)) {
       setSolidNavbar(false);
+    } else {
+      setSolidNavbar(true);
     }
   }, [location]);
 

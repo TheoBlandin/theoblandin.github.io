@@ -176,10 +176,10 @@ function MangerDeSaison() {
 
         <Container className="w-full flex flex-col gap-12">
           {/* Problème */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="manger_de_saison-section_1" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Problème</h2>
+                <h2 id="manger_de_saison-section_1">Problème</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     En 2019, près de deux adultes sur trois n'atteignaient pas
@@ -201,13 +201,13 @@ function MangerDeSaison() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Solution */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="manger_de_saison-section_2" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Solution</h2>
+                <h2 id="manger_de_saison-section_2">Solution</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     <i>Manger de saison</i> s'articule autour de trois points
@@ -235,13 +235,13 @@ function MangerDeSaison() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
 
           {/* Maquettage */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="manger_de_saison-section_3" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Maquettage</h2>
+                <h2 id="manger_de_saison-section_3">Maquettage</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Les premiers brouillons ont été réalisés à la main, avant
@@ -289,13 +289,13 @@ function MangerDeSaison() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Illustrations */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="manger_de_saison-section_4" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Illustrations</h2>
+                <h2 id="manger_de_saison-section_4">Illustrations</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Chaque illustration est réalisée au format SVG sur le
@@ -326,13 +326,13 @@ function MangerDeSaison() {
                 </div>
               </Col>
             </Row>
-          </div>
+          </section>
 
           {/* Développement */}
-          <div className="flex flex-col gap-5">
+          <section aria-labelledby="manger_de_saison-section_5" className="flex flex-col gap-5">
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2>Développement</h2>
+                <h2 id="manger_de_saison-section_5">Développement</h2>
                 <div className="flex flex-col gap-1">
                   <p>L'application a été développée avec Flutter.</p>
                   <p>
@@ -343,7 +343,7 @@ function MangerDeSaison() {
               </Col>
               <Col xl={3}></Col>
             </Row>
-          </div>
+          </section>
         </Container>
       </div>
     </>
