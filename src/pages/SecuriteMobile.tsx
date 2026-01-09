@@ -34,11 +34,19 @@ function SecuriteMobile() {
               <img
                 loading="lazy"
                 className="w-full"
-                src={getAsset("/src/assets/projects/securite_mobile/mockup_mobile-1280.webp")}
+                src={getAsset(
+                  "/src/assets/projects/securite_mobile/mockup_mobile-1280.webp"
+                )}
                 srcSet={`
-                  ${getAsset("/src/assets/projects/securite_mobile/mockup_mobile-480.webp")} 480w,
-                  ${getAsset("/src/assets/projects/securite_mobile/mockup_mobile-768.webp")} 768w,
-                  ${getAsset("/src/assets/projects/securite_mobile/mockup_mobile-1280.webp")} 1280w
+                  ${getAsset(
+                    "/src/assets/projects/securite_mobile/mockup_mobile-480.webp"
+                  )} 480w,
+                  ${getAsset(
+                    "/src/assets/projects/securite_mobile/mockup_mobile-768.webp"
+                  )} 768w,
+                  ${getAsset(
+                    "/src/assets/projects/securite_mobile/mockup_mobile-1280.webp"
+                  )} 1280w
                 `}
                 sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
@@ -48,11 +56,19 @@ function SecuriteMobile() {
               <img
                 loading="lazy"
                 className="w-full"
-                src={getAsset("/src/assets/projects/securite_mobile/mockup_monitor-1280.webp")}
+                src={getAsset(
+                  "/src/assets/projects/securite_mobile/mockup_monitor-1280.webp"
+                )}
                 srcSet={`
-                  ${getAsset("/src/assets/projects/securite_mobile/mockup_monitor-480.webp")} 480w,
-                  ${getAsset("/src/assets/projects/securite_mobile/mockup_monitor-768.webp")} 768w,
-                  ${getAsset("/src/assets/projects/securite_mobile/mockup_monitor-1280.webp")} 1280w
+                  ${getAsset(
+                    "/src/assets/projects/securite_mobile/mockup_monitor-480.webp"
+                  )} 480w,
+                  ${getAsset(
+                    "/src/assets/projects/securite_mobile/mockup_monitor-768.webp"
+                  )} 768w,
+                  ${getAsset(
+                    "/src/assets/projects/securite_mobile/mockup_monitor-1280.webp"
+                  )} 1280w
                 `}
                 sizes="(max-width: 768px) 100vw, 768px"
                 alt=""
@@ -63,7 +79,10 @@ function SecuriteMobile() {
 
         <Container className="w-full flex flex-col gap-12">
           {/* Problème */}
-          <section aria-labelledby="securite_mobile-section_1" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="securite_mobile-section_1"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="securite_mobile-section_1">Problème</h2>
@@ -99,7 +118,10 @@ function SecuriteMobile() {
           </section>
 
           {/* Solution */}
-          <section aria-labelledby="securite_mobile-section_2" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="securite_mobile-section_2"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="securite_mobile-section_2">Solution</h2>
@@ -130,7 +152,10 @@ function SecuriteMobile() {
           </section>
 
           {/* Étude de l'existant */}
-          <section aria-labelledby="securite_mobile-section_3" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="securite_mobile-section_3"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="securite_mobile-section_3">Étude de l'existant</h2>
@@ -150,11 +175,19 @@ function SecuriteMobile() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src={getAsset("/src/assets/projects/securite_mobile/old_ui-1280.webp")}
+                    src={getAsset(
+                      "/src/assets/projects/securite_mobile/old_ui-1280.webp"
+                    )}
                     srcSet={`
-                      ${getAsset("/src/assets/projects/securite_mobile/old_ui-480.webp")} 480w,
-                      ${getAsset("/src/assets/projects/securite_mobile/old_ui-768.webp")} 768w,
-                      ${getAsset("/src/assets/projects/securite_mobile/old_ui-1280.webp")} 1280w
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/old_ui-480.webp"
+                      )} 480w,
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/old_ui-768.webp"
+                      )} 768w,
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/old_ui-1280.webp"
+                      )} 1280w
                     `}
                     sizes="(max-width: 768px) 100vw, 768px"
                     alt="Ancienne interface du projet accompagnée de commentaires"
@@ -165,7 +198,10 @@ function SecuriteMobile() {
           </section>
 
           {/* Personas */}
-          <section aria-labelledby="securite_mobile-section_4" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="securite_mobile-section_4"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="securite_mobile-section_4">Personas</h2>
@@ -289,7 +325,10 @@ function SecuriteMobile() {
           </section>
 
           {/* Idéation */}
-          <section aria-labelledby="securite_mobile-section_5" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="securite_mobile-section_5"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="securite_mobile-section_5">Idéation</h2>
@@ -327,7 +366,10 @@ function SecuriteMobile() {
           </section>
 
           {/* Parcours utilisateur */}
-          <section aria-labelledby="securite_mobile-section_6" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="securite_mobile-section_6"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="securite_mobile-section_6">Parcours utilisateur</h2>
@@ -346,11 +388,19 @@ function SecuriteMobile() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src={getAsset("/src/assets/projects/securite_mobile/userflow-1280.webp")}
+                    src={getAsset(
+                      "/src/assets/projects/securite_mobile/userflow-1280.webp"
+                    )}
                     srcSet={`
-                      ${getAsset("/src/assets/projects/securite_mobile/userflow-480.webp")} 480w,
-                      ${getAsset("/src/assets/projects/securite_mobile/userflow-768.webp")} 768w,
-                      ${getAsset("/src/assets/projects/securite_mobile/userflow-1280.webp")} 1280w
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/userflow-480.webp"
+                      )} 480w,
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/userflow-768.webp"
+                      )} 768w,
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/userflow-1280.webp"
+                      )} 1280w
                     `}
                     sizes="(max-width: 768px) 100vw, 768px"
                     alt="Schéma illustrant le parcours utilisateur depuis l'écran de connexion."
@@ -360,17 +410,38 @@ function SecuriteMobile() {
             </Row>
           </section>
 
-          {/* Maquettages */}
-          <section aria-labelledby="securite_mobile-section_7" className="flex flex-col gap-5">
+          {/* Maquettage et tests utilisateurs */}
+          <section
+            aria-labelledby="securite_mobile-section_7"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2 id="securite_mobile-section_7">Maquettages</h2>
+                <h2 id="securite_mobile-section_7">Maquettage et tests utilisateurs</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Le travail de maquettage s'est déroulé en parallèle des
                     tests utilisateurs, permettant un processus itératif.
                     L'interface a ainsi évolué à travers plusieurs versions
-                    avant d'être développée. Voici les versions principales.
+                    avant d'être développée.
+                  </p>
+                  <p>
+                    Les sessions de tests utilisateurs ont été organisées avec
+                    plusieurs employés d'Orange qui ont accepté de se prêter à
+                    l'exercice. Au total, cinq testeurs ont pu donner leurs
+                    retours au cours de sessions individuelles menées sur
+                    plusieurs semaines, revenant d'une semaine à l'autre pour
+                    observer et évaluer les évolutions des maquettes.
+                  </p>
+                  <p>
+                    Chaque session débutait par une contextualisation du profil
+                    de l'utilisateur. S'ensuivait un temps d'échange durant
+                    lequel le testeur découvrait l'interface, posait ses
+                    questions et partageait ses remarques. Enfin,
+                    l'utilisabilité globale était mesurée à l'aide d'un
+                    questionnaire SUS, permettant de suivre l'évolution de
+                    l'expérience utilisateur au fil des itérations des
+                    maquettes.
                   </p>
                 </div>
               </Col>
@@ -381,11 +452,19 @@ function SecuriteMobile() {
                 <div className="w-full h-fit flex flex-row justify-center">
                   <img
                     loading="lazy"
-                    src={getAsset("/src/assets/projects/securite_mobile/figma_evolution-1280.webp")}
+                    src={getAsset(
+                      "/src/assets/projects/securite_mobile/figma_evolution-1280.webp"
+                    )}
                     srcSet={`
-                      ${getAsset("/src/assets/projects/securite_mobile/figma_evolution-480.webp")} 480w,
-                      ${getAsset("/src/assets/projects/securite_mobile/figma_evolution-768.webp")} 768w,
-                      ${getAsset("/src/assets/projects/securite_mobile/figma_evolution-1280.webp")} 1280w
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/figma_evolution-480.webp"
+                      )} 480w,
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/figma_evolution-768.webp"
+                      )} 768w,
+                      ${getAsset(
+                        "/src/assets/projects/securite_mobile/figma_evolution-1280.webp"
+                      )} 1280w
                     `}
                     sizes="(max-width: 768px) 100vw, 768px"
                     alt="Trois versions successives de la maquette avec annotations, illustrant le processus itératif et les ajustements réalisés suite aux retours de l'équipe et des testeurs."
@@ -395,38 +474,11 @@ function SecuriteMobile() {
             </Row>
           </section>
 
-          {/* Tests utilisateurs */}
-          <section aria-labelledby="securite_mobile-section_8" className="flex flex-col gap-5">
-            <Row justify="center">
-              <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2 id="securite_mobile-section_8">Tests utilisateurs</h2>
-                <div className="flex flex-col gap-1">
-                  <p>
-                    Des sessions de tests utilisateurs ont été organisées sur
-                    les maquettes avec plusieurs employés d'Orange qui ont
-                    accepté de se prêter à l'exercice. Au total, cinq testeurs
-                    ont pu donner leurs retours au cours de sessions
-                    individuelles menées sur plusieurs semaines, revenant d'une
-                    semaine à l'autre pour observer et évaluer les évolutions
-                    des maquettes.
-                  </p>
-                  <p>
-                    Chaque session débutait par une contextualisation du profil
-                    de l'utilisateur. S'ensuivait un temps d'échange durant
-                    lequel le testeur découvrait l'interface, posait ses
-                    questions et partageait ses remarques. Enfin, l'usabilité
-                    globale était mesurée à l'aide d'un questionnaire SUS,
-                    permettant de suivre l'évolution de l'expérience utilisateur
-                    au fil des itérations des maquettes.
-                  </p>
-                </div>
-              </Col>
-              <Col xl={3}></Col>
-            </Row>
-          </section>
-
           {/* Développement */}
-          <section aria-labelledby="securite_mobile-section_9" className="flex flex-col gap-5">
+          <section
+            aria-labelledby="securite_mobile-section_9"
+            className="flex flex-col gap-5"
+          >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
                 <h2 id="securite_mobile-section_9">Développement</h2>
