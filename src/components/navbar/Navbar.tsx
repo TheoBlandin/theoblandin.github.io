@@ -83,10 +83,10 @@ function Navbar() {
               scrolled || solidNavbar ? "t-inverse" : "t-default"
             }`}
             onClick={() => setMenuOpen((prev) => !prev)}
-            aria-label="Ouvrir le menu de navigation"
+            aria-label={menuOpen ? "Fermer le menu de navigation" : "Ouvrir le menu de navigation"}
           >
             {menuOpen ? (
-              <X size={32} />
+              <X size={32} className="t-inverse" />
             ) : (
               <List size={32} />
             )}
