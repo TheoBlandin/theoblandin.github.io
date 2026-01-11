@@ -178,7 +178,7 @@ function Swap() {
             </Row>
             <Row justify="center">
               <Col sm={12} xl={10}>
-                <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 md:grid-rows-4 lg:grid-rows-2 gap-4 ld:gap-6">
+                <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 md:grid-rows-4 lg:grid-rows-2 gap-4">
                   {domains.map((d, index) => {
                     return (
                       <div

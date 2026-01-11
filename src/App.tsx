@@ -15,6 +15,7 @@ import Proficlais from "./pages/Proficlais";
 import About from "./pages/about/About";
 import Page404 from "./pages/Page404";
 import Legals from "./pages/Legals";
+import A4LL from "./pages/A4LL";
 
 setConfiguration({
   breakpoints: [360, 480, 768, 1024, 1280, 1440], // sm, md, lg, xl, xxl, xxxl
@@ -56,6 +57,7 @@ function App() {
           <Route path="/swap" element={<Swap />} />
           <Route path="/securite_mobile" element={<SecuriteMobile />} />
           <Route path="/proficlais" element={<Proficlais />} />
+          <Route path="/a4ll" element={<A4LL />} />
         </Routes>
       </main>
       <Footer />

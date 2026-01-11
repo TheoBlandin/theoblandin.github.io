@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-grid-system";
+import { Link } from "react-router-dom";
 
 import type { Presentation } from "../../types/types";
 import { ArrowSquareOut } from "@phosphor-icons/react";

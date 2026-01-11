@@ -1,0 +1,16 @@
+{
+  "intro": [
+    "<i><abbr title='Analytics for Language Learning'>A4LL</abbr></i> est un projet de recherche issu de l'Université Rennes 2. Celui-ci fut le point de départ du projet de startup incubé à l'INRIA Startup Studio de Rennes, devenu par la suite Proficlais.",
+    "Conçu pour les enseignants de langues secondes, A4LL vise à proposer un système innovant d'analyse des productions écrites des apprenants. Grâce au machine learning, l'outil associe automatiquement à chaque texte un niveau <abbr title='Cadre européen commun de référence pour les langues'>CECR</abbr> (A1, A2, B1, etc.) ainsi qu'une analyse détaillée de différentes dimensions linguistiques : complexité, phraséologie, cohésion du discours ou encore fluidité.",
+    "L'outil se veut être un accompagnant et non un substitut. Son rôle n'est pas de corriger les textes, mais de fournir des données à l'enseignant qui saura les utiliser dans son travail."
+  ],
+  "context": ["Projet professionnel", "Interface web", "Travail en binôme"],
+  "tools": ["Figma", "React"],
+  "role": ["UX Researcher", "UX Designer", "Développeur"],
+  "links": [
+    {
+      "link": "https://www.inria.fr/fr/ia-diagnostic-niveau-langue-logiciel-ISS-A4LL-Rennes",
+      "label": "Article INRIA"
+    }
+  ]
+}

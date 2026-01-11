@@ -24,7 +24,7 @@
     {
       "title": "Kerflow",
       "image": "/src/assets/projects/kerflow/overview-1280.webp",
-      "description": "Design System pour un projet de startup maturé à l'INRIA Startup Studio de Rennes",
+      "description": "Design System et refonte de l'interface graphique pour une équipe de l'INRIA Startup Studio",
       "tags": ["Design", "Figma", "Design System"],
       "link": "/kerflow"
     },
