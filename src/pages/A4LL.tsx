@@ -43,7 +43,7 @@ function A4LL() {
                   ${getAsset("/src/assets/projects/a4ll/quote-1280.webp")} 1280w
                 `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Un outil créé par des enseignants, offrant un diagnostic global, visuel et objectif de la production écrite d'un apprenant."
                 />
               </div>
               <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
@@ -63,7 +63,7 @@ function A4LL() {
                   )} 1280w
                 `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Mockup d'un écran de visualisation de la probabilité de répartition sur le tableau de bord d'A4LL"
                 />
               </div>
             </div>
@@ -85,7 +85,7 @@ function A4LL() {
                   )} 1280w
                 `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Mockup d'un écran de visualisation du positionnement par domaine CECR sur le tableau de bord d'A4LL"
                 />
               </div>
               <div className="bg-surface flex items-center justify-center py-6 px-4 lg:px-6 lg:w-[33%]">
@@ -105,7 +105,7 @@ function A4LL() {
                   )} 1280w
                 `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Première étape : Rédaction, avec un exercice d'expression écrite. Deuxième étape : Analyse, grâce à une pipeline de machine learning. Troisième étape : Visualisations, niveau CECR et pourquoi."
                 />
               </div>
             </div>
@@ -229,7 +229,7 @@ function A4LL() {
                       )} 1280w
                     `}
                     sizes="(max-width: 768px) 100vw, 768px"
-                    alt="Logo, couleurs et typographie de Proficlais"
+                    alt="Ancienne interface du projet accompagnée de commentaires"
                   />
                 </div>
               </Col>
@@ -511,7 +511,7 @@ function A4LL() {
                       )} 1280w
                     `}
                     sizes="(max-width: 768px) 100vw, 768px"
-                    alt="Logo, couleurs et typographie de Proficlais"
+                    alt="Évolution de la nouvelle maquette d'A4LL"
                   />
                 </div>
               </Col>

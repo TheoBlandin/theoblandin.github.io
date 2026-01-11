@@ -56,7 +56,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/mockup_1-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Mockup de l'écran d'accueil"
                 />
               </div>
               <div
@@ -72,7 +72,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/fruit_1-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Illustration d'un abricot, issue de l'application"
                 />
                 <img
                   loading="lazy"
@@ -83,7 +83,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/fruit_2-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Illustration d'une gousse d'ail, issue de l'application"
                 />
                 <img
                   loading="lazy"
@@ -94,7 +94,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/fruit_3-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Illustration de noisettes, issue de l'application"
                 />
                 <img
                   loading="lazy"
@@ -105,7 +105,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/fruit_4-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Illustration d'un artichaut, issue de l'application"
                 />
                 <img
                   loading="lazy"
@@ -116,7 +116,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/fruit_5-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Illustration d'une aubergine, issue de l'application"
                 />
                 <img
                   loading="lazy"
@@ -127,7 +127,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/fruit_6-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Illustration d'amandes, issue de l'application"
                 />
               </div>
               <div
@@ -144,7 +144,7 @@ function MangerDeSaison() {
                     ${getAsset("/src/assets/projects/manger_de_saison/mockup_2-1280.webp")} 1280w
                   `}
                   sizes="(max-width: 768px) 100vw, 768px"
-                  alt=""
+                  alt="Mockup de l'écran de visualisation d'un fruit"
                 />
               </div>
             </div>

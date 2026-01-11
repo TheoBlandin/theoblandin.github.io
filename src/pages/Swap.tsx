@@ -87,7 +87,7 @@ function Swap() {
                   ${getAsset("/src/assets/projects/swap/mockup-1280.webp")} 1280w
                 `}
                 sizes="(max-width: 768px) 100vw, 768px"
-                alt=""
+                alt="Mockup de l'écran d'accueil"
               />
             </div>
             <div className="flex flex-col gap-2 w-full lg:w-[33%]">

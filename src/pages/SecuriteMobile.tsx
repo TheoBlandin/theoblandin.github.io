@@ -49,7 +49,7 @@ function SecuriteMobile() {
                   )} 1280w
                 `}
                 sizes="(max-width: 768px) 100vw, 768px"
-                alt=""
+                alt="Mockup de l'interface accessible via le téléphone portable de l'utilisateur"
               />
             </div>
             <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
@@ -71,7 +71,7 @@ function SecuriteMobile() {
                   )} 1280w
                 `}
                 sizes="(max-width: 768px) 100vw, 768px"
-                alt=""
+                alt="Mockup du tableau de bord la borne de sécurité"
               />
             </div>
           </div>

@@ -64,7 +64,7 @@ function Proficlais() {
                   )} 1280w
                 `}
                 sizes="(max-width: 768px) 100vw, 768px"
-                alt=""
+                alt="Chatbot de Proficlais"
               />
             </div>
             <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
@@ -86,7 +86,7 @@ function Proficlais() {
                   )} 1280w
                 `}
                 sizes="(max-width: 768px) 100vw, 768px"
-                alt=""
+                alt="Mockup de l'interface administrateur de Proficlais"
               />
             </div>
           </div>
