@@ -30,70 +30,13 @@ function A4LL() {
 
         {/* Visuals */}
         <div className="w-full flex flex-row justify-center">
-          <div className="w-full max-w-[1440px] flex flex-col gap-2 lg:gap-3">
-            <div className="flex flex-col-reverse lg:flex-row gap-2 lg:gap-3 px-3 w-full">
-              <div className="bg-surface flex items-center justify-center py-6 px-4 lg:px-6 lg:w-[33%]">
-                <img
-                  loading="lazy"
-                  className="w-full"
-                  src={getAsset("/src/assets/projects/a4ll/quote-1280.webp")}
-                  srcSet={`
-                  ${getAsset("/src/assets/projects/a4ll/quote-480.webp")} 480w,
-                  ${getAsset("/src/assets/projects/a4ll/quote-768.webp")} 768w,
-                  ${getAsset("/src/assets/projects/a4ll/quote-1280.webp")} 1280w
-                `}
-                  sizes="(max-width: 768px) 100vw, 768px"
-                  alt="Un outil créé par des enseignants, offrant un diagnostic global, visuel et objectif de la production écrite d'un apprenant."
-                />
-              </div>
-              <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
-                <img
-                  loading="lazy"
-                  className="w-full"
-                  src={getAsset("/src/assets/projects/a4ll/mockup_1-1280.webp")}
-                  srcSet={`
-                  ${getAsset(
-                    "/src/assets/projects/a4ll/mockup_1-480.webp"
-                  )} 480w,
-                  ${getAsset(
-                    "/src/assets/projects/a4ll/mockup_1-768.webp"
-                  )} 768w,
-                  ${getAsset(
-                    "/src/assets/projects/a4ll/mockup_1-1280.webp"
-                  )} 1280w
-                `}
-                  sizes="(max-width: 768px) 100vw, 768px"
-                  alt="Mockup d'un écran de visualisation de la probabilité de répartition sur le tableau de bord d'A4LL"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row gap-2 lg:gap-3 px-3 w-full">
-              <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
-                <img
-                  loading="lazy"
-                  className="w-full"
-                  src={getAsset("/src/assets/projects/a4ll/mockup_2-1280.webp")}
-                  srcSet={`
-                  ${getAsset(
-                    "/src/assets/projects/a4ll/mockup_2-480.webp"
-                  )} 480w,
-                  ${getAsset(
-                    "/src/assets/projects/a4ll/mockup_2-768.webp"
-                  )} 768w,
-                  ${getAsset(
-                    "/src/assets/projects/a4ll/mockup_2-1280.webp"
-                  )} 1280w
-                `}
-                  sizes="(max-width: 768px) 100vw, 768px"
-                  alt="Mockup d'un écran de visualisation du positionnement par domaine CECR sur le tableau de bord d'A4LL"
-                />
-              </div>
-              <div className="bg-surface flex items-center justify-center py-6 px-4 lg:px-6 lg:w-[33%]">
-                <img
-                  loading="lazy"
-                  className="w-full"
-                  src={getAsset("/src/assets/projects/a4ll/workflow-1280.webp")}
-                  srcSet={`
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-3 px-3 w-full max-w-[1440px]">
+            <div className="bg-surface flex items-center justify-center py-6 px-4 lg:px-6 lg:w-[33%]">
+              <img
+                loading="lazy"
+                className="w-full"
+                src={getAsset("/src/assets/projects/a4ll/workflow-1280.webp")}
+                srcSet={`
                   ${getAsset(
                     "/src/assets/projects/a4ll/workflow-480.webp"
                   )} 480w,
@@ -104,10 +47,29 @@ function A4LL() {
                     "/src/assets/projects/a4ll/workflow-1280.webp"
                   )} 1280w
                 `}
-                  sizes="(max-width: 768px) 100vw, 768px"
-                  alt="Première étape : Rédaction, avec un exercice d'expression écrite. Deuxième étape : Analyse, grâce à une pipeline de machine learning. Troisième étape : Visualisations, niveau CECR et pourquoi."
-                />
-              </div>
+                sizes="(max-width: 768px) 100vw, 768px"
+                alt="Première étape : Rédaction, avec un exercice d'expression écrite. Deuxième étape : Analyse, grâce à une pipeline de machine learning. Troisième étape : Visualisations, niveau CECR et pourquoi."
+              />
+            </div>
+            <div className="bg-surface flex-1 flex items-center justify-center py-6 px-4 lg:px-12">
+              <img
+                loading="lazy"
+                className="w-full"
+                src={getAsset("/src/assets/projects/a4ll/mockup_1-1280.webp")}
+                srcSet={`
+                  ${getAsset(
+                    "/src/assets/projects/a4ll/mockup_1-480.webp"
+                  )} 480w,
+                  ${getAsset(
+                    "/src/assets/projects/a4ll/mockup_1-768.webp"
+                  )} 768w,
+                  ${getAsset(
+                    "/src/assets/projects/a4ll/mockup_1-1280.webp"
+                  )} 1280w
+                `}
+                sizes="(max-width: 768px) 100vw, 768px"
+                alt="Mockup d'un écran de visualisation de la probabilité de répartition sur le tableau de bord d'A4LL"
+              />
             </div>
           </div>
         </div>

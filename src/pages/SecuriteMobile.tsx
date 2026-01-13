@@ -403,7 +403,7 @@ function SecuriteMobile() {
                       )} 1280w
                     `}
                     sizes="(max-width: 768px) 100vw, 768px"
-                    alt="Schéma illustrant le parcours utilisateur depuis l'écran de connexion."
+                    alt="Schéma illustrant le parcours utilisateur simplifié depuis l'écran de connexion."
                   />
                 </div>
               </Col>

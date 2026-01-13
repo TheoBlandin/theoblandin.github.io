@@ -12,7 +12,7 @@ function Navbar() {
 
   const location = useLocation(); // current user location
 
-  const validPath = ['/', '/manger_de_saison', '/swap', '/securite_mobile', '/proficlais']
+  const validPath = ['/', '/manger_de_saison', '/swap', '/securite_mobile', '/proficlais', '/a4ll', '/kerflow']
 
   // If user scoll more than 50px, navbar background go from transparent to dark color
   useEffect(() => {

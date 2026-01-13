@@ -225,20 +225,73 @@ function Proficlais() {
             </Row>
           </section>
 
-          {/* Identité visuelle */}
+          {/* Parcours utilisateurs */}
           <section
             aria-labelledby="proficlais-section_4"
             className="flex flex-col gap-5"
           >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2 id="proficlais-section_4">Identité visuelle</h2>
+                <h2 id="proficlais-section_4">Parcours utilisateurs</h2>
+                <div className="flex flex-col gap-1">
+                  <p>
+                    <i>Proficlais</i> dispose de deux expériences utilisateurs
+                    en parallèle :
+                  </p>
+                  <ul className="list-disc list-outside ms-8 flex flex-col gap-1">
+                    <li>
+                      Le <span className="bold">visiteur</span>, qui va
+                      dialoguer avec le chatbot
+                    </li>
+                    <li>
+                      L'<span className="bold">administrateur</span>, qui va visualiser les données et gérer
+                      le widget présent sur son site
+                    </li>
+                  </ul>
+                </div>
+              </Col>
+              <Col xl={3}></Col>
+            </Row>
+            <Row justify="center">
+              <Col sm={12} xl={10} className="flex flex-col gap-5">
+                <div className="w-full h-fit flex flex-row justify-center">
+                  <img
+                    loading="lazy"
+                    src={getAsset(
+                      "/src/assets/projects/proficlais/workflow-1280.webp"
+                    )}
+                    srcSet={`
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/workflow-480.webp"
+                      )} 480w,
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/workflow-768.webp"
+                      )} 768w,
+                      ${getAsset(
+                        "/src/assets/projects/proficlais/workflow-1280.webp"
+                      )} 1280w
+                    `}
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    alt="Deux schémas illustrant les parcours utilisateurs du visiteur et de l'administrateur."
+                  />
+                </div>
+              </Col>
+            </Row>
+          </section>
+
+          {/* Identité visuelle */}
+          <section
+            aria-labelledby="proficlais-section_5"
+            className="flex flex-col gap-5"
+          >
+            <Row justify="center">
+              <Col sm={12} xl={7} className="flex flex-col gap-2">
+                <h2 id="proficlais-section_5">Identité visuelle</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     L'identité visuelle de <i>Proficlais</i> a été conçue pour
-                    rester simple et neutre, afin de mettre l'accent sur les
-                    fonctionnalités et la précision technique du service, tout
-                    en permettant un widget en marque blanche.
+                    rester simple et neutre, afin de permettre une intégration
+                    uniforme sur les sites web des clients.
                   </p>
                 </div>
               </Col>
@@ -273,12 +326,12 @@ function Proficlais() {
 
           {/* Personnalisation */}
           <section
-            aria-labelledby="proficlais-section_5"
+            aria-labelledby="proficlais-section_6"
             className="flex flex-col gap-5"
           >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2 id="proficlais-section_5">Personnalisation</h2>
+                <h2 id="proficlais-section_6">Personnalisation</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Le widget est proposé en marque blanche, ce qui permet au
@@ -342,12 +395,12 @@ function Proficlais() {
 
           {/* Développement */}
           <section
-            aria-labelledby="proficlais-section_6"
+            aria-labelledby="proficlais-section_7"
             className="flex flex-col gap-5"
           >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2 id="proficlais-section_6">Développement</h2>
+                <h2 id="proficlais-section_7">Développement</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     L'interface de management et le widget ont été développés
@@ -377,12 +430,12 @@ function Proficlais() {
 
           {/* Issue du projet */}
           <section
-            aria-labelledby="proficlais-section_7"
+            aria-labelledby="proficlais-section_8"
             className="flex flex-col gap-5"
           >
             <Row justify="center">
               <Col sm={12} xl={7} className="flex flex-col gap-2">
-                <h2 id="proficlais-section_7">Issue du projet</h2>
+                <h2 id="proficlais-section_8">Issue du projet</h2>
                 <div className="flex flex-col gap-1">
                   <p>
                     Ce projet a été porté et financé par l'INRIA Startup Studio
