@@ -22,13 +22,6 @@
       "link": "/securite_mobile"
     },
     {
-      "title": "Kerflow",
-      "image": "/src/assets/projects/kerflow/overview-1280.webp",
-      "description": "Design System et refonte de l'interface graphique pour une équipe de l'INRIA Startup Studio",
-      "tags": ["Design", "Figma", "Design System"],
-      "link": "/kerflow"
-    },
-    {
       "title": "SWAP",
       "image": "/src/assets/projects/swap/overview-1280.webp",
       "description": "Mise en application de la démarche Design Thinking dans le cadre d'un projet de fin d'études",
